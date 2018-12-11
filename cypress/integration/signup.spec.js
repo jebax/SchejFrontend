@@ -1,6 +1,9 @@
 describe("Signing up", () => {
-  it("redirects to the calendar", () => {
+  beforeEach(() => {
     cy.visit('http://localhost:3000')
+  })
+
+  it("redirects to the calendar", () => {
     cy.get('[id="sign-up-name-entry"]')
       .type('TestName')
     cy.get('[id="sign-up-email-entry"]')
@@ -16,5 +19,22 @@ describe("Signing up", () => {
     cy.get('[id="sign-up-submit"]')
       .click()
     cy.url().should('eq', 'http://localhost:3000/calendar')
+  })
+
+  it('cannot submit if all fields are not filled', () => {
+    cy.get('[id=sign-up-submit]').should('be.disabled')
+    cy.get('[id="sign-up-name-entry"]')
+      .type('TestName')
+    cy.get('[id="sign-up-email-entry"]')
+      .type('TestEmail')
+    cy.get('[id="sign-up-organization-entry"]')
+      .type('TestOrganization')
+    cy.get('[id="sign-up-password-entry"]')
+      .type('TestPassword')
+    cy.get('[id="sign-up-mobile-entry"]')
+      .type('07823012312')
+    cy.get('[id="sign-up-password-confirmation"]')
+      .type('TestPassword')
+    cy.get('[id="sign-up-submit"]').should('not.be.disabled')
   })
 })
