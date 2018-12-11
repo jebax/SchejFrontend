@@ -22,13 +22,22 @@ export default class SignUpForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    this.props.history.push('/calendar')
+
+    if (this.hasMatchingPasswords()) {
+      this.props.history.push('/calendar')
+    } else {
+      alert('Passwords do not match')
+    }
   }
 
   isValidated = () => {
     return this.state.name.length > 0 && this.state.organization.length > 0 &&
       this.state.email.length > 0 && this.state.mobile.length > 0 &&
       this.state.password.length > 0 && this.state.passwordConfirmation.length > 0
+  }
+
+  hasMatchingPasswords = () => {
+    return this.state.password === this.state.passwordConfirmation
   }
 
   render() {
