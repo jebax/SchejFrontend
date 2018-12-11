@@ -30,4 +30,16 @@ describe('<SignUpForm />', () => {
       .type('TestPassword')
       .should('have.value', 'TestPassword')
   })
+
+  it('has an entry field for mobile', () => {
+    cy.get('[id="sign-up-mobile-entry"]')
+      .type('07823012312')
+      .should('have.value', '07823012312')
+  })
+
+  it('has an entry field for password confirmation', () => {
+    cy.get('[id="sign-up-password-confirmation"]')
+      .type('TestPassword')
+      .should('have.value', 'TestPassword')
+  })
 })
