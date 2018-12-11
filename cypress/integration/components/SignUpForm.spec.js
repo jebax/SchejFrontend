@@ -19,10 +19,10 @@ describe('<SignUpForm />', () => {
       .should('have.value', 'TestEmail')
   })
 
-  it('has an entry field for organization', () => {
-    cy.get('[id="sign-up-organization-entry"]')
-      .type('TestOrganization')
-      .should('have.value', 'TestOrganization')
+  it('has an entry field for organisation', () => {
+    cy.get('[id="sign-up-organisation-entry"]')
+      .type('Testorganisation')
+      .should('have.value', 'Testorganisation')
   })
 
   it('has an entry field for password', () => {

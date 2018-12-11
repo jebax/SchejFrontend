@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 export default class SignUpForm extends Component {
   constructor(props) {
@@ -6,7 +7,7 @@ export default class SignUpForm extends Component {
 
     this.state = {
       name: "",
-      organization: "",
+      organisation: "",
       email: "",
       mobile: "",
       password: "",
@@ -22,16 +23,37 @@ export default class SignUpForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
-
     if (this.hasMatchingPasswords()) {
-      this.props.history.push('/calendar')
+      this.createUserRequest()
     } else {
       alert('Passwords do not match')
     }
   }
 
+  createUserRequest = () => {
+    const self = this
+    axios.post(
+      'http://localhost:3001/api/v1/sign_up',
+      {
+        name: this.state.name,
+        organisation: this.state.organisation,
+        email: this.state.email,
+        mobile: this.state.mobile,
+        password: this.state.password,
+        passwordConfirmation: this.state.passwordConfirmation
+      }
+    )
+    .then(response => {
+      self.props.history.push('/calendar')
+      console.log(response)
+    })
+    .catch(error => {
+      alert('Email already taken')
+    })
+  }
+
   isValidated = () => {
-    return this.state.name.length > 0 && this.state.organization.length > 0 &&
+    return this.state.name.length > 0 && this.state.organisation.length > 0 &&
       this.state.email.length > 0 && this.state.mobile.length > 0 &&
       this.state.password.length > 0 && this.state.passwordConfirmation.length > 0
   }
@@ -44,7 +66,7 @@ export default class SignUpForm extends Component {
     return (
       <form className='sign-up-form' onSubmit={this.handleSubmit}>
         <input id='sign-up-name-entry' className='sign-up-entry' type='text' name='name' placeholder='Name' onChange={this.handleChange}/><br />
-        <input id='sign-up-organization-entry' className='sign-up-entry' type='text' name='organization' placeholder='Organization' onChange={this.handleChange} /><br />
+        <input id='sign-up-organisation-entry' className='sign-up-entry' type='text' name='organisation' placeholder='organisation' onChange={this.handleChange} /><br />
         <input id='sign-up-email-entry' className='sign-up-entry' type='text' name='email' placeholder='Email' onChange={this.handleChange} /><br />
         <input id='sign-up-mobile-entry' className='sign-up-entry' type='text' name='mobile' placeholder='Mobile' onChange={this.handleChange} /><br />
         <input id='sign-up-password-entry' className='sign-up-entry' type='password' name='password' placeholder='Password' onChange={this.handleChange} /><br />
