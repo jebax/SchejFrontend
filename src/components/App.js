@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Calendar from './Calendar'
+import Main from './Main'
 
-class App extends Component {
+export default class App extends Component {
 
   render () {
     return (
@@ -10,13 +10,9 @@ class App extends Component {
 
         </header>
         <body>
-          <div>
-            <Calendar />
-          </div>
+          <Main />
         </body>
       </div>
     )
   }
 }
-
-export default App
