@@ -1,5 +1,5 @@
 describe("Signing up", () => {
-  it.skip("redirects to the calendar", () => {
+  it("redirects to the calendar", () => {
     cy.visit('http://localhost:3000')
     cy.get('[id="sign-up-name-entry"]')
       .type('TestName')
