@@ -13,7 +13,8 @@ export default class Shifts extends Component {
         {
           start: new Date(),
           end: new Date(moment().add(6,'hours')),
-          title: 'Schej'
+          title: 'Schej',
+          event_id: 1
         }
       ]
     }
@@ -23,6 +24,7 @@ export default class Shifts extends Component {
       if (!localStorage['authenticationToken']) {
         this.props.history.push('/')
       }
+      console.log(this.state.events)
       return(
         <div>
           <h1 id='title'>Schej</h1>
