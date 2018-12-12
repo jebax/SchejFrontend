@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Calendar from './Calendar'
+import Shifts from './Shifts'
 import SignUpForm from './SignUpForm'
 import { Switch, Route } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ export default class Main extends Component {
     return (
       <main>
         <Switch>
-          <Route exact path='/calendar' component={Calendar}/>
+          <Route exact path='/shifts' component={Shifts}/>
           <Route exact path='/' component={SignUpForm}/>
         </Switch>
       </main>

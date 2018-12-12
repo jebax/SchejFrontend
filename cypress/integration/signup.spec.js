@@ -27,7 +27,7 @@ describe("Signing up", () => {
       .type('TestPassword')
     cy.get('[id="sign-up-submit"]')
       .click()
-    cy.url().should('eq', 'http://localhost:3000/calendar')
+    cy.url().should('eq', 'http://localhost:3000/shifts')
   })
 
   it('cannot submit if all fields are not filled', () => {
@@ -72,7 +72,7 @@ describe("Signing up", () => {
       .type('TestPassword')
     cy.get('[id="sign-up-submit"]')
       .click()
-    cy.url().should('eq', 'http://localhost:3000/calendar')
+    cy.url().should('eq', 'http://localhost:3000/shifts')
     cy.get('[id="welcome"]').contains('Welcome TestName')
   })
 
