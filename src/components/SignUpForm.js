@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { setAuthStorage } from '../actions/authentication'
 
 export default class SignUpForm extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class SignUpForm extends Component {
       }
     )
     .then(response => {
+      setAuthStorage(response.data)
       self.props.history.push('/calendar')
       console.log(response)
     })
