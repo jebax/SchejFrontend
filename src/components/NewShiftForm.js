@@ -17,7 +17,9 @@ export default class NewShiftForm extends Component {
   handleSubmit = event => {
     event.preventDefault()
     this.formatDate()
-    this.createNewShiftRequest()
+    setTimeout(() => {
+      this.createNewShiftRequest()
+    }, 50)
   }
 
   handleChange = event => {
@@ -27,20 +29,26 @@ export default class NewShiftForm extends Component {
   }
 
   createNewShiftRequest = () => {
-    const self = this
+    console.log(this.state.formattedDate)
     axios.post(
       'http://localhost:3001/api/v1/shifts', {
+        user_id: localStorage['id'],
         title: localStorage['email'],
-        start_date: this.state.formattedDate.getTime(),
-        end_date: this.state.formattedDate.setHours(this.state.formattedDate.getHours()+this.state.shiftDuration)
+        start_time: this.state.formattedDate.getTime(),
+        end_time: this.formatEndTime()
       }
     )
     .then(response => {
-      console.log(response)
+      this.props.history.push('/shifts')
     })
     .catch(error => {
       console.log(error)
     })
+  }
+
+  formatEndTime = () => {
+    let date = new Date(this.state.startYear, this.state.startMonth, this.state.startDay, this.state.startHour)
+    return date.setHours(date.getHours()+parseInt(this.state.shiftDuration))
   }
 
   formatDate = () => {
