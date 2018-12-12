@@ -49,6 +49,7 @@ describe("Signing up", () => {
 
   it.skip('cannot submit if password and confirmation do not match', () => {
     const stub = cy.stub()
+    cy.on('window:alert', stub)
     cy.get('[id="sign-up-name-entry"]')
       .type('TestName')
     cy.get('[id="sign-up-email-entry"]')
@@ -61,11 +62,9 @@ describe("Signing up", () => {
       .type('07823012312')
     cy.get('[id="sign-up-password-confirmation"]')
       .type('TestPassword1')
-    cy.on('window:alert', stub)
     cy.get('[id="sign-up-submit"]').click()
       .then(() => {
-      console.log(stub.getCall(0))
-      expect(stub.getCall(0)).to.be.calledWith('Passwords do not match')
-    })
+        expect(stub.getCall(0)).to.be.calledWith('Passwords do not match')
+      })
   })
 })

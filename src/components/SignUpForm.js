@@ -24,10 +24,12 @@ export default class SignUpForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    if (this.hasMatchingPasswords()) {
-      this.createUserRequest()
-    } else {
+    if (this.hasNonMatchingPasswords()) {
       alert('Passwords do not match')
+    } else if (this.hasInvalidPassword()) {
+      alert('Password must be at least 6 characters')
+    } else {
+      this.createUserRequest()
     }
   }
 
@@ -50,7 +52,11 @@ export default class SignUpForm extends Component {
       console.log(response)
     })
     .catch(error => {
-      alert('Email already taken')
+      if (error.response.status === 422) {
+        alert('Email already taken')
+      } else {
+        console.log(error)
+      }
     })
   }
 
@@ -60,8 +66,12 @@ export default class SignUpForm extends Component {
       this.state.password.length > 0 && this.state.passwordConfirmation.length > 0
   }
 
-  hasMatchingPasswords = () => {
-    return this.state.password === this.state.passwordConfirmation
+  hasNonMatchingPasswords = () => {
+    return this.state.password !== this.state.passwordConfirmation
+  }
+
+  hasInvalidPassword = () => {
+    return this.state.password.length < 6
   }
 
   render() {
