@@ -1,13 +1,15 @@
 describe('Signing out', () => {
-  var stub
-
   before(() => {
-    cy.visit('http://localhost:3000')
+    cy.visit('http://localhost:3000/sign_up')
     cy.server()
     cy.route({
       method: 'POST',
       url: 'http://localhost:3001/api/v1/sign_up',
-      response: []
+      response: {
+        data: {
+          name: 'TestName'
+        }
+      }
     })
 
     cy.route({
@@ -32,7 +34,7 @@ describe('Signing out', () => {
       .click()
   })
 
-  it('redirects the user back to the signup page', () => {
+  it('redirects the user back to the sign in page', () => {
     cy.get('[id="sign-out-button"]').click()
     cy.url().should('eq', 'http://localhost:3000/')
   })

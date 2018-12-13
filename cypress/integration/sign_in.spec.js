@@ -1,20 +1,18 @@
-describe('signs in a user', () => {
+describe('Signing in', () => {
   var stub
 
   before(() => {
-    cy.visit('http://localhost:3000')
+    stub = cy.stub()
+    cy.on('window:alert', stub)
+
+    cy.visit('http://localhost:3000/')
     cy.server()
     const data = {
       name: 'TestName'
     }
     cy.route({
-      method:'DELETE',
-      url: 'http://localhost:3001/api/v1/sign_out',
-      response: ''
-    })
-    cy.route({
       method: 'POST',
-      url: 'http://localhost:3001/api/v1/sign_up',
+      url: 'http://localhost:3001/api/v1/sign_in',
       response: data
     })
 
@@ -23,26 +21,41 @@ describe('signs in a user', () => {
       url: 'http://localhost:3001/api/v1/shifts',
       response: []
     })
-
-    cy.get('[id="sign-up-name-entry"]')
-      .type('TestName')
-    cy.get('[id="sign-up-email-entry"]')
-      .type('TestEmail')
-    cy.get('[id="sign-up-organisation-entry"]')
-      .type('Testorganisation')
-    cy.get('[id="sign-up-password-entry"]')
-      .type('TestPassword')
-    cy.get('[id="sign-up-mobile-entry"]')
-      .type('07823012312')
-    cy.get('[id="sign-up-password-confirmation"]')
-      .type('TestPassword')
-    cy.get('[id="sign-up-submit"]')
-      .click()
-    cy.get('[id="sign-out-button"]').click()
   })
 
-  it('takes user to login page', () => {
-    cy.get('[id="login-button"]').click()
-    cy.url().should('eq', 'http://localhost:3000/sign_in')
+  it('Redirects to shifts page and welcomes user after signing in', () => {
+    cy.get('[id="sign-in-email-entry"]')
+      .type('TestName')
+    cy.get('[id="sign-in-password-entry"]')
+      .type('TestPassword')
+    cy.get('[id="sign-in-submit"]')
+      .click()
+
+    cy.url().should('eq', 'http://localhost:3000/shifts')
+    cy.contains('Welcome TestName')
+  })
+
+  it.skip('Alerts the user if wrong email or password is entered', () => {
+    cy.visit('http://localhost:3000/')
+    cy.get('[id="sign-in-email-entry"]')
+      .type('TestEmail')
+    cy.get('[id="sign-in-password-entry"]')
+      .type('WrongPassword')
+    cy.get('[id="sign-in-submit"]')
+      .click()
+      .then(() => {
+        expect(stub.getCall(0)).to.be.calledWith('Wrong email or password')
+      })
+  })
+
+  it('cannot submit if all fields are not filled', () => {
+    cy.visit('http://localhost:3000/')
+    cy.get('[id="sign-in-email-entry"]')
+      .type('TestEmail')
+    cy.get('[id=sign-in-submit]').should('be.disabled')
+    cy.get('[id="sign-in-password-entry"]')
+      .type('TestPassword')
+
+    cy.get('[id="sign-in-submit"]').should('not.be.disabled')
   })
 })

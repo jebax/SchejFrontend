@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import IndexTitle from './IndexTitle'
 import axios from 'axios'
 import { setAuthStorage } from '../actions/authentication'
 
@@ -34,27 +35,37 @@ export default class SignInForm extends Component {
       })
       .then(response => {
         console.log(response)
-        if (response.data['error'] === "invalid email and password combination"){
-          self.props.history.push('/users/sign_in')
-          alert('Wrong email and password')
+        if (response.data['error']){
+          alert('Wrong email or password')
         } else {
-            setAuthStorage(response.data)
-            self.props.history.push('/shifts')
-          }
+          setAuthStorage(response.data)
+          self.props.history.push('/shifts')
+        }
       })
       .catch(error => {
-          console.log(error)
-      
+        console.log(error)
       })
+    }
+
+    redirectSignUp = () => {
+      this.props.history.push('/sign_up')
+    }
+
+    isValidated = () => {
+      return this.state.email.length > 0 && this.state.password.length > 0
     }
 
     render() {
       return (
-        <form className='sign-in-form' onSubmit={this.handleSubmit}>
-          <input id='sign-in-email-entry' className='sign-in-entry' type='text' name='email' placeholder='Email' onChange={this.handleChange} /><br />
-          <input id='sign-in-password-entry' className='sign-in-entry' type='password' name='password' placeholder='Password' onChange={this.handleChange} /><br />
-          <button id='sign-in-submit' className='custom-button'>Submit</button>
-        </form>
+        <div id='sign-in-page'>
+          <IndexTitle />
+          <form className='sign-in-form' onSubmit={this.handleSubmit}>
+            <input id='sign-in-email-entry' className='sign-in-entry' type='text' name='email' placeholder='Email' onChange={this.handleChange} /><br />
+            <input id='sign-in-password-entry' className='sign-in-entry' type='password' name='password' placeholder='Password' onChange={this.handleChange} /><br />
+            <button id='sign-in-submit' className='custom-button' disabled={!this.isValidated()}>Submit</button>
+          </form>
+          <button id='sign-up-button' className='custom-button' onClick={this.redirectSignUp}>Sign Up</button>
+        </div>
       )
     }
     }

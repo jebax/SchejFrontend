@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import IndexTitle from './IndexTitle'
 import axios from 'axios'
 import { setAuthStorage } from '../actions/authentication'
 
@@ -74,17 +75,25 @@ export default class SignUpForm extends Component {
     return this.state.password.length < 6
   }
 
+  redirectSignIn = () => {
+    this.props.history.push('/')
+  }
+
   render() {
     return (
-      <form className='sign-up-form' onSubmit={this.handleSubmit}>
-        <input id='sign-up-name-entry' className='sign-up-entry' type='text' name='name' placeholder='Name' onChange={this.handleChange}/><br />
-        <input id='sign-up-organisation-entry' className='sign-up-entry' type='text' name='organisation' placeholder='organisation' onChange={this.handleChange} /><br />
-        <input id='sign-up-email-entry' className='sign-up-entry' type='text' name='email' placeholder='Email' onChange={this.handleChange} /><br />
-        <input id='sign-up-mobile-entry' className='sign-up-entry' type='text' name='mobile' placeholder='Mobile' onChange={this.handleChange} /><br />
-        <input id='sign-up-password-entry' className='sign-up-entry' type='password' name='password' placeholder='Password' onChange={this.handleChange} /><br />
-        <input id='sign-up-password-confirmation' className='sign-up-entry' type='password' name='passwordConfirmation' placeholder='Confirm Password' onChange={this.handleChange} /><br /><br />
-        <button id='sign-up-submit' className='custom-button' disabled={!this.isValidated()}>Submit</button>
-      </form>
+      <div id='sign-up-page'>
+        <IndexTitle />
+        <form className='sign-up-form' onSubmit={this.handleSubmit}>
+          <input id='sign-up-name-entry' className='sign-up-entry' type='text' name='name' placeholder='Name' onChange={this.handleChange}/><br />
+          <input id='sign-up-organisation-entry' className='sign-up-entry' type='text' name='organisation' placeholder='Organisation' onChange={this.handleChange} /><br />
+          <input id='sign-up-email-entry' className='sign-up-entry' type='text' name='email' placeholder='Email' onChange={this.handleChange} /><br />
+          <input id='sign-up-mobile-entry' className='sign-up-entry' type='text' name='mobile' placeholder='Mobile' onChange={this.handleChange} /><br />
+          <input id='sign-up-password-entry' className='sign-up-entry' type='password' name='password' placeholder='Password' onChange={this.handleChange} /><br />
+          <input id='sign-up-password-confirmation' className='sign-up-entry' type='password' name='passwordConfirmation' placeholder='Confirm Password' onChange={this.handleChange} /><br /><br />
+          <button id='sign-up-submit' className='custom-button' disabled={!this.isValidated()}>Submit</button>
+        </form>
+        <button id='sign-in-button' className='custom-button' onClick={this.redirectSignIn}>Sign In</button>
+      </div>
     )
   }
 }

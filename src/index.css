@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&text=Schej");
+
 body {
   margin: 0;
   padding: 0;
@@ -17,8 +19,20 @@ code {
   margin-left: 11vh;
 }
 
+.sign-in-form {
+  margin-bottom: 2%;
+}
+
+.sign-in-entry {
+  border-radius: 5px;
+  height: 32px;
+  border-width: 1px;
+  width: 20%;
+  font-size: 13px;
+}
+
 .sign-up-form {
-  text-align: center;
+  margin-bottom: 2%;
 }
 
 .sign-up-entry {
@@ -51,7 +65,32 @@ code {
   color: #666666;
 }
 
+button#sign-up-button {
+  text-align: center;
+}
+
+button#sign-in-submit {
+  margin-top: 2%;
+}
+
+div#sign-up-page {
+  text-align: center;
+}
+
+div#sign-in-page {
+  text-align: center;
+}
+
+h1#index-title-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 7vh;
+}
+
 h1#title {
+  text-align: center;
+}
+
+section#index-title {
   text-align: center;
 }
 

@@ -12,9 +12,9 @@ export default class Main extends Component {
       <main>
         <Switch>
           <Route exact path='/shifts' component={Shifts}/>
-          <Route exact path='/users/sign_in' component={SignInForm}/>
+          <Route exact path='/' component={SignInForm}/>
           <Route exact path='/shifts/new' component={NewShiftForm}/>
-          <Route exact path='/' component={SignUpForm}/>
+          <Route exact path='/sign_up' component={SignUpForm}/>
         </Switch>
       </main>
     )
