@@ -33,7 +33,8 @@ export default class NewShiftForm extends Component {
     axios.post(
       'http://localhost:3001/api/v1/shifts', {
         user_id: localStorage['id'],
-        title: localStorage['email'],
+        title: localStorage['name'],
+        email: localStorage['email'],
         start_time: this.state.formattedDate.getTime(),
         end_time: this.formatEndTime()
       }

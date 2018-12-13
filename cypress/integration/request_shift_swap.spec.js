@@ -1,5 +1,5 @@
-describe("Adding shift", () => {
-  beforeEach(() => {
+describe('Requesting a shift swap', () => {
+  before(() => {
     const data = {
       name: 'TestName',
       organisation: 'Testorganisation'
@@ -43,15 +43,6 @@ describe("Adding shift", () => {
       .type('TestPassword')
     cy.get('[id="sign-up-submit"]')
       .click()
-  })
-
-  it("redirects to a form to add a shift", () => {
-    cy.get('[id="add-shift-button"]')
-      .click()
-    cy.url().should('eq', 'http://localhost:3000/shifts/new')
-  })
-
-  it("creates a shift", () => {
     cy.get('[id="add-shift-button"]')
       .click()
     cy.get('[id="new-shift-start-year-entry"]')
@@ -65,7 +56,11 @@ describe("Adding shift", () => {
     cy.get('[id="new-shift-duration-entry"]')
       .type('8')
     cy.get('[id="new-shift-submit"]').click()
-    cy.url().should('eq', 'http://localhost:3000/shifts')
+  })
+
+  it('can view an individual shift before swapping', () => {
+    cy.get('[title="TestEmail"]').click()
+    cy.contains('Shift Information')
     cy.contains('TestEmail')
   })
 })

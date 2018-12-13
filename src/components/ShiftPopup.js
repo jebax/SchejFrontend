@@ -6,27 +6,53 @@ export default class ShiftPopup extends Component {
     super(props)
     this.state = {
       formatStart: '',
-      formatEnd: ''
+      formatEnd: '',
+      showingRequestForm: false
     }
   }
   componentWillMount() {
     console.log(this.props);
     this.setState({
       formatStart: this.props.shiftInfo.start.toLocaleString("en-GB"),
-      formatEnd: this.props.end.toLocaleString("en-GB")
+      formatEnd: this.props.shiftInfo.end.toLocaleString("en-GB")
     })
   }
-  render() {
-    return(
-      <div>
-      <ul>
-      <li>Contact email address: {this.props.shiftInfo.title}</li>
-      <li>Start time: {this.state.formatStart}</li>
-      </ul>
-      </div>
-    )
 
+  changeState = () => {
+    this.setState({
+      showingRequestForm: true
+    })
   }
 
-
+  render() {
+    if (this.state.showingRequestForm) {
+      return (
+        <div id='request-swap'>
+          <h3 id='shift-swap-title'>Request a shift swap</h3>
+        </div>
+      )
+    } else {
+      return(
+        <div id='shift-popup'>
+          <h3 id='shift-swap-title'>Shift Information</h3>
+          <div className='shift-info'>
+            <p className='shift-info-label'>Contact email address:</p>
+            <p className='shift-info-entry'>{this.props.shiftInfo.title}</p>
+          </div>
+          <div className='shift-info'>
+            <p className='shift-info-label'>Start time:</p>
+            <p className='shift-info-entry'>{this.state.formatStart}</p>
+          </div>
+          <div className='shift-info'>
+            <p className='shift-info-label'>End time:</p>
+            <p className='shift-info-entry'>{this.state.formatEnd}</p>
+          </div>
+          <br />
+          <section id='toggle-popup-state'>
+            <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button>
+          </section>
+        </div>
+      )
+    }
+  }
 }

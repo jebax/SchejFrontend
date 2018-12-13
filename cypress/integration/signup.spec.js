@@ -54,7 +54,8 @@ describe("Signing up", () => {
 
   it('welcomes the user on the calendar page after signup', () => {
     const data = {
-      name: 'TestName'
+      name: 'TestName',
+      organisation: 'Makers'
     }
     cy.server()
     cy.route({
