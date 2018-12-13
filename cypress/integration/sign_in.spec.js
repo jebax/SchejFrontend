@@ -18,7 +18,7 @@ describe('Signing in', () => {
 
     cy.route({
       method: 'GET',
-      url: 'http://localhost:3001/api/v1/shifts',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
       response: []
     })
   })
