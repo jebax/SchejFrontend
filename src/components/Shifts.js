@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import BigCalendar from 'react-big-calendar'
 import AddShiftButton from './AddShiftButton'
+import SignOutButton from './SignOutButton'
 import moment from 'moment'
 import axios from 'axios'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
@@ -48,6 +49,9 @@ export default class Shifts extends Component {
           <section id='welcome'>
             <h2>Welcome {localStorage['name']}</h2>
             <AddShiftButton
+              history={this.props.history}
+            />
+            <SignOutButton
               history={this.props.history}
             />
           </section>
