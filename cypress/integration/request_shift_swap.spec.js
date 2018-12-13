@@ -62,5 +62,12 @@ describe('Requesting a shift swap', () => {
     cy.get('[title="TestEmail"]').click()
     cy.contains('Shift Information')
     cy.contains('TestEmail')
+    cy.contains('12/12/2018, 08:00:00')
+    cy.contains('12/12/2018, 12:00:00')
+  })
+
+  it('can render a shift swapping form', () => {
+    cy.get('[class="custom-button"]').click()
+    cy.contains('Request a shift swap')
   })
 })
