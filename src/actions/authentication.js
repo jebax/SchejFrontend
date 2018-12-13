@@ -6,3 +6,7 @@ export const setAuthStorage = data => {
   localStorage['mobile'] = data.mobile
   localStorage['authenticationToken'] = data.authentication_token
 }
+
+export const deleteAuthStorage = () => {
+  localStorage.clear()
+}

@@ -42,4 +42,8 @@ describe('<SignUpForm />', () => {
       .type('TestPassword')
       .should('have.value', 'TestPassword')
   })
+
+  it('has a button to take user to sign in page', () => {
+    cy.get('[id="sign-in-button"]').click()
+  })
 })

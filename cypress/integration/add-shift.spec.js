@@ -6,7 +6,24 @@ describe("Adding shift", () => {
       url: 'http://localhost:3001/api/v1/sign_up',
       response: []
     })
-    cy.visit('http://localhost:3000')
+    cy.route({
+      method: 'POST',
+      url: 'http://localhost:3001/api/v1/shifts',
+      response: ''
+    })
+    cy.route({
+      method: 'GET',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
+      response: {
+        data: {
+          title: 'TestEmail',
+          start_time: '1544601600000',
+          end_time: '1544616000000'
+        }
+      }
+    })
+    cy.visit('http://localhost:3000/sign_up')
+
     cy.get('[id="sign-up-name-entry"]')
       .type('TestName')
     cy.get('[id="sign-up-email-entry"]')
@@ -31,7 +48,7 @@ describe("Adding shift", () => {
 
   it("creates a shift", () => {
     cy.get('[id="add-shift-button"]')
-    .click()
+      .click()
     cy.get('[id="new-shift-start-year-entry"]')
       .type('2018')
     cy.get('[id="new-shift-start-month-entry"]')
