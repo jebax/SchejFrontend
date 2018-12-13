@@ -48,7 +48,7 @@ export default class SignUpForm extends Component {
     )
     .then(response => {
       setAuthStorage(response.data)
-      self.props.history.push('/calendar')
+      self.props.history.push('/shifts')
       console.log(response)
     })
     .catch(error => {
