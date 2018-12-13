@@ -5,15 +5,37 @@ import SignOutButton from './SignOutButton'
 import moment from 'moment'
 import axios from 'axios'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
+import Popup from "reactjs-popup";
+import ShiftPopup from './ShiftPopup'
 const localizer = BigCalendar.momentLocalizer(moment)
 
 export default class Shifts extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      events: []
+      events: [],
+      open: false,
+      displayedShift: ''
     }
+    this.openModal = this.openModal.bind(this)
+    this.closeModal = this.closeModal.bind(this)
   }
+
+  openModal (shift){
+   this.setState({
+     open: true,
+     displayedShift: {
+       shiftId: shift.eventId,
+       title: shift.title,
+       userId: shift.userId,
+       start: shift.start,
+       end: shift.end
+     }
+   })
+ }
+ closeModal () {
+   this.setState({ open: false })
+ }
 
 
   componentWillMount() {
@@ -62,11 +84,18 @@ export default class Shifts extends Component {
               defaultDate = { new Date() }
               selectable
               defaultView = "month"
-              onSelectEvent={(event) => console.log(event)}
+              onSelectEvent={(shift) => this.openModal(shift)}
               events= { this.state.events }
               style={{ height: '100vh' }}
             />
           </div>
+          <Popup
+            open={this.state.open}
+            closeOnDocumentClick
+            onClose={this.closeModal}
+          >
+            <ShiftPopup shiftInfo={this.state.displayedShift} />
+            </Popup>
         </div>
     )}
 }
