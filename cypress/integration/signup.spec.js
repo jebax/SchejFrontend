@@ -1,8 +1,12 @@
 import axios from 'axios'
 
 describe("Signing up", () => {
+  var stub
+
   beforeEach(() => {
     cy.visit('http://localhost:3000')
+    stub = cy.stub()
+    cy.on('window:alert', stub)
   })
 
   it("redirects to the calendar", () => {
@@ -76,9 +80,7 @@ describe("Signing up", () => {
     cy.get('[id="welcome"]').contains('Welcome TestName')
   })
 
-  it.skip('cannot submit if password and confirmation do not match', () => {
-    const stub = cy.stub()
-    cy.on('window:alert', stub)
+  it('cannot submit if password and confirmation do not match', () => {
     cy.get('[id="sign-up-name-entry"]')
       .type('TestName')
     cy.get('[id="sign-up-email-entry"]')
