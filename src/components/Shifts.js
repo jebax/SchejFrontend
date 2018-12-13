@@ -18,7 +18,10 @@ export default class Shifts extends Component {
 
   componentWillMount() {
     axios.get(
-      'http://localhost:3001/api/v1/shifts'
+      'http://localhost:3001/api/v1/shifts',
+      {
+        organisation: localStorage['organisation']
+      }
     )
     .then(response => {
       let shiftData = response.data
@@ -48,6 +51,7 @@ export default class Shifts extends Component {
           <h1 id='title'>Schej</h1>
           <section id='welcome'>
             <h2>Welcome {localStorage['name']}</h2>
+            <h3>Organisation: {localStorage['organisation']}</h3>
             <AddShiftButton
               history={this.props.history}
             />

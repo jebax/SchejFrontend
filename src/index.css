@@ -87,6 +87,8 @@ h1#index-title-text {
 }
 
 h1#title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 7vh;
   text-align: center;
 }
 
