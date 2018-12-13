@@ -23,7 +23,7 @@ export default class SignInForm extends Component {
     event.preventDefault()
     this.createUserRequest()
   }
-  
+
   createUserRequest = () => {
     const self = this
     axios.post(
@@ -33,16 +33,18 @@ export default class SignInForm extends Component {
         password: this.state.password
       })
       .then(response => {
-        setAuthStorage(response.data)
-        self.props.history.push('/shifts')
         console.log(response)
-      })
-      .catch(error => {
-        if (error.response.status === 422) {
+        if (response.data['error'] === "invalid email and password combination"){
+          self.props.history.push('/users/sign_in')
           alert('Wrong email and password')
         } else {
+            setAuthStorage(response.data)
+            self.props.history.push('/shifts')
+          }
+      })
+      .catch(error => {
           console.log(error)
-        }
+      
       })
     }
 
