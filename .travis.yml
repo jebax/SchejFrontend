@@ -7,7 +7,7 @@ cache:
 script:
  - npm run build
  - cypress install
- - npm start & wait-on http://localhost:3000
+ - npm start 
  - npm cypress run
  - npm add surge
 deploy:
