@@ -6,7 +6,8 @@ export default class RequestSwapForm extends Component {
   constructor(props){
     super(props)
     this.state = {
-      userShiftId: "",
+      chosenShift: '',
+      userShift: "",
       userShifts: []
     }
   }
@@ -17,9 +18,19 @@ export default class RequestSwapForm extends Component {
     )
     .then(response => {
       this.setState({
-        userShifts: response.data
+        userShifts: response.data,
+        chosenShift: this.props.shiftInfo.shiftId
       })
     })
+  }
+
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+    setTimeout(() => {
+      console.log(this.state)
+    }, 100)
   }
 
   formatDate = (time) => {
@@ -29,7 +40,7 @@ export default class RequestSwapForm extends Component {
   render() {
     return(
       <form id="request-swap-form">
-        <select className="menu" name="chosenShift">
+        <select className="menu" name="userShift" onChange={this.handleChange} value={this.state.chosenShift}>
           {this.state.userShifts.map( (shift, index) => {
             return <option className="menu-item" key={index} value={shift.id}>{this.formatDate(shift.start_time)}-{this.formatDate(shift.end_time)}</option>
           } )}

@@ -26,11 +26,12 @@ export default class ShiftPopup extends Component {
   }
 
   render() {
+    console.log(this.props)
     if (this.state.showingRequestForm) {
       return (
         <div id='request-swap'>
           <h3 id='shift-swap-title'>Request a shift swap</h3>
-          <RequestSwapForm />
+          <RequestSwapForm shiftInfo = {this.props.shiftInfo}/>
         </div>
       )
     } else {

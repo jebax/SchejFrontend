@@ -24,7 +24,8 @@ describe('Requesting a shift swap', () => {
         data: {
           title: 'TestEmail',
           start_time: '1544601600000',
-          end_time: '1544616000000'
+          end_time: '1544616000000',
+          id: "1"
         }
       }
     })
@@ -90,8 +91,7 @@ describe('Requesting a shift swap', () => {
   })
 
   it.skip('can select own shift', () => {
-    cy.get('[id="user-shifts-list"]').click()
-    cy.get('[className="menu-item"]').click()
-    cy.get('[id="chosen-shift"]').should('have.value', '1')
+    cy.get('[name="chosenShift"]').select('1')
+    cy.get('[className="menu"]').should('have.value', '1')
   })
 })
