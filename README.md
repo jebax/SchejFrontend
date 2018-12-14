@@ -3,6 +3,8 @@ Schej Frontend
 
 React frontend for our shift scheduling and swapping web app! We used Cypress for testing, and [`react-big-calendar`](https://github.com/intljusticemission/react-big-calendar) for the calendar component. You can find the Rails API backend for this project [here](https://github.com/chloeverity/SchejBackend).
 
+[Here](http://schej-frontend.surge.sh/) is a link to our deployed frontend on Surge
+
 ## Our learning logs
 [Here](https://waffle.io/jebax/SchejFrontend) is our card wall for the entire project (frontend and backend).
 [Here](https://github.com/jebax/SchejFrontend/wiki) is a link to our Wiki which kept up-to-date with new stuff that we learned.
