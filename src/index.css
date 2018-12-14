@@ -15,6 +15,10 @@ code {
     monospace;
 }
 
+.popup-content  {
+  border-radius: 5px !important;
+}
+
 .rbc-toolbar-label {
   margin-left: 11vh;
 }
@@ -65,6 +69,10 @@ code {
   color: #666666;
 }
 
+.menu {
+  float: left;
+}
+
 .shift-info {
   display: inline-block;
   margin-bottom: 1vh;
@@ -72,13 +80,18 @@ code {
 
 .shift-info-label {
   float: left;
-  width: 30vh;
+  width: 20vh;
   margin-left: 5vh;
   font-weight: 700;
 }
 
 .shift-info-entry {
   float: left;
+}
+
+button#confirm-swap-request-form {
+  width: 20vh;
+  margin-top: 5vh;
 }
 
 button#sign-up-button {
@@ -101,12 +114,19 @@ div#sign-in-page {
   text-align: center;
 }
 
+form#request-swap-form {
+  display: block;
+  text-align: center;
+}
+
 h1#index-title-text {
+  color: #3173AF;
   font-family: 'Fredoka One', cursive;
   font-size: 7vh;
 }
 
 h1#title {
+  color: #3173AF;
   font-family: 'Fredoka One', cursive;
   font-size: 7vh;
   text-align: center;
