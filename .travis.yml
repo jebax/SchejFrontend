@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+ - "stable"
+cache:
+ directories:
+ - node_modules
+script:
+ - npm run build
+ - cypress install
+ - npm start & wait-on http://localhost:3000
+ - npm cypress run
+ - npm add surge
+deploy:
+  provider: surge
+  project: ./build/
+  domain: schej-frontend.surge.sh
+  skip_cleanup: true
