@@ -37,7 +37,7 @@ export default class SignUpForm extends Component {
   createUserRequest = () => {
     const self = this
     axios.post(
-      'http://localhost:3001/api/v1/sign_up',
+      `${process.env.REACT_APP_API_URL}/sign_up`,
       {
         name: this.state.name,
         organisation: this.state.organisation,

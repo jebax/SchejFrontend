@@ -28,7 +28,7 @@ export default class SignInForm extends Component {
   createUserRequest = () => {
     const self = this
     axios.post(
-      'http://localhost:3001/api/v1/sign_in',
+      `${process.env.REACT_APP_API_URL}/sign_in`,
       {
         email: this.state.email,
         password: this.state.password
