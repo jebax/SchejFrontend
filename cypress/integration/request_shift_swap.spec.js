@@ -2,7 +2,8 @@ describe('Requesting a shift swap', () => {
   before(() => {
     const data = {
       name: 'TestName',
-      organisation: 'Testorganisation'
+      organisation: 'Testorganisation',
+      id: '1'
     }
 
     cy.server()
@@ -23,8 +24,26 @@ describe('Requesting a shift swap', () => {
         data: {
           title: 'TestEmail',
           start_time: '1544601600000',
-          end_time: '1544616000000'
+          end_time: '1544616000000',
+          id: "1"
         }
+      }
+    })
+    cy.route({
+      method: 'GET',
+      url: 'http://localhost:3001/api/v1/shiftsbyuser/1',
+      response: {
+        data: [
+          {
+            id: "1",
+            title: "TestName",
+            start_time: '1544601600000',
+            end_time: '1544616000000',
+            user_id: "1",
+            organisation: "Testorganisation",
+            email: "TestEmail"
+          }
+        ]
       }
     })
     cy.visit('http://localhost:3000/sign_up')
@@ -69,5 +88,10 @@ describe('Requesting a shift swap', () => {
   it('can render a shift swapping form', () => {
     cy.get('[class="custom-button"]').click()
     cy.contains('Request a shift swap')
+  })
+
+  it.skip('can select own shift', () => {
+    cy.get('[name="chosenShift"]').select('1')
+    cy.get('[className="menu"]').should('have.value', '1')
   })
 })

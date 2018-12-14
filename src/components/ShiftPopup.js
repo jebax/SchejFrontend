@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
+import RequestSwapForm from "./RequestSwapForm";
 
 export default class ShiftPopup extends Component {
   constructor(props) {
@@ -29,6 +30,10 @@ export default class ShiftPopup extends Component {
       return (
         <div id='request-swap'>
           <h3 id='shift-swap-title'>Request a shift swap</h3>
+          <RequestSwapForm
+            shiftInfo = {this.props.shiftInfo}
+            history={this.props.history}
+          />
         </div>
       )
     } else {
@@ -37,7 +42,7 @@ export default class ShiftPopup extends Component {
           <h3 id='shift-swap-title'>Shift Information</h3>
           <div className='shift-info'>
             <p className='shift-info-label'>Contact email address:</p>
-            <p className='shift-info-entry'>{this.props.shiftInfo.title}</p>
+            <p className='shift-info-entry'>{this.props.shiftInfo.email}</p>
           </div>
           <div className='shift-info'>
             <p className='shift-info-label'>Start time:</p>
