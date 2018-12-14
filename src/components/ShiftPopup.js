@@ -41,6 +41,10 @@ export default class ShiftPopup extends Component {
         <div id='shift-popup'>
           <h3 id='shift-swap-title'>Shift Information</h3>
           <div className='shift-info'>
+            <p className='shift-info-label'>Employee name:</p>
+            <p className='shift-info-entry'>{this.props.shiftInfo.title}</p>
+          </div>
+          <div className='shift-info'>
             <p className='shift-info-label'>Contact email address:</p>
             <p className='shift-info-entry'>{this.props.shiftInfo.email}</p>
           </div>
