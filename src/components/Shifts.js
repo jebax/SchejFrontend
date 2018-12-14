@@ -48,6 +48,7 @@ export default class Shifts extends Component {
         shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))
         shiftData[i].end_time = new Date(parseInt(shiftData[i].end_time))
 
+// eslint-disable-next-line 
         this.setState(prevState => ({
           events: [...prevState.events, {
             title: shiftData[i].title,
