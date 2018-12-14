@@ -40,7 +40,7 @@ export default class Shifts extends Component {
 
   componentWillMount() {
     axios.get(
-      `http://localhost:3001/api/v1/shifts?organisation=${localStorage['organisation']}`
+      `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}`
     )
     .then(response => {
       let shiftData = response.data

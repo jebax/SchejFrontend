@@ -7,7 +7,7 @@ export default class SignOutButton extends Component {
   handleClick = () => {
     let self = this
     axios.delete(
-      'http://localhost:3001/api/v1/sign_out',
+      `${process.env.REACT_APP_API_URL}/sign_out`,
       {
         authentication_token: localStorage['authenticationToken']
       }

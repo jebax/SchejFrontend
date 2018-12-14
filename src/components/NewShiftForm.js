@@ -29,9 +29,8 @@ export default class NewShiftForm extends Component {
   }
 
   createNewShiftRequest = () => {
-    console.log(this.state.formattedDate)
     axios.post(
-      'http://localhost:3001/api/v1/shifts', {
+      `${process.env.REACT_APP_API_URL}/shifts`, {
         user_id: localStorage['id'],
         title: localStorage['name'],
         email: localStorage['email'],
@@ -48,13 +47,13 @@ export default class NewShiftForm extends Component {
   }
 
   formatEndTime = () => {
-    let date = new Date(this.state.startYear, this.state.startMonth, this.state.startDay, this.state.startHour)
+    let date = new Date(this.state.startYear, (parseInt(this.state.startMonth) -1), this.state.startDay, this.state.startHour)
     return date.setHours(date.getHours()+parseInt(this.state.shiftDuration))
   }
 
   formatDate = () => {
     this.setState({
-      formattedDate: new Date(this.state.startYear, this.state.startMonth, this.state.startDay, this.state.startHour)
+      formattedDate: new Date(this.state.startYear, (parseInt(this.state.startMonth) - 1), this.state.startDay, this.state.startHour)
     })
   }
 
