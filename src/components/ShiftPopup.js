@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// eslint-disable-next-line 
 import Popup from "reactjs-popup";
 
 export default class ShiftPopup extends Component {
