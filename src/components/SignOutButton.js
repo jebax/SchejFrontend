@@ -25,6 +25,7 @@ export default class SignOutButton extends Component {
     return (
       <button
         id='sign-out-button'
+        className='custom-button'
         onClick={this.handleClick}
       >
         Sign Out

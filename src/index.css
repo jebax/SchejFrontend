@@ -99,6 +99,14 @@ code {
   float: left;
 }
 
+aside#welcome-text {
+  float: left;
+}
+
+aside#welcome-buttons {
+  float: right;
+}
+
 button#confirm-swap-request-form {
   width: 20vh;
   margin-top: 5vh;
@@ -107,6 +115,14 @@ button#confirm-swap-request-form {
 button#new-shift-submit {
   width: 20vh;
   margin-top: 5vh;
+}
+
+button#add-shift-button {
+  margin-right: 1%;
+}
+
+button#sign-out-button {
+  margin-left: 1%;
 }
 
 button#sign-up-button {
@@ -161,5 +177,6 @@ section#toggle-popup-state {
 
 section#welcome {
   text-align: center;
+  display: block;
   margin-bottom: 2%;
 }

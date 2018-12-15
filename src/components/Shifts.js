@@ -83,9 +83,9 @@ export default class Shifts extends Component {
       <div>
         <h1 id='title'>Schej</h1>
         <section id='welcome'>
-          <h2>Welcome {localStorage['name']}</h2>
-          <h3>Organisation: {localStorage['organisation']}</h3>
-          <button id="add-shift-button" onClick={this.openNewShiftModal}>Add Shift</button>
+          <h2 id='welcome-name'>Welcome {localStorage['name']}</h2>
+          <h3 id='welcome-organisation'>Organisation: {localStorage['organisation']}</h3>
+          <button id="add-shift-button" className='custom-button' onClick={this.openNewShiftModal}>Add Shift</button>
           <SignOutButton
             history={this.props.history}
           />
