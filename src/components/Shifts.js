@@ -29,7 +29,8 @@ export default class Shifts extends Component {
        title: shift.title,
        userId: shift.userId,
        start: shift.start,
-       end: shift.end
+       end: shift.end,
+       email: shift.email
      }
    })
  }
@@ -55,7 +56,8 @@ export default class Shifts extends Component {
             start: shiftData[i].start_time,
             end: shiftData[i].end_time,
             eventId: shiftData[i].id,
-            userId: shiftData[i].user_id
+            userId: shiftData[i].user_id,
+            email: shiftData[i].email
           }]
         }))
       }
