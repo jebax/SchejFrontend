@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BigCalendar from 'react-big-calendar'
-import AddShiftButton from './AddShiftButton'
+import NewShiftForm from './NewShiftForm'
 import SignOutButton from './SignOutButton'
 import moment from 'moment'
 import axios from 'axios'
@@ -15,6 +15,7 @@ export default class Shifts extends Component {
     this.state = {
       events: [],
       open: false,
+      newShiftOpen: false,
       displayedShift: ''
     }
     this.openModal = this.openModal.bind(this)
@@ -34,8 +35,18 @@ export default class Shifts extends Component {
      }
    })
  }
+
+ openNewShiftModal = () => {
+   this.setState({
+     newShiftOpen: true
+   })
+ }
+
  closeModal () {
-   this.setState({ open: false })
+   this.setState({
+     open: false,
+     newShiftOpen: false
+   })
  }
 
 
@@ -74,9 +85,7 @@ export default class Shifts extends Component {
           <section id='welcome'>
             <h2>Welcome {localStorage['name']}</h2>
             <h3>Organisation: {localStorage['organisation']}</h3>
-            <AddShiftButton
-              history={this.props.history}
-            />
+            <button id="add-shift-button" onClick={this.openNewShiftModal}>Add Shift</button>
             <SignOutButton
               history={this.props.history}
             />
@@ -101,7 +110,16 @@ export default class Shifts extends Component {
               shiftInfo={this.state.displayedShift}
               history={this.props.history}
             />
-            </Popup>
+          </Popup>
+          <Popup
+            open={this.state.newShiftOpen}
+            closeOnDocumentClick
+            onClose={this.closeModal}
+          >
+            <NewShiftForm
+              history={this.props.history}
+            />
+          </Popup>
         </div>
     )}
 }
