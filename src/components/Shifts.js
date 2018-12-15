@@ -75,51 +75,51 @@ export default class Shifts extends Component {
     })
   }
 
-    render() {
-      if (!localStorage['authenticationToken']) {
-        this.props.history.push('/')
-      }
-      return(
+  render() {
+    if (!localStorage['authenticationToken']) {
+      this.props.history.push('/')
+    }
+    return(
+      <div>
+        <h1 id='title'>Schej</h1>
+        <section id='welcome'>
+          <h2>Welcome {localStorage['name']}</h2>
+          <h3>Organisation: {localStorage['organisation']}</h3>
+          <button id="add-shift-button" onClick={this.openNewShiftModal}>Add Shift</button>
+          <SignOutButton
+            history={this.props.history}
+          />
+        </section>
         <div>
-          <h1 id='title'>Schej</h1>
-          <section id='welcome'>
-            <h2>Welcome {localStorage['name']}</h2>
-            <h3>Organisation: {localStorage['organisation']}</h3>
-            <button id="add-shift-button" onClick={this.openNewShiftModal}>Add Shift</button>
-            <SignOutButton
-              history={this.props.history}
-            />
-          </section>
-          <div>
-            <BigCalendar
-              localizer = { localizer }
-              defaultDate = { new Date() }
-              selectable
-              defaultView = "month"
-              onSelectEvent={(shift) => this.openModal(shift)}
-              events= { this.state.events }
-              style={{ height: '100vh' }}
-            />
-          </div>
-          <Popup
-            open={this.state.open}
-            closeOnDocumentClick
-            onClose={this.closeModal}
-          >
-            <ShiftPopup
-              shiftInfo={this.state.displayedShift}
-              history={this.props.history}
-            />
-          </Popup>
-          <Popup
-            open={this.state.newShiftOpen}
-            closeOnDocumentClick
-            onClose={this.closeModal}
-          >
-            <NewShiftForm
-              history={this.props.history}
-            />
-          </Popup>
+          <BigCalendar
+            localizer = { localizer }
+            defaultDate = { new Date() }
+            selectable
+            defaultView = "month"
+            onSelectEvent={(shift) => this.openModal(shift)}
+            events= { this.state.events }
+            style={{ height: '100vh' }}
+          />
         </div>
-    )}
+        <Popup
+          open={this.state.open}
+          closeOnDocumentClick
+          onClose={this.closeModal}
+        >
+          <ShiftPopup
+            shiftInfo={this.state.displayedShift}
+            history={this.props.history}
+          />
+        </Popup>
+        <Popup
+          open={this.state.newShiftOpen}
+          closeOnDocumentClick
+          onClose={this.closeModal}
+        >
+          <NewShiftForm
+            history={this.props.history}
+          />
+        </Popup>
+      </div>
+  )}
 }

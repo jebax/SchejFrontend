@@ -73,6 +73,16 @@ code {
   float: left;
 }
 
+.new-shift-label {
+  font-weight: 700;
+}
+
+.popup-title {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 3vh;
+}
+
 .shift-info {
   display: inline-block;
   margin-bottom: 1vh;
@@ -80,8 +90,8 @@ code {
 
 .shift-info-label {
   float: left;
-  width: 20vh;
-  margin-left: 5vh;
+  width: 30vh;
+  margin-left: 20vh;
   font-weight: 700;
 }
 
@@ -90,6 +100,11 @@ code {
 }
 
 button#confirm-swap-request-form {
+  width: 20vh;
+  margin-top: 5vh;
+}
+
+button#new-shift-submit {
   width: 20vh;
   margin-top: 5vh;
 }
@@ -104,6 +119,10 @@ button#sign-in-submit {
 
 button#toggle-popup-content {
   width: 20vh;
+}
+
+div#new-shift-form {
+  text-align: center;
 }
 
 div#sign-up-page {
@@ -130,12 +149,6 @@ h1#title {
   font-family: 'Fredoka One', cursive;
   font-size: 7vh;
   text-align: center;
-}
-
-h3#shift-swap-title {
-  text-align: center;
-  font-family: 'Fredoka One', cursive;
-  font-size: 3vh;
 }
 
 section#index-title {

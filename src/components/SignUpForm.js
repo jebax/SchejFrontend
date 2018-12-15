@@ -16,6 +16,12 @@ export default class SignUpForm extends Component {
       passwordConfirmation: ""
     }
   }
+  
+  componentWillMount() {
+    if (localStorage['authenticationToken']) {
+      this.props.history.push('/shifts')
+    }
+  }
 
   handleChange = event => {
     this.setState({
