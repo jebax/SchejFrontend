@@ -17,6 +17,7 @@ code {
 
 .popup-content  {
   border-radius: 5px !important;
+  padding: 4vh !important;
 }
 
 .rbc-toolbar-label {
@@ -83,6 +84,10 @@ code {
   font-size: 3vh;
 }
 
+.rbc-calendar {
+  min-width: 1212px;
+}
+
 .shift-info {
   display: inline-block;
   margin-bottom: 1vh;
@@ -110,11 +115,13 @@ aside#welcome-buttons {
 button#approve-swap-button {
   float: right;
   width: 20vh;
+  margin-left: 1vh;
 }
 
 button#decline-swap-button {
   float: right;
   width: 20vh;
+  margin-left: 1vh;
 }
 
 button#confirm-swap-request-form {
@@ -128,11 +135,21 @@ button#new-shift-submit {
 }
 
 button#add-shift-button {
-  margin-right: 1%;
+  margin-right: 1vh;
+  float: right;
+  width: 15vh;
+}
+
+button#notifications-button {
+  margin-right: 1vh;
+  float: right;
+  width: 15vh;
 }
 
 button#sign-out-button {
-  margin-left: 1%;
+  margin-right: 1vh;
+  float: right;
+  width: 15vh;
 }
 
 button#sign-up-button {
@@ -174,6 +191,7 @@ h1#index-title-text {
   color: #3173AF;
   font-family: 'Fredoka One', cursive;
   font-size: 7vh;
+  position: relative;
 }
 
 h1#title {
@@ -181,6 +199,22 @@ h1#title {
   font-family: 'Fredoka One', cursive;
   font-size: 7vh;
   text-align: center;
+}
+
+h2#welcome-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  padding-left: 1vh;
+  color: #3173AF;
+  float: left;
+}
+
+h3#welcome-organisation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  padding-left: 1vh;
+  color: #3173AF;
+  float: left;
 }
 
 section#index-title {
@@ -194,5 +228,5 @@ section#toggle-popup-state {
 section#welcome {
   text-align: center;
   display: block;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
