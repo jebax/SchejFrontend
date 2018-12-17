@@ -34,7 +34,7 @@ export default class NotificationsList extends Component {
       `${process.env.REACT_APP_API_URL}/shifts/${this.state.requests[index].requesterShift.id}?other_id=${this.state.requests[index].respondentShift.id}`
     )
     .then(response => {
-      console.log('hello')
+      console.log(response)
     })
 
     this.deleteRequest(this.state.requests[index].id)
@@ -56,7 +56,7 @@ export default class NotificationsList extends Component {
       `${process.env.REACT_APP_API_URL}/requests/${requestId}`
     )
     .then(response => {
-      console.log('hi')
+      console.log(response)
     })
     .catch(error => {
       console.log(error)
