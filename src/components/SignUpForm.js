@@ -48,7 +48,7 @@ export default class SignUpForm extends Component {
       {
         name: this.state.name,
         organisation: this.state.organisation,
-        jobTitle: this.state.jobTitle,
+        job_title: this.state.jobTitle,
         email: this.state.email,
         mobile: this.state.mobile,
         password: this.state.password,
