@@ -7,6 +7,48 @@ describe("Viewing requests", () => {
       url: 'http://localhost:3001/api/v1/sign_up',
       response: { id: '1' }
     })
+    cy.route({
+      method:'GET',
+      url: 'http://localhost:3001/api/v1/requestsbyuser/1',
+      response: [
+                  {
+                      "id": 1,
+                      "comment": null,
+                      "requestedShift": {
+                          "id": 1,
+                          "userId": 1,
+                          "name": "Responder",
+                          "start": "1546304400000",
+                          "end": "1546308000000"
+                      },
+                      "currentShift": {
+                          "id": 2,
+                          "userId": 2,
+                          "name": "Requester",
+                          "start": "1545085481938",
+                          "end": "1545114281938"
+                      }
+                  },
+                  {
+                      "id": 1,
+                      "comment": null,
+                      "requestedShift": {
+                          "id": 1,
+                          "userId": 1,
+                          "name": "Responder",
+                          "start": "1546304400000",
+                          "end": "1546308000000"
+                      },
+                      "currentShift": {
+                          "id": 2,
+                          "userId": 2,
+                          "name": "Requester",
+                          "start": "1545085481938",
+                          "end": "1545114281938"
+                      }
+                  }
+              ]
+            })
 
     cy.visit('http://localhost:3000')
 
@@ -28,24 +70,11 @@ describe("Viewing requests", () => {
     cy.get('[id="sign-up-submit"]')
       .click()
 
+
     cy.get('[id="notifications-button"]')
       .click()
-    cy.route({
-      method:'GET',
-      url: 'http://localhost:3001/api/v1/requestsbyuser/1',
-      response: [
-                  {
-                    "id": 1,
-                    "shift_requester_id": 2,
-                    "shift_holder_id": 1,
-                    "comment": 'Want your shift',
-                    "requested_shift_id": 1,
-                    "current_shift_id": 2,
-                    "created_at": new Date(),
-                    "updated_at": new Date(),
-                }]
-            })
-    cy.contains('2 wants to swap shifts with you.')
+
+    cy.contains('Requester wants to swap shifts with you.')
   })
   it("can accept a request", () => {
     cy.get('[id="approve-swap-button"]')

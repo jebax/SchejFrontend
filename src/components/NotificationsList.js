@@ -10,6 +10,7 @@ export default class NotificationsList extends Component {
   }
 
   componentWillMount() {
+    console.log(localStorage['id'])
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
@@ -30,7 +31,7 @@ export default class NotificationsList extends Component {
     this.setState({requests})
 
     axios.patch(
-      `${process.env.REACT_APP_API_URL}/shifts/${this.state.requests[index].currentShift.id}?other_id=${this.state.requests[index].requestedShift.id}`
+      `${process.env.REACT_APP_API_URL}/shifts/${this.state.requests[index].requesterShift.id}?other_id=${this.state.requests[index].respondentShift.id}`
     )
     .then(response => {
       console.log('hello')
@@ -71,7 +72,7 @@ export default class NotificationsList extends Component {
       } else {
         return (
           <div key={index}>
-            <span>{this.state.requests[index].requestedShift.name} wants to swap shifts with you.</span>
+            <span>{this.state.requests[index].requesterShift.name} wants to swap shifts with you.</span>
             <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button>
             <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button>
           </div>
@@ -81,6 +82,8 @@ export default class NotificationsList extends Component {
   }
 
   render() {
+
+    console.log(this.state)
     return(
       <div>
         <h3 className='popup-title'>Notifications</h3>

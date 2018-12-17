@@ -28,8 +28,13 @@ export default class RequestSwapForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    axios.patch(
-      `${process.env.REACT_APP_API_URL}/shifts/${this.state.userShift}?other_id=${this.state.chosenShift}`
+    console.log(this.state)
+    axios.post(
+      `${process.env.REACT_APP_API_URL}/requests`,
+      {
+        requested_shift_id: this.state.chosenShift,
+        current_shift_id: this.state.userShift
+      }
     )
     .then(response => {
       console.log('hello')
