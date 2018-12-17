@@ -3,20 +3,22 @@ import axios from 'axios'
 
 export default class NotificationsList extends Component {
   constructor(props) {
-  super(props)
-  this.state = {
-    requests: [
-      {
-        requesterId: '2',
-        approved: false,
-        declined: false
-      },
-      {
-        requesterId: '3',
-        approved: false,
-        declined: false
-      }
-    ]}
+    super(props)
+    this.state = {
+      requests: []
+    }
+  }
+
+  componentWillMount() {
+    axios.get(
+      `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
+    )
+    .then(response => {
+      this.setState({ requests: response.data })
+    })
+    .then(response => {
+      console.log(this.state)
+    })
   }
 
   handleApprove = (event) => {
@@ -26,7 +28,17 @@ export default class NotificationsList extends Component {
     request.approved = true
     requests[index] = request
     this.setState({requests})
+
+    axios.patch(
+      `${process.env.REACT_APP_API_URL}/shifts/${this.state.requests[index].currentShift.id}?other_id=${this.state.requests[index].requestedShift.id}`
+    )
+    .then(response => {
+      console.log('hello')
+    })
+
+    this.deleteRequest(this.state.requests[index].id)
   }
+
   handleDecline = (event) => {
     const index = event.target.attributes.index.value
     let requests = [...this.state.requests]
@@ -34,6 +46,20 @@ export default class NotificationsList extends Component {
     request.declined = true
     requests[index] = request
     this.setState({requests})
+
+    this.deleteRequest(this.state.requests[index].id)
+  }
+
+  deleteRequest = (requestId) => {
+    axios.delete(
+      `${process.env.REACT_APP_API_URL}/requests/${requestId}`
+    )
+    .then(response => {
+      console.log('hi')
+    })
+    .catch(error => {
+      console.log(error)
+    })
   }
 
   formatRequestContent = () => {
@@ -45,13 +71,11 @@ export default class NotificationsList extends Component {
       } else {
         return (
           <div key={index}>
-            <span>{this.state.requests[index].requesterId} wants to swap shifts with you.</span>
+            <span>{this.state.requests[index].requestedShift.name} wants to swap shifts with you.</span>
             <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button>
             <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button>
           </div>
-
         )
-
       }
     })
   }
@@ -59,7 +83,10 @@ export default class NotificationsList extends Component {
   render() {
     return(
       <div>
-        {this.formatRequestContent()}
+        <h3 className='popup-title'>Notifications</h3>
+        <div id='notifications-list'>
+          {this.formatRequestContent()}
+        </div>
       </div>
   )}
 }
