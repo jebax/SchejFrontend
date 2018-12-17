@@ -22,7 +22,6 @@ export default class Shifts extends Component {
     }
     this.openModal = this.openModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
-
     this.getAllShifts()
   }
 
@@ -122,7 +121,7 @@ export default class Shifts extends Component {
         <Popup
           open={this.state.open}
           closeOnDocumentClick
-          onClose={this.closeAndUpdate}
+          onClose={this.closeModal}
         >
           <ShiftPopup
             shiftInfo={this.state.displayedShift}

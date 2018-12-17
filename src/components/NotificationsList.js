@@ -63,7 +63,7 @@ export default class NotificationsList extends Component {
   }
 
   formatDate = (time) => {
-    return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit'})
+    return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
   }
 
   formatRequestContent = () => {
@@ -88,8 +88,6 @@ export default class NotificationsList extends Component {
   }
 
   render() {
-
-    console.log(this.state)
     return(
       <div>
         <h3 className='popup-title'>Notifications</h3>
@@ -97,5 +95,6 @@ export default class NotificationsList extends Component {
           {this.formatRequestContent()}
         </div>
       </div>
-  )}
+    )
+  }
 }
