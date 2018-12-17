@@ -41,6 +41,8 @@ describe('Requesting a shift swap', () => {
       .type('TestEmail')
     cy.get('[id="sign-up-organisation-entry"]')
       .type('Testorganisation')
+    cy.get('[id="sign-up-job-title-entry"]')
+      .type('TestTitle')
     cy.get('[id="sign-up-password-entry"]')
       .type('TestPassword')
     cy.get('[id="sign-up-mobile-entry"]')
