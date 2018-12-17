@@ -61,8 +61,8 @@ describe('Requesting a shift swap', () => {
     cy.contains('12/12/2018, 12:00:00')
   })
 
-  it.skip('can render a shift swapping form', () => {
-    cy.get('[class="custom-button"]').click()
+  it('can render a shift swapping form', () => {
+    cy.get('[id="toggle-popup-content"]').click()
     cy.contains('Request a shift swap')
   })
 

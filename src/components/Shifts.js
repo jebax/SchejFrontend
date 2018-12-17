@@ -7,6 +7,7 @@ import axios from 'axios'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import Popup from "reactjs-popup";
 import ShiftPopup from './ShiftPopup'
+import NotificationsList from './NotificationsList'
 const localizer = BigCalendar.momentLocalizer(moment)
 
 export default class Shifts extends Component {
@@ -16,7 +17,8 @@ export default class Shifts extends Component {
       events: [],
       open: false,
       newShiftOpen: false,
-      displayedShift: ''
+      displayedShift: '',
+      notificationsOpen: false
     }
     this.openModal = this.openModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
@@ -41,14 +43,19 @@ export default class Shifts extends Component {
      newShiftOpen: true
    })
  }
+ openNotificationsModal = () => {
+   this.setState({
+     notificationsOpen: true
+   })
+ }
 
  closeModal () {
    this.setState({
      open: false,
-     newShiftOpen: false
+     newShiftOpen: false,
+     notificationsOpen: false
    })
  }
-
 
   componentWillMount() {
     axios.get(
@@ -84,11 +91,13 @@ export default class Shifts extends Component {
         <h1 id='title'>Schej</h1>
         <section id='welcome'>
           <h2 id='welcome-name'>Welcome {localStorage['name']}</h2>
-          <h3 id='welcome-organisation'>Organisation: {localStorage['organisation']}</h3>
-          <button id="add-shift-button" className='custom-button' onClick={this.openNewShiftModal}>Add Shift</button>
           <SignOutButton
             history={this.props.history}
-          />
+          /><br /><br />
+          <h3 id='welcome-organisation'>Organisation: {localStorage['organisation']}</h3>
+
+          <button id="add-shift-button" className='custom-button' onClick={this.openNewShiftModal}>Add Shift</button>
+          <button id="notifications-button" className='custom-button' onClick={this.openNotificationsModal}>Notifications</button>
         </section>
         <div>
           <BigCalendar
@@ -118,6 +127,15 @@ export default class Shifts extends Component {
         >
           <NewShiftForm
             history={this.props.history}
+          />
+        </Popup>
+        <Popup
+          open={this.state.notificationsOpen}
+          closeOnDocumentClick
+          onClose={this.closeModal}
+        >
+        <NotificationsList
+          history={this.props.history}
           />
         </Popup>
       </div>

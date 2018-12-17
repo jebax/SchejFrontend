@@ -28,11 +28,16 @@ export default class RequestSwapForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    axios.patch(
-      `${process.env.REACT_APP_API_URL}/shifts/${this.state.userShift}?other_id=${this.state.chosenShift}`
+    console.log(this.state)
+    axios.post(
+      `${process.env.REACT_APP_API_URL}/requests`,
+      {
+        requested_shift_id: this.state.chosenShift,
+        current_shift_id: this.state.userShift
+      }
     )
     .then(response => {
-      console.log('hello')
+      console.log(response)
       this.props.history.push('/')
       this.props.history.push('/shifts')
     })
@@ -48,7 +53,7 @@ export default class RequestSwapForm extends Component {
   }
 
   formatDate = (time) => {
-    return new Date(parseInt(time)).toLocaleString('en-GB')
+    return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit'})
   }
 
   render() {
@@ -59,7 +64,7 @@ export default class RequestSwapForm extends Component {
           <option className='menu-item'>My shifts</option>
           {this.state.userShifts.map( (shift, index) => {
             if (new Date(parseInt(shift.start_time)) > new Date()) {
-              return <option className="menu-item" key={index} value={shift.id}>{this.formatDate(shift.start_time)}-{this.formatDate(shift.end_time)}</option>
+              return <option className="menu-item" key={index} value={shift.id}>{this.formatDate(shift.start_time)} - {this.formatDate(shift.end_time)}</option>
             }
           })}
         </select>
