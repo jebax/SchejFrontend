@@ -29,7 +29,7 @@ export default class ShiftPopup extends Component {
     if (this.state.showingRequestForm) {
       return (
         <div id='request-swap'>
-          <h3 id='shift-swap-title'>Request a shift swap</h3>
+          <h3 className='popup-title'>Request a shift swap</h3>
           <RequestSwapForm
             shiftInfo = {this.props.shiftInfo}
             history={this.props.history}
@@ -39,15 +39,22 @@ export default class ShiftPopup extends Component {
     } else {
       return(
         <div id='shift-popup'>
-          <h3 id='shift-swap-title'>Shift Information</h3>
+          <h3 className='popup-title'>Shift Information</h3>
+          <div className='shift-info'>
+            <p className='shift-info-label'>Employee name:</p>
+            <p className='shift-info-entry'>{this.props.shiftInfo.title}</p>
+          </div>
+          <br />
           <div className='shift-info'>
             <p className='shift-info-label'>Contact email address:</p>
             <p className='shift-info-entry'>{this.props.shiftInfo.email}</p>
           </div>
+          <br />
           <div className='shift-info'>
             <p className='shift-info-label'>Start time:</p>
             <p className='shift-info-entry'>{this.state.formatStart}</p>
           </div>
+          <br />
           <div className='shift-info'>
             <p className='shift-info-label'>End time:</p>
             <p className='shift-info-entry'>{this.state.formatEnd}</p>

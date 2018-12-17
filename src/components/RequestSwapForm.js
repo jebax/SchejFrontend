@@ -18,7 +18,9 @@ export default class RequestSwapForm extends Component {
     )
     .then(response => {
       this.setState({
-        userShifts: response.data,
+        userShifts: response.data.sort((shift, secondShift) => {
+          return shift.start_time - secondShift.start_time
+        }),
         chosenShift: this.props.shiftInfo.shiftId
       })
     })

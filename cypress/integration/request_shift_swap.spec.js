@@ -1,9 +1,13 @@
 describe('Requesting a shift swap', () => {
+  var stub
+
   before(() => {
+    stub = cy.stub()
+    cy.on('window:alert', stub)
+
     const data = {
       name: 'TestName',
-      organisation: 'Testorganisation',
-      id: '1'
+      organisation: 'Testorganisation'
     }
 
     cy.server()
@@ -22,28 +26,11 @@ describe('Requesting a shift swap', () => {
       url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
       response: {
         data: {
-          title: 'TestEmail',
+          title: 'TestName',
           start_time: '1544601600000',
           end_time: '1544616000000',
-          id: "1"
+          email: 'TestEmail'
         }
-      }
-    })
-    cy.route({
-      method: 'GET',
-      url: 'http://localhost:3001/api/v1/shiftsbyuser/1',
-      response: {
-        data: [
-          {
-            id: "1",
-            title: "TestName",
-            start_time: '1544601600000',
-            end_time: '1544616000000',
-            user_id: "1",
-            organisation: "Testorganisation",
-            email: "TestEmail"
-          }
-        ]
       }
     })
     cy.visit('http://localhost:3000/sign_up')
@@ -62,23 +49,10 @@ describe('Requesting a shift swap', () => {
       .type('TestPassword')
     cy.get('[id="sign-up-submit"]')
       .click()
-    cy.get('[id="add-shift-button"]')
-      .click()
-    cy.get('[id="new-shift-start-year-entry"]')
-      .type('2018')
-    cy.get('[id="new-shift-start-month-entry"]')
-      .type('11')
-    cy.get('[id="new-shift-start-day-entry"]')
-      .type('1')
-    cy.get('[id="new-shift-start-hour-entry"]')
-      .type('9')
-    cy.get('[id="new-shift-duration-entry"]')
-      .type('8')
-    cy.get('[id="new-shift-submit"]').click()
   })
 
   it('can view an individual shift before swapping', () => {
-    cy.get('[title="TestEmail"]').click()
+    cy.get('[title="TestName"]').click()
     cy.contains('Shift Information')
     cy.contains('TestEmail')
     cy.contains('12/12/2018, 08:00:00')
@@ -90,8 +64,41 @@ describe('Requesting a shift swap', () => {
     cy.contains('Request a shift swap')
   })
 
-  it.skip('can select own shift', () => {
-    cy.get('[name="chosenShift"]').select('1')
-    cy.get('[className="menu"]').should('have.value', '1')
+  it.skip('cannot request a swap the shift starts in less than 12 hours', () => {
+    let currentTime = new Date()
+    let endTime = currentTime.setHours(currentTime.getHours() + 8)
+
+    cy.server()
+    cy.route({
+      method: 'GET',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
+      response: {
+        data: {
+          title: 'TestName',
+          start_time: currentTime.getTime(),
+          end_time: endTime,
+          email: 'TestEmail'
+        }
+      }
+    })
+    cy.get(window).click('topRight')
+    cy.get('[id="add-shift-button"]')
+      .click()
+    cy.get('[id="new-shift-start-year-entry"]')
+      .type('2018')
+    cy.get('[id="new-shift-start-month-entry"]')
+      .type('12')
+    cy.get('[id="new-shift-start-day-entry"]')
+      .type('1')
+    cy.get('[id="new-shift-start-hour-entry"]')
+      .type('9')
+    cy.get('[id="new-shift-duration-entry"]')
+      .type('8')
+    cy.get('[id="new-shift-submit"]').click()
+    cy.get('[title="TestName"]').click()
+    cy.get('[id="toggle-popup-content"]').click()
+      .then(() => {
+        expect(stub.getCall(0)).to.be.calledWith('Too late! Shift must be at least 12 hours away.')
+      })
   })
 })
