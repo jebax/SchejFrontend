@@ -7,6 +7,7 @@ import axios from 'axios'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import Popup from "reactjs-popup";
 import ShiftPopup from './ShiftPopup'
+import NotificationsButton from './NotificationsButton'
 import NotificationsList from './NotificationsList'
 const localizer = BigCalendar.momentLocalizer(moment)
 
@@ -17,11 +18,12 @@ export default class Shifts extends Component {
       events: [],
       open: false,
       newShiftOpen: false,
-      displayedShift: '',
-      notificationsOpen: false
+      displayedShift: ''
     }
     this.openModal = this.openModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
+
+    this.getAllShifts()
   }
 
   openModal (shift){
@@ -43,41 +45,46 @@ export default class Shifts extends Component {
      newShiftOpen: true
    })
  }
- openNotificationsModal = () => {
-   this.setState({
-     notificationsOpen: true
-   })
+
+ closeAndUpdate = () => {
+   this.setState({ events: [] })
+   setTimeout(() => {
+     this.getAllShifts()
+     this.setState({
+       open: false,
+       newShiftOpen: false
+     })
+   }, 10)
  }
 
  closeModal () {
    this.setState({
      open: false,
-     newShiftOpen: false,
-     notificationsOpen: false
+     newShiftOpen: false
    })
  }
 
-  componentWillMount() {
-    axios.get(
-      `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}&job_title=${localStorage['jobTitle']}`
-    )
-    .then(response => {
-      console.log(response)
-      let shiftData = response.data
-      for(var i in shiftData) {
-        shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))
-        shiftData[i].end_time = new Date(parseInt(shiftData[i].end_time))
+ getAllShifts = () => {
+   axios.get(
+     `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}&job_title=${localStorage['jobTitle']}`
+   )
+   .then(response => {
+     console.log(response)
+     let shiftData = response.data
+     for(var i in shiftData) {
+       shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))
+       shiftData[i].end_time = new Date(parseInt(shiftData[i].end_time))
 
-        this.setState(prevState => ({
-          events: [...prevState.events, {
-            title: shiftData[i].title,
-            start: shiftData[i].start_time,
-            end: shiftData[i].end_time,
-            eventId: shiftData[i].id,
-            userId: shiftData[i].user_id,
-            email: shiftData[i].email
-          }]
-        }))
+       this.setState(prevState => ({
+         events: [...prevState.events, {
+           title: shiftData[i].title,
+           start: shiftData[i].start_time,
+           end: shiftData[i].end_time,
+           eventId: shiftData[i].id,
+           userId: shiftData[i].user_id,
+           email: shiftData[i].email
+         }]
+       }))
       }
     })
   }
@@ -97,7 +104,9 @@ export default class Shifts extends Component {
           <h3 id='welcome-organisation'>Organisation: {localStorage['organisation']}</h3>
 
           <button id="add-shift-button" className='custom-button' onClick={this.openNewShiftModal}>Add Shift</button>
-          <button id="notifications-button" className='custom-button' onClick={this.openNotificationsModal}>Notifications</button>
+          <NotificationsButton
+            onClose={this.closeAndUpdate}
+          />
         </section>
         <div>
           <BigCalendar
@@ -113,7 +122,7 @@ export default class Shifts extends Component {
         <Popup
           open={this.state.open}
           closeOnDocumentClick
-          onClose={this.closeModal}
+          onClose={this.closeAndUpdate}
         >
           <ShiftPopup
             shiftInfo={this.state.displayedShift}
@@ -127,15 +136,6 @@ export default class Shifts extends Component {
         >
           <NewShiftForm
             history={this.props.history}
-          />
-        </Popup>
-        <Popup
-          open={this.state.notificationsOpen}
-          closeOnDocumentClick
-          onClose={this.closeModal}
-        >
-        <NotificationsList
-          history={this.props.history}
           />
         </Popup>
       </div>

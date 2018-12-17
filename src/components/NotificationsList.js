@@ -10,7 +10,6 @@ export default class NotificationsList extends Component {
   }
 
   componentWillMount() {
-    console.log(localStorage['id'])
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
@@ -69,6 +68,7 @@ export default class NotificationsList extends Component {
 
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
+      console.log(this.state.requests[index])
       if (request.approved) {
         return <div id="notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
       } else if (request.declined){

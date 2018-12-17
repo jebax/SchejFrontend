@@ -7,7 +7,8 @@ describe('Requesting a shift swap', () => {
 
     const data = {
       name: 'TestName',
-      organisation: 'Testorganisation'
+      organisation: 'Testorganisation',
+      job_title: 'TestTitle'
     }
 
     cy.server()
@@ -23,7 +24,7 @@ describe('Requesting a shift swap', () => {
     })
     cy.route({
       method: 'GET',
-      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation&job_title=TestTitle',
       response: {
         data: {
           title: 'TestName',

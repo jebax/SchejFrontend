@@ -7,14 +7,16 @@ describe('Signing out', () => {
       url: 'http://localhost:3001/api/v1/sign_up',
       response: {
         data: {
-          name: 'TestName'
+          name: 'TestName',
+          organisation: 'Testorganisation',
+          job_title: 'TestTitle'
         }
       }
     })
 
     cy.route({
       method: 'GET',
-      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation&job_title=TestTitle',
       response: []
     })
 

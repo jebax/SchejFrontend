@@ -14,39 +14,39 @@ describe("Viewing requests", () => {
                   {
                       "id": 1,
                       "comment": null,
-                      "requestedShift": {
+                      "requesterShift": {
+                        "id": 2,
+                        "userId": 2,
+                        "name": "Requester",
+                        "start": "1545085481938",
+                        "end": "1545114281938"
+                      },
+                      "respondentShift": {
                           "id": 1,
                           "userId": 1,
                           "name": "Responder",
                           "start": "1546304400000",
                           "end": "1546308000000"
-                      },
-                      "currentShift": {
-                          "id": 2,
-                          "userId": 2,
-                          "name": "Requester",
-                          "start": "1545085481938",
-                          "end": "1545114281938"
                       }
                   },
                   {
                       "id": 1,
                       "comment": null,
-                      "requestedShift": {
+                      "requesterShift": {
+                        "id": 2,
+                        "userId": 2,
+                        "name": "Requester",
+                        "start": "1545085481938",
+                        "end": "1545114281938"
+                      },
+                      "respondentShift": {
                           "id": 1,
                           "userId": 1,
                           "name": "Responder",
                           "start": "1546304400000",
                           "end": "1546308000000"
-                      },
-                      "currentShift": {
-                          "id": 2,
-                          "userId": 2,
-                          "name": "Requester",
-                          "start": "1545085481938",
-                          "end": "1545114281938"
                       }
-                  }
+                  },
               ]
             })
 
@@ -59,6 +59,8 @@ describe("Viewing requests", () => {
       .type('TestName')
     cy.get('[id="sign-up-email-entry"]')
       .type('TestEmail')
+    cy.get('[id="sign-up-job-title-entry"]')
+      .type('TestTitle')
     cy.get('[id="sign-up-organisation-entry"]')
       .type('Testorganisation')
     cy.get('[id="sign-up-password-entry"]')
