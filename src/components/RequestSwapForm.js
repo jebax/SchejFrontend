@@ -37,9 +37,7 @@ export default class RequestSwapForm extends Component {
       }
     )
     .then(response => {
-      console.log('hello')
-      this.props.history.push('/')
-      this.props.history.push('/shifts')
+      console.log(response)
     })
   }
 

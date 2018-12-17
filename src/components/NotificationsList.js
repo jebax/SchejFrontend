@@ -63,18 +63,24 @@ export default class NotificationsList extends Component {
     })
   }
 
+  formatDate = (time) => {
+    return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit'})
+  }
+
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
       if (request.approved) {
-        return <div key={index}><span>Thanks! Your shifts have been swapped.</span></div>
+        return <div id="notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
       } else if (request.declined){
-        return <div key={index}><span>You have declined to swap.</span></div>
+        return <div id="notification-box" key={index}><span>You have declined to swap.</span></div>
       } else {
         return (
-          <div key={index}>
-            <span>{this.state.requests[index].requesterShift.name} wants to swap shifts with you.</span>
+          <div id="notification-box" key={index}>
+            <span id="notification-message"><b>{this.state.requests[index].requesterShift.name}</b> wants to swap shifts with you.</span><br />
+            <span id="requester-shift-details">Their shift: {this.formatDate(this.state.requests[index].requesterShift.start)} - {this.formatDate(this.state.requests[index].requesterShift.end)}</span><br />
+            <span id="respondent-shift-details">Your shift: {this.formatDate(this.state.requests[index].respondentShift.start)} - {this.formatDate(this.state.requests[index].respondentShift.end)}</span><br />
             <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button>
-            <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button>
+            <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button><br /><br />
           </div>
         )
       }

@@ -107,6 +107,16 @@ aside#welcome-buttons {
   float: right;
 }
 
+button#approve-swap-button {
+  float: right;
+  width: 20vh;
+}
+
+button#decline-swap-button {
+  float: right;
+  width: 20vh;
+}
+
 button#confirm-swap-request-form {
   width: 20vh;
   margin-top: 5vh;
@@ -139,6 +149,12 @@ button#toggle-popup-content {
 
 div#new-shift-form {
   text-align: center;
+}
+
+div#notification-box {
+  padding: 5px;
+  display: block;
+
 }
 
 div#sign-up-page {
