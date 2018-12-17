@@ -10,13 +10,14 @@ export default class SignUpForm extends Component {
     this.state = {
       name: "",
       organisation: "",
+      jobTitle: "",
       email: "",
       mobile: "",
       password: "",
       passwordConfirmation: ""
     }
   }
-  
+
   componentWillMount() {
     if (localStorage['authenticationToken']) {
       this.props.history.push('/shifts')
@@ -47,6 +48,7 @@ export default class SignUpForm extends Component {
       {
         name: this.state.name,
         organisation: this.state.organisation,
+        jobTitle: this.state.jobTitle,
         email: this.state.email,
         mobile: this.state.mobile,
         password: this.state.password,
@@ -92,6 +94,7 @@ export default class SignUpForm extends Component {
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
           <input id='sign-up-name-entry' className='sign-up-entry' type='text' name='name' placeholder='Name' onChange={this.handleChange}/><br />
           <input id='sign-up-organisation-entry' className='sign-up-entry' type='text' name='organisation' placeholder='Organisation' onChange={this.handleChange} /><br />
+          <input id='sign-up-job-title-entry' className='sign-up-entry' type='text' name='jobTitle' placeholder='Job Title' onChange={this.handleChange} /><br />
           <input id='sign-up-email-entry' className='sign-up-entry' type='text' name='email' placeholder='Email' onChange={this.handleChange} /><br />
           <input id='sign-up-mobile-entry' className='sign-up-entry' type='text' name='mobile' placeholder='Mobile' onChange={this.handleChange} /><br />
           <input id='sign-up-password-entry' className='sign-up-entry' type='password' name='password' placeholder='Password' onChange={this.handleChange} /><br />
