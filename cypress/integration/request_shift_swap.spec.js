@@ -60,7 +60,7 @@ describe('Requesting a shift swap', () => {
   })
 
   it('can render a shift swapping form', () => {
-    cy.get('[class="custom-button"]').click()
+    cy.get('[id="toggle-popup-content"]').click()
     cy.contains('Request a shift swap')
   })
 

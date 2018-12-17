@@ -45,6 +45,16 @@ describe("Viewing requests", () => {
                     "updated_at": new Date(),
                 }]
             })
-    cy.contains( '2 wants to swap shifts with you.')
+    cy.contains('2 wants to swap shifts with you.')
+  })
+  it("can accept a request", () => {
+    cy.get('[id="approve-swap-button"]')
+      .first().click()
+    cy.contains("Thanks! Your shifts have been swapped.")
+  })
+  it("can decline a request", () => {
+    cy.get('[id="decline-swap-button"]')
+      .first().click()
+    cy.contains("You have declined to swap.")
   })
 })
