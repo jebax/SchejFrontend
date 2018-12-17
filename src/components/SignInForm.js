@@ -12,7 +12,13 @@ export default class SignInForm extends Component {
       password: "",
       authenticationToken: localStorage['authenticationToken']
     }
-}
+  }
+
+  componentWillMount() {
+    if (localStorage['authenticationToken']) {
+      this.props.history.push('/shifts')
+    }
+  }
 
   handleChange = event => {
     this.setState({

@@ -16,17 +16,6 @@ describe("Adding shift", () => {
       url: 'http://localhost:3001/api/v1/shifts',
       response: ''
     })
-    cy.route({
-      method: 'GET',
-      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
-      response: {
-        data: {
-          title: 'TestEmail',
-          start_time: '1544601600000',
-          end_time: '1544616000000'
-        }
-      }
-    })
     cy.visit('http://localhost:3000/sign_up')
 
     cy.get('[id="sign-up-name-entry"]')
@@ -45,27 +34,28 @@ describe("Adding shift", () => {
       .click()
   })
 
-  it("redirects to a form to add a shift", () => {
+  it("shows a pop-up form to add a new shift", () => {
     cy.get('[id="add-shift-button"]')
       .click()
-    cy.url().should('eq', 'http://localhost:3000/shifts/new')
+    cy.contains('Add a new shift')
   })
 
   it("creates a shift", () => {
+    cy.server()
+    cy.route({
+      method: 'GET',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
+      response: {
+        data: {
+          title: 'TestEmail',
+          start_time: '1544601600000',
+          end_time: '1544616000000'
+        }
+      }
+    })
     cy.get('[id="add-shift-button"]')
       .click()
-    cy.get('[id="new-shift-start-year-entry"]')
-      .type('2018')
-    cy.get('[id="new-shift-start-month-entry"]')
-      .type('11')
-    cy.get('[id="new-shift-start-day-entry"]')
-      .type('1')
-    cy.get('[id="new-shift-start-hour-entry"]')
-      .type('9')
-    cy.get('[id="new-shift-duration-entry"]')
-      .type('8')
     cy.get('[id="new-shift-submit"]').click()
-    cy.url().should('eq', 'http://localhost:3000/shifts')
     cy.contains('TestEmail')
   })
 })
