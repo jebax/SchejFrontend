@@ -19,6 +19,17 @@ describe("sign up form", () => {
     const component = create(<SignUpForm />)
     const instance = component.getInstance()
     await instance.createUserRequest()
-    console.log(instance.state);
+    expect(axios.post).toHaveBeenCalledTimes(1)
+    expect(axios.post).toHaveBeenCalledWith(
+      'http://localhost:3001/api/v1/sign_up', {
+        name: "",
+        email: "",
+        organisation: "",
+        job_title: "",
+        mobile: "",
+        password: "",
+        passwordConfirmation: ""
+      }
+    )
   });
 });
