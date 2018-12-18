@@ -10,7 +10,6 @@ export default class NotificationsList extends Component {
   }
 
   componentWillMount() {
-    console.log(localStorage['id'])
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
@@ -64,11 +63,12 @@ export default class NotificationsList extends Component {
   }
 
   formatDate = (time) => {
-    return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit'})
+    return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
   }
 
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
+      console.log(this.state.requests[index])
       if (request.approved) {
         return <div id="notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
       } else if (request.declined){
@@ -88,8 +88,6 @@ export default class NotificationsList extends Component {
   }
 
   render() {
-
-    console.log(this.state)
     return(
       <div>
         <h3 className='popup-title'>Notifications</h3>
@@ -97,5 +95,6 @@ export default class NotificationsList extends Component {
           {this.formatRequestContent()}
         </div>
       </div>
-  )}
+    )
+  }
 }

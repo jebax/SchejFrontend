@@ -8,7 +8,9 @@ describe('Signing in', () => {
     cy.visit('http://localhost:3000/')
     cy.server()
     const data = {
-      name: 'TestName'
+      name: 'TestName',
+      organisation: 'Testorganisation',
+      job_title: 'TestTitle'
     }
     cy.route({
       method: 'POST',
@@ -18,7 +20,7 @@ describe('Signing in', () => {
 
     cy.route({
       method: 'GET',
-      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation',
+      url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation&job_title=TestTitle',
       response: []
     })
   })
