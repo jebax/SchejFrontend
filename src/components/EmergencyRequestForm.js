@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-export default class NewShiftForm extends Component {
+export default class EmergencyRequestForm extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -13,6 +13,7 @@ export default class NewShiftForm extends Component {
       [event.target.name]: event.target.value
     })
   }
+
   handleSubmit = (event) => {
     event.preventDefault()
     axios.post(
@@ -29,7 +30,7 @@ export default class NewShiftForm extends Component {
   render() {
     return(
       <form id="emergency-request-form" onSubmit={this.handleSubmit}>
-        <input id="comment" type="text" placeholder="comment" onChange={this.handleChange} />
+        <input id="comment" type="text" name="comment" placeholder="comment" onChange={this.handleChange} />
         <button id="confirm-emergency-request" className='custom-button'>Confirm</button>
       </form>
     )

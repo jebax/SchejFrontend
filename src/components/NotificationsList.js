@@ -35,6 +35,23 @@ export default class NotificationsList extends Component {
     })
   }
 
+  handleEmergencyApprove = (event) => {
+    const index = event.target.attributes.index.value
+    let emergencies = [...this.state.emergencies]
+    let emergency = {...emergencies[index]}
+    emergency.approved = true
+    emergencies[index] = emergency
+    this.setState({emergencies})
+
+    axios.patch(
+      `${process.env.REACT_APP_API_URL}/emergencyshift/${this.state.emergencies[index].shiftId}`, {
+        respondent_id: localStorage['id']
+      }
+    )
+
+    this.deleteEmergencyRequest(this.state.emergencies[index].id)
+  }
+
   handleApprove = (event) => {
     const index = event.target.attributes.index.value
     let requests = [...this.state.requests]
@@ -64,6 +81,12 @@ export default class NotificationsList extends Component {
     this.deleteRequest(this.state.requests[index].id)
   }
 
+  deleteEmergencyRequest = (emergencyId) => {
+    axios.delete(
+      `${process.env.REACT_APP_API_URL}/emergency_requests/${emergencyId}`
+    )
+  }
+
   deleteRequest = (requestId) => {
     axios.delete(
       `${process.env.REACT_APP_API_URL}/requests/${requestId}`
@@ -82,6 +105,9 @@ export default class NotificationsList extends Component {
 
   formatEmergencyRequestContent = () => {
     return this.state.emergencies.map((emergency, index) => {
+      if (emergency.approved) {
+        return <div id="emergency-box" key={index}><span>Thanks! You have now taken on this shift. You're a hero!</span></div>
+      } else {
       return (
         <div id="emergency-box" key={index}>
           <span><b>Emergency requests:</b></span><br />
@@ -89,14 +115,15 @@ export default class NotificationsList extends Component {
           <span>{this.state.emergencies[index].name} has an emergency and cannot make their shift on </span>
           <span>{this.formatDate(this.state.emergencies[index].start)} until </span>
           <span>{this.formatDate(this.state.emergencies[index].end)}</span><br />
+          <button id="approve-emergency-button" className="custom-button" index={index} onClick={this.handleEmergencyApprove}>Approve</button><br /><br />
         </div>
       )
+    }
     })
   }
 
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
-      console.log(this.state.requests[index])
       if (request.approved) {
         return <div id="notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
       } else if (request.declined){
