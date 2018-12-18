@@ -58,4 +58,9 @@ describe('Requesting emergency cover for a shift', () => {
     cy.get('[title="TestName"]').click()
     cy.contains('Request emergency cover')
   })
+
+  it('can render a emergency request form', () => {
+    cy.get('[id="toggle-emergency-popup-content"]').click()
+    cy.contains('Emergency Request Form')
+  })
 })
