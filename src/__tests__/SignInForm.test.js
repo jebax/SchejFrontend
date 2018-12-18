@@ -1,5 +1,6 @@
 import React from 'react'
 import { create } from "react-test-renderer"
+import { mount, shallow } from 'enzyme'
 import SignInForm from '../components/SignInForm'
 import axios from "axios"
 
@@ -7,13 +8,19 @@ jest.mock('axios')
 
 describe('sign in form', () => {
   var component
+  var wrapper
 
   beforeAll(() => {
     component = create(<SignInForm />)
+    wrapper = shallow(<SignInForm />)
+  })
+
+  beforeEach(() => {
+    window.localStorage.clear()
   })
 
   test("it matches the snapshot", () => {
-    expect(component.toJSON()).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 
   test("it posts to the correct API when sign in credentials are correct", () => {
@@ -39,8 +46,8 @@ describe('sign in form', () => {
   })
 
   test('It has a disabled submit button by default', () => {
-    const button = component.root.findByProps({id: 'sign-in-submit'})
+    const button = wrapper.find('#sign-in-submit')
 
-    expect(button.props.disabled).toBeTruthy()
+    expect(button.props('disabled')).toBeTruthy()
   })
 })

@@ -1,5 +1,6 @@
 import React from 'react'
 import { create } from "react-test-renderer"
+import { shallow } from 'enzyme'
 import SignUpForm from '../components/SignUpForm'
 import axios from "axios"
 
@@ -7,13 +8,15 @@ jest.mock('axios')
 
 describe("sign up form", () => {
   var component
+  var wrapper
 
   beforeAll(() => {
     component = create(<SignUpForm />)
+    wrapper = shallow(<SignUpForm />)
   })
 
   test("it matches the snapshot", () => {
-    expect(component.toJSON()).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 
   test("it posts to the API of the new user when form is valid", () => {
