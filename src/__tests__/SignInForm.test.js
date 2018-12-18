@@ -7,7 +7,7 @@ jest.mock('axios')
 
 describe('sign in form', () => {
   var component
-  
+
   beforeAll(() => {
     component = create(<SignInForm />)
   })
@@ -36,5 +36,11 @@ describe('sign in form', () => {
         password: ""
       }
     )
+  })
+
+  test('It has a disabled submit button by default', () => {
+    const button = component.root.findByProps({id: 'sign-in-submit'})
+
+    expect(button.props.disabled).toBeTruthy()
   })
 })

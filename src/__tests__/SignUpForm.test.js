@@ -50,4 +50,10 @@ describe("sign up form", () => {
       }
     )
   })
+
+  test('It has a disabled submit button by default', () => {
+    const button = component.root.findByProps({id: 'sign-up-submit'})
+
+    expect(button.props.disabled).toBeTruthy()
+  })
 })
