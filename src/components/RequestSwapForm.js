@@ -46,9 +46,6 @@ export default class RequestSwapForm extends Component {
     this.setState({
       [event.target.name]: event.target.value
     })
-    setTimeout(() => {
-      console.log(this.state)
-    }, 100)
   }
 
   formatDate = (time) => {

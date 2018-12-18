@@ -3,7 +3,9 @@
 exports[`sign up form it matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignUpForm />,
+  Symbol(enzyme.__unrendered__): <SignUpForm
+    history={Array []}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

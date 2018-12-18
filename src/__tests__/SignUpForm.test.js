@@ -11,8 +11,8 @@ describe("sign up form", () => {
   var wrapper
 
   beforeAll(() => {
-    component = create(<SignUpForm />)
-    wrapper = shallow(<SignUpForm />)
+    component = create(<SignUpForm history = {[]}/>)
+    wrapper = shallow(<SignUpForm history = {[]}/>)
   })
 
   test("it matches the snapshot", () => {

@@ -12,7 +12,6 @@ export default class ShiftPopup extends Component {
     }
   }
   componentWillMount() {
-    console.log(this.props);
     this.setState({
       formatStart: this.props.shiftInfo.start.toLocaleString("en-GB"),
       formatEnd: this.props.shiftInfo.end.toLocaleString("en-GB")

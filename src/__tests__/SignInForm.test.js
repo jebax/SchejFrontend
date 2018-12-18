@@ -11,8 +11,8 @@ describe('sign in form', () => {
   var wrapper
 
   beforeAll(() => {
-    component = create(<SignInForm />)
-    wrapper = shallow(<SignInForm />)
+    component = create(<SignInForm history = {[]}/>)
+    wrapper = shallow(<SignInForm history = {[]}/>)
   })
 
   beforeEach(() => {
