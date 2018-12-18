@@ -23,6 +23,15 @@ describe('sign in form', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  test('it renders a button to go to the sign up page', () => {
+    const mountedWrapper = mount(<SignInForm history={[]} />)
+    const button = mountedWrapper.find('#sign-up-button')
+
+    button.simulate('click')
+
+    expect(mountedWrapper.props().history).toEqual(['/sign_up'])
+  })
+
   test("it posts to the correct API when sign in credentials are correct", () => {
     const response = {
       data: {}
@@ -49,5 +58,16 @@ describe('sign in form', () => {
     const button = wrapper.find('#sign-in-submit')
 
     expect(button.props('disabled')).toBeTruthy()
+  })
+
+  test('It redirects to the shifts calendar if already signed in', () => {
+    localStorage['authenticationToken'] = 'TestToken'
+    const secondWrapper = mount(<SignInForm history={[]} />)
+
+    expect(secondWrapper.props().history).toEqual(['/shifts'])
+  })
+
+  afterAll(() => {
+    localStorage.clear()
   })
 })

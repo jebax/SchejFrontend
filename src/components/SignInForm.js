@@ -48,9 +48,6 @@ export default class SignInForm extends Component {
           self.props.history.push('/shifts')
         }
       })
-      .catch(error => {
-        console.log(error)
-      })
     }
 
     redirectSignUp = () => {
