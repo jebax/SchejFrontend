@@ -5,16 +5,30 @@ export default class NotificationsList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      requests: []
+      requests: [],
+      emergencies: []
     }
   }
 
   componentWillMount() {
+    console.log(localStorage['id'])
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
     .then(response => {
       this.setState({ requests: response.data })
+    })
+    .then(response => {
+      console.log(this.state)
+    })
+    console.log(localStorage['id'])
+
+    axios.get(
+      `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
+    )
+    .then(response => {
+      console.log(response)
+      this.setState({ emergencies: response.data })
     })
     .then(response => {
       console.log(this.state)
@@ -66,6 +80,20 @@ export default class NotificationsList extends Component {
     return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' })
   }
 
+  formatEmergencyRequestContent = () => {
+    return this.state.emergencies.map((emergency, index) => {
+      return (
+        <div id="emergency-box" key={index}>
+          <span><b>Emergency requests:</b></span><br />
+          <span id="emergency-message">Comment: {this.state.emergencies[index].comment}</span><br />
+          <span>{this.state.emergencies[index].name} has an emergency and cannot make their shift on </span>
+          <span>{this.formatDate(this.state.emergencies[index].start)} until </span>
+          <span>{this.formatDate(this.state.emergencies[index].end)}</span><br />
+        </div>
+      )
+    })
+  }
+
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
       console.log(this.state.requests[index])
@@ -88,11 +116,14 @@ export default class NotificationsList extends Component {
   }
 
   render() {
+    console.log('logging state here')
+    console.log(this.state)
     return(
       <div>
         <h3 className='popup-title'>Notifications</h3>
         <div id='notifications-list'>
-          {this.formatRequestContent()}
+          {this.formatRequestContent()},
+           {this.formatEmergencyRequestContent()}
         </div>
       </div>
     )

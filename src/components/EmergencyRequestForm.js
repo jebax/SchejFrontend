@@ -34,6 +34,4 @@ export default class NewShiftForm extends Component {
       </form>
     )
   }
-
-
 }
