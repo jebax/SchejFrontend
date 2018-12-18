@@ -6,6 +6,16 @@ import axios from "axios"
 jest.mock('axios')
 
 describe("sign up form", () => {
+  var component
+
+  beforeAll(() => {
+    component = create(<SignUpForm />)
+  })
+
+  test("it matches the snapshot", () => {
+    expect(component.toJSON()).toMatchSnapshot()
+  })
+
   test("it posts to the API of the new user when form is valid", () => {
     const response = {
       data: {
@@ -18,7 +28,6 @@ describe("sign up form", () => {
 
     axios.post.mockResolvedValue(response)
 
-    const component = create(<SignUpForm />)
     const form = component.root.findByType('form')
 
     const fakeEvent = { preventDefault: () => {} }

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sign in form it matches the snapshot 1`] = `
+<div
+  id="sign-in-page"
+>
+  <section
+    id="index-title"
+  >
+    <h1
+      id="index-title-text"
+    >
+      Schej
+    </h1>
+  </section>
+  <form
+    className="sign-in-form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="sign-in-entry"
+      id="sign-in-email-entry"
+      name="email"
+      onChange={[Function]}
+      placeholder="Email"
+      type="text"
+    />
+    <br />
+    <input
+      className="sign-in-entry"
+      id="sign-in-password-entry"
+      name="password"
+      onChange={[Function]}
+      placeholder="Password"
+      type="password"
+    />
+    <br />
+    <button
+      className="custom-button"
+      disabled={true}
+      id="sign-in-submit"
+    >
+      Submit
+    </button>
+  </form>
+  <button
+    className="custom-button"
+    id="sign-up-button"
+    onClick={[Function]}
+  >
+    Sign Up
+  </button>
+</div>
+`;
