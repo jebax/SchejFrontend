@@ -18,7 +18,6 @@ export default class NotificationsButton extends Component {
   }
 
   getRequestsNumber = () => {
-    console.log('hello')
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )

@@ -28,7 +28,6 @@ export default class RequestSwapForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log(this.state)
     axios.post(
       `${process.env.REACT_APP_API_URL}/requests`,
       {
