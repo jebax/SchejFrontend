@@ -3,10 +3,10 @@ import { create } from "react-test-renderer"
 import SignUpForm from '../components/SignUpForm'
 import axios from "axios"
 
-jest.mock("axios")
+jest.mock('axios')
 
 describe("sign up form", () => {
-  test("it posts to the API of the new user", async () => {
+  test("it posts to the API of the new user when form is valid", () => {
     const response = {
       data: {
         name: "TestName",
@@ -15,10 +15,19 @@ describe("sign up form", () => {
         job_title: "TestJob"
       }
     }
+
     axios.post.mockResolvedValue(response)
+
     const component = create(<SignUpForm />)
-    const instance = component.getInstance()
-    await instance.createUserRequest()
+    const form = component.root.findByType('form')
+
+    const fakeEvent = { preventDefault: () => {} }
+
+    component.getInstance().hasNonMatchingPasswords = jest.fn()
+    component.getInstance().hasInvalidPassword = jest.fn()
+
+    form.props.onSubmit(fakeEvent)
+
     expect(axios.post).toHaveBeenCalledTimes(1)
     expect(axios.post).toHaveBeenCalledWith(
       'http://localhost:3001/api/v1/sign_up', {
@@ -31,5 +40,5 @@ describe("sign up form", () => {
         passwordConfirmation: ""
       }
     )
-  });
-});
+  })
+})
