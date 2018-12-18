@@ -5,10 +5,26 @@ export default class NewShiftForm extends Component {
   constructor(props){
     super(props)
     this.state = {
-      emergencyShift: '',
       comment: ''
     }
   }
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+  handleSubmit = (event) => {
+    event.preventDefault()
+    axios.post(
+      `${process.env.REACT_APP_API_URL}/emergency_requests`, {
+        emergency_shift_id: this.props.shiftInfo.shiftId,
+        comment: this.state.comment
+      })
+      .then(response => {
+        this.props.history.push('/')
+        this.props.history.push('/shifts')
+      })
+    }
 
   render() {
     return(
