@@ -16,7 +16,8 @@ This project requires the use of [our Rails API backend](https://github.com/chlo
 1) Clone the repository
 2) Run `npm install` to install local dependencies
 3) Run `npm start` to start the React app at `http://localhost:3000`
-4) Run `npx cypress open` to run the tests in Cypress.
+4) Run `npx cypress open` to run the feature tests in Cypress. The app must be running for the tests to execute.
+5) Run `npm test` to run the unit tests in Jest/Enzyme. The app does not need to be running for these tests.
 
 ## Contributing
 
