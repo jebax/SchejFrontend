@@ -1,18 +1,19 @@
 import React from 'react'
-import { create } from "react-test-renderer"
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 import SignUpForm from '../components/SignUpForm'
 import axios from "axios"
 
 jest.mock('axios')
 
 describe("sign up form", () => {
-  var component
   var wrapper
 
   beforeAll(() => {
-    component = create(<SignUpForm history = {[]}/>)
     wrapper = shallow(<SignUpForm history = {[]}/>)
+  })
+
+  beforeEach(() => {
+    localStorage.clear()
   })
 
   test("it matches the snapshot", () => {
@@ -31,14 +32,13 @@ describe("sign up form", () => {
 
     axios.post.mockResolvedValue(response)
 
-    const form = component.root.findByType('form')
+    const form = wrapper.find('.sign-up-form')
+    const fakeEvent = { preventDefault() {} }
 
-    const fakeEvent = { preventDefault: () => {} }
+    wrapper.instance().hasNonMatchingPasswords = jest.fn()
+    wrapper.instance().hasInvalidPassword = jest.fn()
 
-    component.getInstance().hasNonMatchingPasswords = jest.fn()
-    component.getInstance().hasInvalidPassword = jest.fn()
-
-    form.props.onSubmit(fakeEvent)
+    form.props().onSubmit(fakeEvent)
 
     expect(axios.post).toHaveBeenCalledTimes(1)
     expect(axios.post).toHaveBeenCalledWith(
@@ -55,8 +55,75 @@ describe("sign up form", () => {
   })
 
   test('It has a disabled submit button by default', () => {
-    const button = component.root.findByProps({id: 'sign-up-submit'})
+    const button = wrapper.find('#sign-up-submit')
 
-    expect(button.props.disabled).toBeTruthy()
+    expect(button.props().disabled).toBeTruthy()
+  })
+
+  test('it renders a button to go to the sign up page', () => {
+    const mountedWrapper = mount(<SignUpForm history={[]} />)
+    const button = mountedWrapper.find('#sign-in-button')
+
+    button.simulate('click')
+
+    expect(mountedWrapper.props().history).toEqual(['/sign_in'])
+  })
+
+  test('alerts the user when email already taken', () => {
+    const result = Promise.reject({ response: { status: 422 } })
+    axios.post.mockImplementation(() => result)
+
+    global.alert = jest.fn()
+
+    const form = wrapper.find('.sign-up-form')
+    const fakeEvent = { preventDefault() {} }
+
+    wrapper.instance().hasNonMatchingPasswords = jest.fn()
+    wrapper.instance().hasInvalidPassword = jest.fn()
+
+    form.props().onSubmit(fakeEvent)
+
+    setTimeout(() => {
+      expect(global.alert).toHaveBeenCalledTimes(1)
+      expect(global.alert).toHaveBeenCalledWith('Email already taken')
+    }, 10)
+  })
+
+  test('alerts the user if passwords do not match', () => {
+    global.alert = jest.fn()
+
+    const fakeEvent = { preventDefault() {} }
+    const form = wrapper.find('.sign-up-form')
+
+    wrapper.instance().hasNonMatchingPasswords.mockImplementation(() => true)
+
+    form.props().onSubmit(fakeEvent)
+
+    expect(global.alert).toHaveBeenCalledWith('Passwords do not match')
+  })
+
+  test('alerts the user if password is invalid length', () => {
+    global.alert = jest.fn()
+
+    const fakeEvent = { preventDefault() {} }
+    const form = wrapper.find('.sign-up-form')
+
+    wrapper.instance().hasNonMatchingPasswords.mockImplementation(() => false)
+    wrapper.instance().hasInvalidPassword.mockImplementation(() => true)
+
+    form.props().onSubmit(fakeEvent)
+
+    expect(global.alert).toHaveBeenCalledWith('Password must be at least 6 characters')
+  })
+
+  test('It redirects to the shifts calendar if already signed in', () => {
+    localStorage['authenticationToken'] = 'TestToken'
+    const secondWrapper = mount(<SignUpForm history={[]} />)
+
+    expect(secondWrapper.props().history).toEqual(['/shifts'])
+  })
+
+  afterAll(() => {
+    localStorage.clear()
   })
 })

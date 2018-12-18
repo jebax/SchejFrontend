@@ -84,7 +84,7 @@ export default class SignUpForm extends Component {
   }
 
   redirectSignIn = () => {
-    this.props.history.push('/')
+    this.props.history.push('/sign_in')
   }
 
   render() {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { create } from "react-test-renderer"
 import { mount, shallow } from 'enzyme'
 import SignInForm from '../components/SignInForm'
 import axios from "axios"
@@ -7,11 +6,9 @@ import axios from "axios"
 jest.mock('axios')
 
 describe('sign in form', () => {
-  var component
   var wrapper
 
   beforeAll(() => {
-    component = create(<SignInForm history = {[]}/>)
     wrapper = shallow(<SignInForm history = {[]}/>)
   })
 
@@ -36,14 +33,12 @@ describe('sign in form', () => {
     const response = {
       data: {}
     }
-
     axios.post.mockResolvedValue(response)
 
-    const form = component.root.findByType('form')
+    const form = wrapper.find('.sign-in-form')
+    const fakeEvent = { preventDefault () {} }
 
-    const fakeEvent = { preventDefault: () => {} }
-
-    form.props.onSubmit(fakeEvent)
+    form.props().onSubmit(fakeEvent)
 
     expect(axios.post).toHaveBeenCalledTimes(1)
     expect(axios.post).toHaveBeenCalledWith(

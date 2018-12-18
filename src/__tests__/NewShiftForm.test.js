@@ -38,7 +38,7 @@ describe('new shift form', () => {
   test("makes correct api request when button is clicked", () => {
     axios.post.mockResolvedValue({})
     const form = wrapper.find("form")
-    const fakeEvent = { preventDefault () {}}
+    const fakeEvent = { preventDefault () {} }
     form.props().onSubmit(fakeEvent)
     expect(axios.post).toHaveBeenCalledTimes(1)
   })
