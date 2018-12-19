@@ -22,6 +22,11 @@ ShallowWrapper {
       "children": Array [
         <h1
           id="title"
+          style={
+            Object {
+              "top": "50px",
+            }
+          }
         >
           Schej
         </h1>,
@@ -32,6 +37,9 @@ ShallowWrapper {
             id="welcome-name"
           >
             Welcome 
+            <span
+              id="user-name-on-hompage"
+            />
           </h2>
           <SignOutButton
             history={Array []}
@@ -87,7 +95,7 @@ ShallowWrapper {
             selectable={true}
             style={
               Object {
-                "height": "100vh",
+                "height": "77vh",
               }
             }
           />
@@ -170,6 +178,9 @@ ShallowWrapper {
         "props": Object {
           "children": "Schej",
           "id": "title",
+          "style": Object {
+            "top": "50px",
+          },
         },
         "ref": null,
         "rendered": "Schej",
@@ -185,6 +196,9 @@ ShallowWrapper {
               id="welcome-name"
             >
               Welcome 
+              <span
+                id="user-name-on-hompage"
+              />
             </h2>,
             <SignOutButton
               history={Array []}
@@ -218,14 +232,27 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Welcome ",
-                undefined,
+                <span
+                  id="user-name-on-hompage"
+                />,
               ],
               "id": "welcome-name",
             },
             "ref": null,
             "rendered": Array [
               "Welcome ",
-              undefined,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "id": "user-name-on-hompage",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
             ],
             "type": "h2",
           },
@@ -341,7 +368,7 @@ ShallowWrapper {
             selectable={true}
             style={
               Object {
-                "height": "100vh",
+                "height": "77vh",
               }
             }
           />,
@@ -380,7 +407,7 @@ ShallowWrapper {
             "onSelectEvent": [Function],
             "selectable": true,
             "style": Object {
-              "height": "100vh",
+              "height": "77vh",
             },
           },
           "ref": null,
@@ -534,6 +561,11 @@ ShallowWrapper {
         "children": Array [
           <h1
             id="title"
+            style={
+              Object {
+                "top": "50px",
+              }
+            }
           >
             Schej
           </h1>,
@@ -544,6 +576,9 @@ ShallowWrapper {
               id="welcome-name"
             >
               Welcome 
+              <span
+                id="user-name-on-hompage"
+              />
             </h2>
             <SignOutButton
               history={Array []}
@@ -599,7 +634,7 @@ ShallowWrapper {
               selectable={true}
               style={
                 Object {
-                  "height": "100vh",
+                  "height": "77vh",
                 }
               }
             />
@@ -682,6 +717,9 @@ ShallowWrapper {
           "props": Object {
             "children": "Schej",
             "id": "title",
+            "style": Object {
+              "top": "50px",
+            },
           },
           "ref": null,
           "rendered": "Schej",
@@ -697,6 +735,9 @@ ShallowWrapper {
                 id="welcome-name"
               >
                 Welcome 
+                <span
+                  id="user-name-on-hompage"
+                />
               </h2>,
               <SignOutButton
                 history={Array []}
@@ -730,14 +771,27 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Welcome ",
-                  undefined,
+                  <span
+                    id="user-name-on-hompage"
+                  />,
                 ],
                 "id": "welcome-name",
               },
               "ref": null,
               "rendered": Array [
                 "Welcome ",
-                undefined,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "id": "user-name-on-hompage",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
               ],
               "type": "h2",
             },
@@ -853,7 +907,7 @@ ShallowWrapper {
               selectable={true}
               style={
                 Object {
-                  "height": "100vh",
+                  "height": "77vh",
                 }
               }
             />,
@@ -892,7 +946,7 @@ ShallowWrapper {
               "onSelectEvent": [Function],
               "selectable": true,
               "style": Object {
-                "height": "100vh",
+                "height": "77vh",
               },
             },
             "ref": null,

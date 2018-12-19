@@ -60,19 +60,19 @@ ShallowWrapper {
             <br />
             <button
               className="custom-button"
-              id="approve-swap-button"
-              index={0}
-              onClick={[Function]}
-            >
-              Approve
-            </button>
-            <button
-              className="custom-button"
               id="decline-swap-button"
               index={0}
               onClick={[Function]}
             >
               Decline
+            </button>
+            <button
+              className="custom-button"
+              id="approve-swap-button"
+              index={0}
+              onClick={[Function]}
+            >
+              Approve
             </button>
             <br />
             <br />
@@ -139,19 +139,19 @@ ShallowWrapper {
                 <br />
                 <button
                   className="custom-button"
-                  id="approve-swap-button"
-                  index={0}
-                  onClick={[Function]}
-                >
-                  Approve
-                </button>
-                <button
-                  className="custom-button"
                   id="decline-swap-button"
                   index={0}
                   onClick={[Function]}
                 >
                   Decline
+                </button>
+                <button
+                  className="custom-button"
+                  id="approve-swap-button"
+                  index={0}
+                  onClick={[Function]}
+                >
+                  Approve
                 </button>
                 <br />
                 <br />
@@ -204,19 +204,19 @@ ShallowWrapper {
                 <br />,
                 <button
                   className="custom-button"
-                  id="approve-swap-button"
-                  index={0}
-                  onClick={[Function]}
-                >
-                  Approve
-                </button>,
-                <button
-                  className="custom-button"
                   id="decline-swap-button"
                   index={0}
                   onClick={[Function]}
                 >
                   Decline
+                </button>,
+                <button
+                  className="custom-button"
+                  id="approve-swap-button"
+                  index={0}
+                  onClick={[Function]}
+                >
+                  Approve
                 </button>,
                 <br />,
                 <br />,
@@ -331,21 +331,6 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Approve",
-                  "className": "custom-button",
-                  "id": "approve-swap-button",
-                  "index": 0,
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": "Approve",
-                "type": "button",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
                   "children": "Decline",
                   "className": "custom-button",
                   "id": "decline-swap-button",
@@ -354,6 +339,21 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Decline",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Approve",
+                  "className": "custom-button",
+                  "id": "approve-swap-button",
+                  "index": 0,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Approve",
                 "type": "button",
               },
               Object {
@@ -462,19 +462,19 @@ ShallowWrapper {
               <br />
               <button
                 className="custom-button"
-                id="approve-swap-button"
-                index={0}
-                onClick={[Function]}
-              >
-                Approve
-              </button>
-              <button
-                className="custom-button"
                 id="decline-swap-button"
                 index={0}
                 onClick={[Function]}
               >
                 Decline
+              </button>
+              <button
+                className="custom-button"
+                id="approve-swap-button"
+                index={0}
+                onClick={[Function]}
+              >
+                Approve
               </button>
               <br />
               <br />
@@ -541,19 +541,19 @@ ShallowWrapper {
                   <br />
                   <button
                     className="custom-button"
-                    id="approve-swap-button"
-                    index={0}
-                    onClick={[Function]}
-                  >
-                    Approve
-                  </button>
-                  <button
-                    className="custom-button"
                     id="decline-swap-button"
                     index={0}
                     onClick={[Function]}
                   >
                     Decline
+                  </button>
+                  <button
+                    className="custom-button"
+                    id="approve-swap-button"
+                    index={0}
+                    onClick={[Function]}
+                  >
+                    Approve
                   </button>
                   <br />
                   <br />
@@ -606,19 +606,19 @@ ShallowWrapper {
                   <br />,
                   <button
                     className="custom-button"
-                    id="approve-swap-button"
-                    index={0}
-                    onClick={[Function]}
-                  >
-                    Approve
-                  </button>,
-                  <button
-                    className="custom-button"
                     id="decline-swap-button"
                     index={0}
                     onClick={[Function]}
                   >
                     Decline
+                  </button>,
+                  <button
+                    className="custom-button"
+                    id="approve-swap-button"
+                    index={0}
+                    onClick={[Function]}
+                  >
+                    Approve
                   </button>,
                   <br />,
                   <br />,
@@ -733,21 +733,6 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Approve",
-                    "className": "custom-button",
-                    "id": "approve-swap-button",
-                    "index": 0,
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": "Approve",
-                  "type": "button",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
                     "children": "Decline",
                     "className": "custom-button",
                     "id": "decline-swap-button",
@@ -756,6 +741,21 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Decline",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Approve",
+                    "className": "custom-button",
+                    "id": "approve-swap-button",
+                    "index": 0,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Approve",
                   "type": "button",
                 },
                 Object {
