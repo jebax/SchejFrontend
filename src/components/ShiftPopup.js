@@ -36,11 +36,7 @@ export default class ShiftPopup extends Component {
   formatEmergencyRequest = () => {
     if (this.props.shiftInfo.userId === parseInt(localStorage['id'])) {
       return(
-        <div>
-          <section id='toggle-popup-state'>
-          <button id='toggle-emergency-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
-          </section>
-        </div>
+        <button id='toggle-emergency-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
     )}
   }
 
@@ -69,6 +65,7 @@ export default class ShiftPopup extends Component {
       return(
         <div id='shift-popup'>
           <h3 className='popup-title'>Shift Information</h3>
+          <br />
           <div className='shift-info'>
             <p className='shift-info-label'>Employee name:</p>
             <p className='shift-info-entry'>{this.props.shiftInfo.title}</p>
@@ -90,9 +87,9 @@ export default class ShiftPopup extends Component {
           </div>
           <br />
           <section id='toggle-popup-state'>
-          <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button><br />
+            <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button>
+            {this.formatEmergencyRequest()}
           </section>
-          {this.formatEmergencyRequest()}
         </div>
       )}
     }

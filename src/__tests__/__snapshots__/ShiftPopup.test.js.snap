@@ -122,6 +122,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -183,20 +184,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -333,6 +327,7 @@ ReactWrapper {
                   >
                     Shift Information
                   </h3>
+                  <br />
                   <div
                     class="shift-info"
                   >
@@ -394,20 +389,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -525,6 +513,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -586,20 +575,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -736,6 +718,7 @@ ReactWrapper {
                   >
                     Shift Information
                   </h3>
+                  <br />
                   <div
                     class="shift-info"
                   >
@@ -797,20 +780,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -927,7 +903,7 @@ ReactWrapper {
           "_debugOwner": [Circular],
           "_debugSource": Object {
             "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-            "lineNumber": 70,
+            "lineNumber": 66,
           },
           "actualDuration": 0,
           "actualStartTime": -1,
@@ -938,7 +914,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-              "lineNumber": 71,
+              "lineNumber": 67,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -973,53 +949,47 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                "lineNumber": 72,
+                "lineNumber": 68,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
               "alternate": null,
-              "child": FiberNode {
-                "_debugID": 63,
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "br",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {},
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {},
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": FiberNode {
+                "_debugID": 54,
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                  "lineNumber": 73,
+                  "lineNumber": 69,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
                 "alternate": null,
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": "p",
-                "expirationTime": 0,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {
-                  "children": "Employee name:",
-                  "className": "shift-info-label",
-                },
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {
-                  "children": "Employee name:",
-                  "className": "shift-info-label",
-                },
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": FiberNode {
-                  "_debugID": 64,
+                "child": FiberNode {
+                  "_debugID": 63,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
                     "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                    "lineNumber": 74,
+                    "lineNumber": 70,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -1031,130 +1001,30 @@ ReactWrapper {
                   "expirationTime": 0,
                   "firstContextDependency": null,
                   "firstEffect": null,
-                  "index": 1,
+                  "index": 0,
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": undefined,
-                    "className": "shift-info-entry",
+                    "children": "Employee name:",
+                    "className": "shift-info-label",
                   },
                   "memoizedState": null,
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": undefined,
-                    "className": "shift-info-entry",
+                    "children": "Employee name:",
+                    "className": "shift-info-label",
                   },
                   "ref": null,
                   "return": [Circular],
                   "selfBaseDuration": 0,
-                  "sibling": null,
-                  "stateNode": <p
-                    class="shift-info-entry"
-                  />,
-                  "tag": 5,
-                  "treeBaseDuration": 0,
-                  "type": "p",
-                  "updateQueue": null,
-                },
-                "stateNode": <p
-                  class="shift-info-label"
-                >
-                  Employee name:
-                </p>,
-                "tag": 5,
-                "treeBaseDuration": 0,
-                "type": "p",
-                "updateQueue": null,
-              },
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": "div",
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 1,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": Object {
-                "children": Array [
-                  <p
-                    className="shift-info-label"
-                  >
-                    Employee name:
-                  </p>,
-                  <p
-                    className="shift-info-entry"
-                  />,
-                ],
-                "className": "shift-info",
-              },
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": Object {
-                "children": Array [
-                  <p
-                    className="shift-info-label"
-                  >
-                    Employee name:
-                  </p>,
-                  <p
-                    className="shift-info-entry"
-                  />,
-                ],
-                "className": "shift-info",
-              },
-              "ref": null,
-              "return": [Circular],
-              "selfBaseDuration": 0,
-              "sibling": FiberNode {
-                "_debugID": 54,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": [Circular],
-                "_debugSource": Object {
-                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                  "lineNumber": 76,
-                },
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": null,
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": "br",
-                "expirationTime": 0,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 2,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {},
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {},
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": FiberNode {
-                  "_debugID": 55,
-                  "_debugIsCurrentlyTiming": false,
-                  "_debugOwner": [Circular],
-                  "_debugSource": Object {
-                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                    "lineNumber": 77,
-                  },
-                  "actualDuration": 0,
-                  "actualStartTime": -1,
-                  "alternate": null,
-                  "child": FiberNode {
-                    "_debugID": 65,
+                  "sibling": FiberNode {
+                    "_debugID": 64,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
                       "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                      "lineNumber": 78,
+                      "lineNumber": 71,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -1166,30 +1036,130 @@ ReactWrapper {
                     "expirationTime": 0,
                     "firstContextDependency": null,
                     "firstEffect": null,
-                    "index": 0,
+                    "index": 1,
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "children": "Contact email address:",
-                      "className": "shift-info-label",
+                      "children": undefined,
+                      "className": "shift-info-entry",
                     },
                     "memoizedState": null,
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "children": "Contact email address:",
-                      "className": "shift-info-label",
+                      "children": undefined,
+                      "className": "shift-info-entry",
                     },
                     "ref": null,
                     "return": [Circular],
                     "selfBaseDuration": 0,
-                    "sibling": FiberNode {
-                      "_debugID": 66,
+                    "sibling": null,
+                    "stateNode": <p
+                      class="shift-info-entry"
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "p",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <p
+                    class="shift-info-label"
+                  >
+                    Employee name:
+                  </p>,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "p",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "div",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 2,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <p
+                      className="shift-info-label"
+                    >
+                      Employee name:
+                    </p>,
+                    <p
+                      className="shift-info-entry"
+                    />,
+                  ],
+                  "className": "shift-info",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <p
+                      className="shift-info-label"
+                    >
+                      Employee name:
+                    </p>,
+                    <p
+                      className="shift-info-entry"
+                    />,
+                  ],
+                  "className": "shift-info",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugID": 55,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": Object {
+                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                    "lineNumber": 73,
+                  },
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "br",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 3,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {},
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {},
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 56,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                      "lineNumber": 74,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugID": 65,
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
                         "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                        "lineNumber": 79,
+                        "lineNumber": 75,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -1201,130 +1171,30 @@ ReactWrapper {
                       "expirationTime": 0,
                       "firstContextDependency": null,
                       "firstEffect": null,
-                      "index": 1,
+                      "index": 0,
                       "key": null,
                       "lastEffect": null,
                       "memoizedProps": Object {
-                        "children": undefined,
-                        "className": "shift-info-entry",
+                        "children": "Contact email address:",
+                        "className": "shift-info-label",
                       },
                       "memoizedState": null,
                       "mode": 0,
                       "nextEffect": null,
                       "pendingProps": Object {
-                        "children": undefined,
-                        "className": "shift-info-entry",
+                        "children": "Contact email address:",
+                        "className": "shift-info-label",
                       },
                       "ref": null,
                       "return": [Circular],
                       "selfBaseDuration": 0,
-                      "sibling": null,
-                      "stateNode": <p
-                        class="shift-info-entry"
-                      />,
-                      "tag": 5,
-                      "treeBaseDuration": 0,
-                      "type": "p",
-                      "updateQueue": null,
-                    },
-                    "stateNode": <p
-                      class="shift-info-label"
-                    >
-                      Contact email address:
-                    </p>,
-                    "tag": 5,
-                    "treeBaseDuration": 0,
-                    "type": "p",
-                    "updateQueue": null,
-                  },
-                  "childExpirationTime": 0,
-                  "effectTag": 0,
-                  "elementType": "div",
-                  "expirationTime": 0,
-                  "firstContextDependency": null,
-                  "firstEffect": null,
-                  "index": 3,
-                  "key": null,
-                  "lastEffect": null,
-                  "memoizedProps": Object {
-                    "children": Array [
-                      <p
-                        className="shift-info-label"
-                      >
-                        Contact email address:
-                      </p>,
-                      <p
-                        className="shift-info-entry"
-                      />,
-                    ],
-                    "className": "shift-info",
-                  },
-                  "memoizedState": null,
-                  "mode": 0,
-                  "nextEffect": null,
-                  "pendingProps": Object {
-                    "children": Array [
-                      <p
-                        className="shift-info-label"
-                      >
-                        Contact email address:
-                      </p>,
-                      <p
-                        className="shift-info-entry"
-                      />,
-                    ],
-                    "className": "shift-info",
-                  },
-                  "ref": null,
-                  "return": [Circular],
-                  "selfBaseDuration": 0,
-                  "sibling": FiberNode {
-                    "_debugID": 56,
-                    "_debugIsCurrentlyTiming": false,
-                    "_debugOwner": [Circular],
-                    "_debugSource": Object {
-                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                      "lineNumber": 81,
-                    },
-                    "actualDuration": 0,
-                    "actualStartTime": -1,
-                    "alternate": null,
-                    "child": null,
-                    "childExpirationTime": 0,
-                    "effectTag": 0,
-                    "elementType": "br",
-                    "expirationTime": 0,
-                    "firstContextDependency": null,
-                    "firstEffect": null,
-                    "index": 4,
-                    "key": null,
-                    "lastEffect": null,
-                    "memoizedProps": Object {},
-                    "memoizedState": null,
-                    "mode": 0,
-                    "nextEffect": null,
-                    "pendingProps": Object {},
-                    "ref": null,
-                    "return": [Circular],
-                    "selfBaseDuration": 0,
-                    "sibling": FiberNode {
-                      "_debugID": 57,
-                      "_debugIsCurrentlyTiming": false,
-                      "_debugOwner": [Circular],
-                      "_debugSource": Object {
-                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                        "lineNumber": 82,
-                      },
-                      "actualDuration": 0,
-                      "actualStartTime": -1,
-                      "alternate": null,
-                      "child": FiberNode {
-                        "_debugID": 67,
+                      "sibling": FiberNode {
+                        "_debugID": 66,
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                          "lineNumber": 83,
+                          "lineNumber": 76,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -1336,30 +1206,130 @@ ReactWrapper {
                         "expirationTime": 0,
                         "firstContextDependency": null,
                         "firstEffect": null,
-                        "index": 0,
+                        "index": 1,
                         "key": null,
                         "lastEffect": null,
                         "memoizedProps": Object {
-                          "children": "Start time:",
-                          "className": "shift-info-label",
+                          "children": undefined,
+                          "className": "shift-info-entry",
                         },
                         "memoizedState": null,
                         "mode": 0,
                         "nextEffect": null,
                         "pendingProps": Object {
-                          "children": "Start time:",
-                          "className": "shift-info-label",
+                          "children": undefined,
+                          "className": "shift-info-entry",
                         },
                         "ref": null,
                         "return": [Circular],
                         "selfBaseDuration": 0,
-                        "sibling": FiberNode {
-                          "_debugID": 68,
+                        "sibling": null,
+                        "stateNode": <p
+                          class="shift-info-entry"
+                        />,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "p",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <p
+                        class="shift-info-label"
+                      >
+                        Contact email address:
+                      </p>,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "p",
+                      "updateQueue": null,
+                    },
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "div",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 4,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": Array [
+                        <p
+                          className="shift-info-label"
+                        >
+                          Contact email address:
+                        </p>,
+                        <p
+                          className="shift-info-entry"
+                        />,
+                      ],
+                      "className": "shift-info",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": Array [
+                        <p
+                          className="shift-info-label"
+                        >
+                          Contact email address:
+                        </p>,
+                        <p
+                          className="shift-info-entry"
+                        />,
+                      ],
+                      "className": "shift-info",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 57,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                        "lineNumber": 78,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "br",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 5,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {},
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {},
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 58,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                          "lineNumber": 79,
+                        },
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": FiberNode {
+                          "_debugID": 67,
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                            "lineNumber": 84,
+                            "lineNumber": 80,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -1371,130 +1341,30 @@ ReactWrapper {
                           "expirationTime": 0,
                           "firstContextDependency": null,
                           "firstEffect": null,
-                          "index": 1,
+                          "index": 0,
                           "key": null,
                           "lastEffect": null,
                           "memoizedProps": Object {
-                            "children": undefined,
-                            "className": "shift-info-entry",
+                            "children": "Start time:",
+                            "className": "shift-info-label",
                           },
                           "memoizedState": null,
                           "mode": 0,
                           "nextEffect": null,
                           "pendingProps": Object {
-                            "children": undefined,
-                            "className": "shift-info-entry",
+                            "children": "Start time:",
+                            "className": "shift-info-label",
                           },
                           "ref": null,
                           "return": [Circular],
                           "selfBaseDuration": 0,
-                          "sibling": null,
-                          "stateNode": <p
-                            class="shift-info-entry"
-                          />,
-                          "tag": 5,
-                          "treeBaseDuration": 0,
-                          "type": "p",
-                          "updateQueue": null,
-                        },
-                        "stateNode": <p
-                          class="shift-info-label"
-                        >
-                          Start time:
-                        </p>,
-                        "tag": 5,
-                        "treeBaseDuration": 0,
-                        "type": "p",
-                        "updateQueue": null,
-                      },
-                      "childExpirationTime": 0,
-                      "effectTag": 0,
-                      "elementType": "div",
-                      "expirationTime": 0,
-                      "firstContextDependency": null,
-                      "firstEffect": null,
-                      "index": 5,
-                      "key": null,
-                      "lastEffect": null,
-                      "memoizedProps": Object {
-                        "children": Array [
-                          <p
-                            className="shift-info-label"
-                          >
-                            Start time:
-                          </p>,
-                          <p
-                            className="shift-info-entry"
-                          />,
-                        ],
-                        "className": "shift-info",
-                      },
-                      "memoizedState": null,
-                      "mode": 0,
-                      "nextEffect": null,
-                      "pendingProps": Object {
-                        "children": Array [
-                          <p
-                            className="shift-info-label"
-                          >
-                            Start time:
-                          </p>,
-                          <p
-                            className="shift-info-entry"
-                          />,
-                        ],
-                        "className": "shift-info",
-                      },
-                      "ref": null,
-                      "return": [Circular],
-                      "selfBaseDuration": 0,
-                      "sibling": FiberNode {
-                        "_debugID": 58,
-                        "_debugIsCurrentlyTiming": false,
-                        "_debugOwner": [Circular],
-                        "_debugSource": Object {
-                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                          "lineNumber": 86,
-                        },
-                        "actualDuration": 0,
-                        "actualStartTime": -1,
-                        "alternate": null,
-                        "child": null,
-                        "childExpirationTime": 0,
-                        "effectTag": 0,
-                        "elementType": "br",
-                        "expirationTime": 0,
-                        "firstContextDependency": null,
-                        "firstEffect": null,
-                        "index": 6,
-                        "key": null,
-                        "lastEffect": null,
-                        "memoizedProps": Object {},
-                        "memoizedState": null,
-                        "mode": 0,
-                        "nextEffect": null,
-                        "pendingProps": Object {},
-                        "ref": null,
-                        "return": [Circular],
-                        "selfBaseDuration": 0,
-                        "sibling": FiberNode {
-                          "_debugID": 59,
-                          "_debugIsCurrentlyTiming": false,
-                          "_debugOwner": [Circular],
-                          "_debugSource": Object {
-                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                            "lineNumber": 87,
-                          },
-                          "actualDuration": 0,
-                          "actualStartTime": -1,
-                          "alternate": null,
-                          "child": FiberNode {
-                            "_debugID": 69,
+                          "sibling": FiberNode {
+                            "_debugID": 68,
                             "_debugIsCurrentlyTiming": false,
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                              "lineNumber": 88,
+                              "lineNumber": 81,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -1506,30 +1376,130 @@ ReactWrapper {
                             "expirationTime": 0,
                             "firstContextDependency": null,
                             "firstEffect": null,
-                            "index": 0,
+                            "index": 1,
                             "key": null,
                             "lastEffect": null,
                             "memoizedProps": Object {
-                              "children": "End time:",
-                              "className": "shift-info-label",
+                              "children": undefined,
+                              "className": "shift-info-entry",
                             },
                             "memoizedState": null,
                             "mode": 0,
                             "nextEffect": null,
                             "pendingProps": Object {
-                              "children": "End time:",
-                              "className": "shift-info-label",
+                              "children": undefined,
+                              "className": "shift-info-entry",
                             },
                             "ref": null,
                             "return": [Circular],
                             "selfBaseDuration": 0,
-                            "sibling": FiberNode {
-                              "_debugID": 70,
+                            "sibling": null,
+                            "stateNode": <p
+                              class="shift-info-entry"
+                            />,
+                            "tag": 5,
+                            "treeBaseDuration": 0,
+                            "type": "p",
+                            "updateQueue": null,
+                          },
+                          "stateNode": <p
+                            class="shift-info-label"
+                          >
+                            Start time:
+                          </p>,
+                          "tag": 5,
+                          "treeBaseDuration": 0,
+                          "type": "p",
+                          "updateQueue": null,
+                        },
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "elementType": "div",
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 6,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "children": Array [
+                            <p
+                              className="shift-info-label"
+                            >
+                              Start time:
+                            </p>,
+                            <p
+                              className="shift-info-entry"
+                            />,
+                          ],
+                          "className": "shift-info",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "children": Array [
+                            <p
+                              className="shift-info-label"
+                            >
+                              Start time:
+                            </p>,
+                            <p
+                              className="shift-info-entry"
+                            />,
+                          ],
+                          "className": "shift-info",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 59,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": Object {
+                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                            "lineNumber": 83,
+                          },
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "elementType": "br",
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 7,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {},
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {},
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": FiberNode {
+                            "_debugID": 60,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": Object {
+                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                              "lineNumber": 84,
+                            },
+                            "actualDuration": 0,
+                            "actualStartTime": -1,
+                            "alternate": null,
+                            "child": FiberNode {
+                              "_debugID": 69,
                               "_debugIsCurrentlyTiming": false,
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                "lineNumber": 89,
+                                "lineNumber": 85,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -1541,109 +1511,115 @@ ReactWrapper {
                               "expirationTime": 0,
                               "firstContextDependency": null,
                               "firstEffect": null,
-                              "index": 1,
+                              "index": 0,
                               "key": null,
                               "lastEffect": null,
                               "memoizedProps": Object {
-                                "children": undefined,
-                                "className": "shift-info-entry",
+                                "children": "End time:",
+                                "className": "shift-info-label",
                               },
                               "memoizedState": null,
                               "mode": 0,
                               "nextEffect": null,
                               "pendingProps": Object {
-                                "children": undefined,
-                                "className": "shift-info-entry",
+                                "children": "End time:",
+                                "className": "shift-info-label",
                               },
                               "ref": null,
                               "return": [Circular],
                               "selfBaseDuration": 0,
-                              "sibling": null,
+                              "sibling": FiberNode {
+                                "_debugID": 70,
+                                "_debugIsCurrentlyTiming": false,
+                                "_debugOwner": [Circular],
+                                "_debugSource": Object {
+                                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                  "lineNumber": 86,
+                                },
+                                "actualDuration": 0,
+                                "actualStartTime": -1,
+                                "alternate": null,
+                                "child": null,
+                                "childExpirationTime": 0,
+                                "effectTag": 0,
+                                "elementType": "p",
+                                "expirationTime": 0,
+                                "firstContextDependency": null,
+                                "firstEffect": null,
+                                "index": 1,
+                                "key": null,
+                                "lastEffect": null,
+                                "memoizedProps": Object {
+                                  "children": undefined,
+                                  "className": "shift-info-entry",
+                                },
+                                "memoizedState": null,
+                                "mode": 0,
+                                "nextEffect": null,
+                                "pendingProps": Object {
+                                  "children": undefined,
+                                  "className": "shift-info-entry",
+                                },
+                                "ref": null,
+                                "return": [Circular],
+                                "selfBaseDuration": 0,
+                                "sibling": null,
+                                "stateNode": <p
+                                  class="shift-info-entry"
+                                />,
+                                "tag": 5,
+                                "treeBaseDuration": 0,
+                                "type": "p",
+                                "updateQueue": null,
+                              },
                               "stateNode": <p
-                                class="shift-info-entry"
-                              />,
+                                class="shift-info-label"
+                              >
+                                End time:
+                              </p>,
                               "tag": 5,
                               "treeBaseDuration": 0,
                               "type": "p",
                               "updateQueue": null,
                             },
-                            "stateNode": <p
-                              class="shift-info-label"
-                            >
-                              End time:
-                            </p>,
-                            "tag": 5,
-                            "treeBaseDuration": 0,
-                            "type": "p",
-                            "updateQueue": null,
-                          },
-                          "childExpirationTime": 0,
-                          "effectTag": 0,
-                          "elementType": "div",
-                          "expirationTime": 0,
-                          "firstContextDependency": null,
-                          "firstEffect": null,
-                          "index": 7,
-                          "key": null,
-                          "lastEffect": null,
-                          "memoizedProps": Object {
-                            "children": Array [
-                              <p
-                                className="shift-info-label"
-                              >
-                                End time:
-                              </p>,
-                              <p
-                                className="shift-info-entry"
-                              />,
-                            ],
-                            "className": "shift-info",
-                          },
-                          "memoizedState": null,
-                          "mode": 0,
-                          "nextEffect": null,
-                          "pendingProps": Object {
-                            "children": Array [
-                              <p
-                                className="shift-info-label"
-                              >
-                                End time:
-                              </p>,
-                              <p
-                                className="shift-info-entry"
-                              />,
-                            ],
-                            "className": "shift-info",
-                          },
-                          "ref": null,
-                          "return": [Circular],
-                          "selfBaseDuration": 0,
-                          "sibling": FiberNode {
-                            "_debugID": 60,
-                            "_debugIsCurrentlyTiming": false,
-                            "_debugOwner": [Circular],
-                            "_debugSource": Object {
-                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                              "lineNumber": 91,
-                            },
-                            "actualDuration": 0,
-                            "actualStartTime": -1,
-                            "alternate": null,
-                            "child": null,
                             "childExpirationTime": 0,
                             "effectTag": 0,
-                            "elementType": "br",
+                            "elementType": "div",
                             "expirationTime": 0,
                             "firstContextDependency": null,
                             "firstEffect": null,
                             "index": 8,
                             "key": null,
                             "lastEffect": null,
-                            "memoizedProps": Object {},
+                            "memoizedProps": Object {
+                              "children": Array [
+                                <p
+                                  className="shift-info-label"
+                                >
+                                  End time:
+                                </p>,
+                                <p
+                                  className="shift-info-entry"
+                                />,
+                              ],
+                              "className": "shift-info",
+                            },
                             "memoizedState": null,
                             "mode": 0,
                             "nextEffect": null,
-                            "pendingProps": Object {},
+                            "pendingProps": Object {
+                              "children": Array [
+                                <p
+                                  className="shift-info-label"
+                                >
+                                  End time:
+                                </p>,
+                                <p
+                                  className="shift-info-entry"
+                                />,
+                              ],
+                              "className": "shift-info",
+                            },
                             "ref": null,
                             "return": [Circular],
                             "selfBaseDuration": 0,
@@ -1653,135 +1629,26 @@ ReactWrapper {
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                "lineNumber": 92,
+                                "lineNumber": 88,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
                               "alternate": null,
-                              "child": FiberNode {
-                                "_debugID": 71,
-                                "_debugIsCurrentlyTiming": false,
-                                "_debugOwner": [Circular],
-                                "_debugSource": Object {
-                                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 93,
-                                },
-                                "actualDuration": 0,
-                                "actualStartTime": -1,
-                                "alternate": null,
-                                "child": null,
-                                "childExpirationTime": 0,
-                                "effectTag": 0,
-                                "elementType": "button",
-                                "expirationTime": 0,
-                                "firstContextDependency": null,
-                                "firstEffect": null,
-                                "index": 0,
-                                "key": null,
-                                "lastEffect": null,
-                                "memoizedProps": Object {
-                                  "children": "Request shift swap",
-                                  "className": "custom-button",
-                                  "id": "toggle-popup-content",
-                                  "onClick": [Function],
-                                },
-                                "memoizedState": null,
-                                "mode": 0,
-                                "nextEffect": null,
-                                "pendingProps": Object {
-                                  "children": "Request shift swap",
-                                  "className": "custom-button",
-                                  "id": "toggle-popup-content",
-                                  "onClick": [Function],
-                                },
-                                "ref": null,
-                                "return": [Circular],
-                                "selfBaseDuration": 0,
-                                "sibling": FiberNode {
-                                  "_debugID": 72,
-                                  "_debugIsCurrentlyTiming": false,
-                                  "_debugOwner": [Circular],
-                                  "_debugSource": Object {
-                                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 93,
-                                  },
-                                  "actualDuration": 0,
-                                  "actualStartTime": -1,
-                                  "alternate": null,
-                                  "child": null,
-                                  "childExpirationTime": 0,
-                                  "effectTag": 0,
-                                  "elementType": "br",
-                                  "expirationTime": 0,
-                                  "firstContextDependency": null,
-                                  "firstEffect": null,
-                                  "index": 1,
-                                  "key": null,
-                                  "lastEffect": null,
-                                  "memoizedProps": Object {},
-                                  "memoizedState": null,
-                                  "mode": 0,
-                                  "nextEffect": null,
-                                  "pendingProps": Object {},
-                                  "ref": null,
-                                  "return": [Circular],
-                                  "selfBaseDuration": 0,
-                                  "sibling": null,
-                                  "stateNode": <br />,
-                                  "tag": 5,
-                                  "treeBaseDuration": 0,
-                                  "type": "br",
-                                  "updateQueue": null,
-                                },
-                                "stateNode": <button
-                                  class="custom-button"
-                                  id="toggle-popup-content"
-                                >
-                                  Request shift swap
-                                </button>,
-                                "tag": 5,
-                                "treeBaseDuration": 0,
-                                "type": "button",
-                                "updateQueue": null,
-                              },
+                              "child": null,
                               "childExpirationTime": 0,
                               "effectTag": 0,
-                              "elementType": "section",
+                              "elementType": "br",
                               "expirationTime": 0,
                               "firstContextDependency": null,
                               "firstEffect": null,
                               "index": 9,
                               "key": null,
                               "lastEffect": null,
-                              "memoizedProps": Object {
-                                "children": Array [
-                                  <button
-                                    className="custom-button"
-                                    id="toggle-popup-content"
-                                    onClick={[Function]}
-                                  >
-                                    Request shift swap
-                                  </button>,
-                                  <br />,
-                                ],
-                                "id": "toggle-popup-state",
-                              },
+                              "memoizedProps": Object {},
                               "memoizedState": null,
                               "mode": 0,
                               "nextEffect": null,
-                              "pendingProps": Object {
-                                "children": Array [
-                                  <button
-                                    className="custom-button"
-                                    id="toggle-popup-content"
-                                    onClick={[Function]}
-                                  >
-                                    Request shift swap
-                                  </button>,
-                                  <br />,
-                                ],
-                                "id": "toggle-popup-state",
-                              },
+                              "pendingProps": Object {},
                               "ref": null,
                               "return": [Circular],
                               "selfBaseDuration": 0,
@@ -1791,29 +1658,57 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 39,
+                                  "lineNumber": 89,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
                                 "alternate": null,
                                 "child": FiberNode {
-                                  "_debugID": 73,
+                                  "_debugID": 71,
                                   "_debugIsCurrentlyTiming": false,
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
                                     "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 40,
+                                    "lineNumber": 90,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
                                   "alternate": null,
-                                  "child": FiberNode {
-                                    "_debugID": 74,
+                                  "child": null,
+                                  "childExpirationTime": 0,
+                                  "effectTag": 0,
+                                  "elementType": "button",
+                                  "expirationTime": 0,
+                                  "firstContextDependency": null,
+                                  "firstEffect": null,
+                                  "index": 0,
+                                  "key": null,
+                                  "lastEffect": null,
+                                  "memoizedProps": Object {
+                                    "children": "Request shift swap",
+                                    "className": "custom-button",
+                                    "id": "toggle-popup-content",
+                                    "onClick": [Function],
+                                  },
+                                  "memoizedState": null,
+                                  "mode": 0,
+                                  "nextEffect": null,
+                                  "pendingProps": Object {
+                                    "children": "Request shift swap",
+                                    "className": "custom-button",
+                                    "id": "toggle-popup-content",
+                                    "onClick": [Function],
+                                  },
+                                  "ref": null,
+                                  "return": [Circular],
+                                  "selfBaseDuration": 0,
+                                  "sibling": FiberNode {
+                                    "_debugID": 72,
                                     "_debugIsCurrentlyTiming": false,
                                     "_debugOwner": [Circular],
                                     "_debugSource": Object {
                                       "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                      "lineNumber": 41,
+                                      "lineNumber": 39,
                                     },
                                     "actualDuration": 0,
                                     "actualStartTime": -1,
@@ -1825,7 +1720,7 @@ ReactWrapper {
                                     "expirationTime": 0,
                                     "firstContextDependency": null,
                                     "firstEffect": null,
-                                    "index": 0,
+                                    "index": 1,
                                     "key": null,
                                     "lastEffect": null,
                                     "memoizedProps": Object {
@@ -1858,60 +1753,20 @@ ReactWrapper {
                                     "type": "button",
                                     "updateQueue": null,
                                   },
-                                  "childExpirationTime": 0,
-                                  "effectTag": 0,
-                                  "elementType": "section",
-                                  "expirationTime": 0,
-                                  "firstContextDependency": null,
-                                  "firstEffect": null,
-                                  "index": 0,
-                                  "key": null,
-                                  "lastEffect": null,
-                                  "memoizedProps": Object {
-                                    "children": <button
-                                      className="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request emergency cover
-                                    </button>,
-                                    "id": "toggle-popup-state",
-                                  },
-                                  "memoizedState": null,
-                                  "mode": 0,
-                                  "nextEffect": null,
-                                  "pendingProps": Object {
-                                    "children": <button
-                                      className="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request emergency cover
-                                    </button>,
-                                    "id": "toggle-popup-state",
-                                  },
-                                  "ref": null,
-                                  "return": [Circular],
-                                  "selfBaseDuration": 0,
-                                  "sibling": null,
-                                  "stateNode": <section
-                                    id="toggle-popup-state"
+                                  "stateNode": <button
+                                    class="custom-button"
+                                    id="toggle-popup-content"
                                   >
-                                    <button
-                                      class="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                    >
-                                      Request emergency cover
-                                    </button>
-                                  </section>,
+                                    Request shift swap
+                                  </button>,
                                   "tag": 5,
                                   "treeBaseDuration": 0,
-                                  "type": "section",
+                                  "type": "button",
                                   "updateQueue": null,
                                 },
                                 "childExpirationTime": 0,
                                 "effectTag": 0,
-                                "elementType": "div",
+                                "elementType": "section",
                                 "expirationTime": 0,
                                 "firstContextDependency": null,
                                 "firstEffect": null,
@@ -1919,161 +1774,167 @@ ReactWrapper {
                                 "key": null,
                                 "lastEffect": null,
                                 "memoizedProps": Object {
-                                  "children": <section
-                                    id="toggle-popup-state"
-                                  >
+                                  "children": Array [
+                                    <button
+                                      className="custom-button"
+                                      id="toggle-popup-content"
+                                      onClick={[Function]}
+                                    >
+                                      Request shift swap
+                                    </button>,
                                     <button
                                       className="custom-button"
                                       id="toggle-emergency-popup-content"
                                       onClick={[Function]}
                                     >
                                       Request emergency cover
-                                    </button>
-                                  </section>,
+                                    </button>,
+                                  ],
+                                  "id": "toggle-popup-state",
                                 },
                                 "memoizedState": null,
                                 "mode": 0,
                                 "nextEffect": null,
                                 "pendingProps": Object {
-                                  "children": <section
-                                    id="toggle-popup-state"
-                                  >
+                                  "children": Array [
+                                    <button
+                                      className="custom-button"
+                                      id="toggle-popup-content"
+                                      onClick={[Function]}
+                                    >
+                                      Request shift swap
+                                    </button>,
                                     <button
                                       className="custom-button"
                                       id="toggle-emergency-popup-content"
                                       onClick={[Function]}
                                     >
                                       Request emergency cover
-                                    </button>
-                                  </section>,
+                                    </button>,
+                                  ],
+                                  "id": "toggle-popup-state",
                                 },
                                 "ref": null,
                                 "return": [Circular],
                                 "selfBaseDuration": 0,
                                 "sibling": null,
-                                "stateNode": <div>
-                                  <section
-                                    id="toggle-popup-state"
+                                "stateNode": <section
+                                  id="toggle-popup-state"
+                                >
+                                  <button
+                                    class="custom-button"
+                                    id="toggle-popup-content"
                                   >
-                                    <button
-                                      class="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                    >
-                                      Request emergency cover
-                                    </button>
-                                  </section>
-                                </div>,
+                                    Request shift swap
+                                  </button>
+                                  <button
+                                    class="custom-button"
+                                    id="toggle-emergency-popup-content"
+                                  >
+                                    Request emergency cover
+                                  </button>
+                                </section>,
                                 "tag": 5,
                                 "treeBaseDuration": 0,
-                                "type": "div",
+                                "type": "section",
                                 "updateQueue": null,
                               },
-                              "stateNode": <section
-                                id="toggle-popup-state"
-                              >
-                                <button
-                                  class="custom-button"
-                                  id="toggle-popup-content"
-                                >
-                                  Request shift swap
-                                </button>
-                                <br />
-                              </section>,
+                              "stateNode": <br />,
                               "tag": 5,
                               "treeBaseDuration": 0,
-                              "type": "section",
+                              "type": "br",
                               "updateQueue": null,
                             },
-                            "stateNode": <br />,
+                            "stateNode": <div
+                              class="shift-info"
+                            >
+                              <p
+                                class="shift-info-label"
+                              >
+                                End time:
+                              </p>
+                              <p
+                                class="shift-info-entry"
+                              />
+                            </div>,
                             "tag": 5,
                             "treeBaseDuration": 0,
-                            "type": "br",
+                            "type": "div",
                             "updateQueue": null,
                           },
-                          "stateNode": <div
-                            class="shift-info"
-                          >
-                            <p
-                              class="shift-info-label"
-                            >
-                              End time:
-                            </p>
-                            <p
-                              class="shift-info-entry"
-                            />
-                          </div>,
+                          "stateNode": <br />,
                           "tag": 5,
                           "treeBaseDuration": 0,
-                          "type": "div",
+                          "type": "br",
                           "updateQueue": null,
                         },
-                        "stateNode": <br />,
+                        "stateNode": <div
+                          class="shift-info"
+                        >
+                          <p
+                            class="shift-info-label"
+                          >
+                            Start time:
+                          </p>
+                          <p
+                            class="shift-info-entry"
+                          />
+                        </div>,
                         "tag": 5,
                         "treeBaseDuration": 0,
-                        "type": "br",
+                        "type": "div",
                         "updateQueue": null,
                       },
-                      "stateNode": <div
-                        class="shift-info"
-                      >
-                        <p
-                          class="shift-info-label"
-                        >
-                          Start time:
-                        </p>
-                        <p
-                          class="shift-info-entry"
-                        />
-                      </div>,
+                      "stateNode": <br />,
                       "tag": 5,
                       "treeBaseDuration": 0,
-                      "type": "div",
+                      "type": "br",
                       "updateQueue": null,
                     },
-                    "stateNode": <br />,
+                    "stateNode": <div
+                      class="shift-info"
+                    >
+                      <p
+                        class="shift-info-label"
+                      >
+                        Contact email address:
+                      </p>
+                      <p
+                        class="shift-info-entry"
+                      />
+                    </div>,
                     "tag": 5,
                     "treeBaseDuration": 0,
-                    "type": "br",
+                    "type": "div",
                     "updateQueue": null,
                   },
-                  "stateNode": <div
-                    class="shift-info"
-                  >
-                    <p
-                      class="shift-info-label"
-                    >
-                      Contact email address:
-                    </p>
-                    <p
-                      class="shift-info-entry"
-                    />
-                  </div>,
+                  "stateNode": <br />,
                   "tag": 5,
                   "treeBaseDuration": 0,
-                  "type": "div",
+                  "type": "br",
                   "updateQueue": null,
                 },
-                "stateNode": <br />,
+                "stateNode": <div
+                  class="shift-info"
+                >
+                  <p
+                    class="shift-info-label"
+                  >
+                    Employee name:
+                  </p>
+                  <p
+                    class="shift-info-entry"
+                  />
+                </div>,
                 "tag": 5,
                 "treeBaseDuration": 0,
-                "type": "br",
+                "type": "div",
                 "updateQueue": null,
               },
-              "stateNode": <div
-                class="shift-info"
-              >
-                <p
-                  class="shift-info-label"
-                >
-                  Employee name:
-                </p>
-                <p
-                  class="shift-info-entry"
-                />
-              </div>,
+              "stateNode": <br />,
               "tag": 5,
               "treeBaseDuration": 0,
-              "type": "div",
+              "type": "br",
               "updateQueue": null,
             },
             "stateNode": <h3
@@ -2102,6 +1963,7 @@ ReactWrapper {
               >
                 Shift Information
               </h3>,
+              <br />,
               <div
                 className="shift-info"
               >
@@ -2164,21 +2026,14 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>
-                <br />
-              </section>,
-              <div>
-                <section
-                  id="toggle-popup-state"
+                <button
+                  className="custom-button"
+                  id="toggle-emergency-popup-content"
+                  onClick={[Function]}
                 >
-                  <button
-                    className="custom-button"
-                    id="toggle-emergency-popup-content"
-                    onClick={[Function]}
-                  >
-                    Request emergency cover
-                  </button>
-                </section>
-              </div>,
+                  Request emergency cover
+                </button>
+              </section>,
             ],
             "id": "shift-popup",
           },
@@ -2192,6 +2047,7 @@ ReactWrapper {
               >
                 Shift Information
               </h3>,
+              <br />,
               <div
                 className="shift-info"
               >
@@ -2254,21 +2110,14 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>
-                <br />
-              </section>,
-              <div>
-                <section
-                  id="toggle-popup-state"
+                <button
+                  className="custom-button"
+                  id="toggle-emergency-popup-content"
+                  onClick={[Function]}
                 >
-                  <button
-                    className="custom-button"
-                    id="toggle-emergency-popup-content"
-                    onClick={[Function]}
-                  >
-                    Request emergency cover
-                  </button>
-                </section>
-              </div>,
+                  Request emergency cover
+                </button>
+              </section>,
             ],
             "id": "shift-popup",
           },
@@ -2284,6 +2133,7 @@ ReactWrapper {
             >
               Shift Information
             </h3>
+            <br />
             <div
               class="shift-info"
             >
@@ -2345,20 +2195,13 @@ ReactWrapper {
               >
                 Request shift swap
               </button>
-              <br />
-            </section>
-            <div>
-              <section
-                id="toggle-popup-state"
+              <button
+                class="custom-button"
+                id="toggle-emergency-popup-content"
               >
-                <button
-                  class="custom-button"
-                  id="toggle-emergency-popup-content"
-                >
-                  Request emergency cover
-                </button>
-              </section>
-            </div>
+                Request emergency cover
+              </button>
+            </section>
           </div>,
           "tag": 5,
           "treeBaseDuration": 0,
@@ -2498,6 +2341,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -2559,20 +2403,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -2709,6 +2546,7 @@ ReactWrapper {
                   >
                     Shift Information
                   </h3>
+                  <br />
                   <div
                     class="shift-info"
                   >
@@ -2770,20 +2608,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -2901,6 +2732,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -2962,20 +2794,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -3112,6 +2937,7 @@ ReactWrapper {
                   >
                     Shift Information
                   </h3>
+                  <br />
                   <div
                     class="shift-info"
                   >
@@ -3173,20 +2999,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -3369,6 +3188,7 @@ ReactWrapper {
         >
           Shift Information
         </h3>
+        <br />
         <div
           class="shift-info"
         >
@@ -3430,20 +3250,13 @@ ReactWrapper {
           >
             Request shift swap
           </button>
-          <br />
-        </section>
-        <div>
-          <section
-            id="toggle-popup-state"
+          <button
+            class="custom-button"
+            id="toggle-emergency-popup-content"
           >
-            <button
-              class="custom-button"
-              id="toggle-emergency-popup-content"
-            >
-              Request emergency cover
-            </button>
-          </section>
-        </div>
+            Request emergency cover
+          </button>
+        </section>
       </div>,
       "key": undefined,
       "nodeType": "host",
@@ -3454,6 +3267,7 @@ ReactWrapper {
           >
             Shift Information
           </h3>,
+          <br />,
           <div
             className="shift-info"
           >
@@ -3516,21 +3330,14 @@ ReactWrapper {
             >
               Request shift swap
             </button>
-            <br />
-          </section>,
-          <div>
-            <section
-              id="toggle-popup-state"
+            <button
+              className="custom-button"
+              id="toggle-emergency-popup-content"
+              onClick={[Function]}
             >
-              <button
-                className="custom-button"
-                id="toggle-emergency-popup-content"
-                onClick={[Function]}
-              >
-                Request emergency cover
-              </button>
-            </section>
-          </div>,
+              Request emergency cover
+            </button>
+          </section>,
         ],
         "id": "shift-popup",
       },
@@ -3553,6 +3360,17 @@ ReactWrapper {
             "Shift Information",
           ],
           "type": "h3",
+        },
+        Object {
+          "instance": <br />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "br",
         },
         Object {
           "instance": <div
@@ -3876,7 +3694,12 @@ ReactWrapper {
             >
               Request shift swap
             </button>
-            <br />
+            <button
+              class="custom-button"
+              id="toggle-emergency-popup-content"
+            >
+              Request emergency cover
+            </button>
           </section>,
           "key": undefined,
           "nodeType": "host",
@@ -3889,7 +3712,13 @@ ReactWrapper {
               >
                 Request shift swap
               </button>,
-              <br />,
+              <button
+                className="custom-button"
+                id="toggle-emergency-popup-content"
+                onClick={[Function]}
+              >
+                Request emergency cover
+              </button>,
             ],
             "id": "toggle-popup-state",
           },
@@ -3917,100 +3746,28 @@ ReactWrapper {
               "type": "button",
             },
             Object {
-              "instance": <br />,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": Array [
-                undefined,
-              ],
-              "type": "br",
-            },
-          ],
-          "type": "section",
-        },
-        Object {
-          "instance": <div>
-            <section
-              id="toggle-popup-state"
-            >
-              <button
+              "instance": <button
                 class="custom-button"
                 id="toggle-emergency-popup-content"
               >
                 Request emergency cover
-              </button>
-            </section>
-          </div>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <section
-              id="toggle-popup-state"
-            >
-              <button
-                className="custom-button"
-                id="toggle-emergency-popup-content"
-                onClick={[Function]}
-              >
-                Request emergency cover
-              </button>
-            </section>,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": <section
-                id="toggle-popup-state"
-              >
-                <button
-                  class="custom-button"
-                  id="toggle-emergency-popup-content"
-                >
-                  Request emergency cover
-                </button>
-              </section>,
+              </button>,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <button
-                  className="custom-button"
-                  id="toggle-emergency-popup-content"
-                  onClick={[Function]}
-                >
-                  Request emergency cover
-                </button>,
-                "id": "toggle-popup-state",
+                "children": "Request emergency cover",
+                "className": "custom-button",
+                "id": "toggle-emergency-popup-content",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": Array [
-                Object {
-                  "instance": <button
-                    class="custom-button"
-                    id="toggle-emergency-popup-content"
-                  >
-                    Request emergency cover
-                  </button>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Request emergency cover",
-                    "className": "custom-button",
-                    "id": "toggle-emergency-popup-content",
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Request emergency cover",
-                  ],
-                  "type": "button",
-                },
+                "Request emergency cover",
               ],
-              "type": "section",
+              "type": "button",
             },
           ],
-          "type": "div",
+          "type": "section",
         },
       ],
       "type": "div",
@@ -4116,6 +3873,7 @@ ReactWrapper {
                       >
                         Shift Information
                       </h3>
+                      <br />
                       <div
                         class="shift-info"
                       >
@@ -4177,20 +3935,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -4327,6 +4078,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -4388,20 +4140,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -4519,6 +4264,7 @@ ReactWrapper {
                       >
                         Shift Information
                       </h3>
+                      <br />
                       <div
                         class="shift-info"
                       >
@@ -4580,20 +4326,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -4730,6 +4469,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -4791,20 +4531,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -4921,7 +4654,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-              "lineNumber": 70,
+              "lineNumber": 66,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -4932,7 +4665,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                "lineNumber": 71,
+                "lineNumber": 67,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -4967,53 +4700,47 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                  "lineNumber": 72,
+                  "lineNumber": 68,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
                 "alternate": null,
-                "child": FiberNode {
-                  "_debugID": 63,
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "br",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {},
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {},
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugID": 54,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
                     "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                    "lineNumber": 73,
+                    "lineNumber": 69,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
                   "alternate": null,
-                  "child": null,
-                  "childExpirationTime": 0,
-                  "effectTag": 0,
-                  "elementType": "p",
-                  "expirationTime": 0,
-                  "firstContextDependency": null,
-                  "firstEffect": null,
-                  "index": 0,
-                  "key": null,
-                  "lastEffect": null,
-                  "memoizedProps": Object {
-                    "children": "Employee name:",
-                    "className": "shift-info-label",
-                  },
-                  "memoizedState": null,
-                  "mode": 0,
-                  "nextEffect": null,
-                  "pendingProps": Object {
-                    "children": "Employee name:",
-                    "className": "shift-info-label",
-                  },
-                  "ref": null,
-                  "return": [Circular],
-                  "selfBaseDuration": 0,
-                  "sibling": FiberNode {
-                    "_debugID": 64,
+                  "child": FiberNode {
+                    "_debugID": 63,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
                       "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                      "lineNumber": 74,
+                      "lineNumber": 70,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -5025,130 +4752,30 @@ ReactWrapper {
                     "expirationTime": 0,
                     "firstContextDependency": null,
                     "firstEffect": null,
-                    "index": 1,
+                    "index": 0,
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "children": undefined,
-                      "className": "shift-info-entry",
+                      "children": "Employee name:",
+                      "className": "shift-info-label",
                     },
                     "memoizedState": null,
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "children": undefined,
-                      "className": "shift-info-entry",
+                      "children": "Employee name:",
+                      "className": "shift-info-label",
                     },
                     "ref": null,
                     "return": [Circular],
                     "selfBaseDuration": 0,
-                    "sibling": null,
-                    "stateNode": <p
-                      class="shift-info-entry"
-                    />,
-                    "tag": 5,
-                    "treeBaseDuration": 0,
-                    "type": "p",
-                    "updateQueue": null,
-                  },
-                  "stateNode": <p
-                    class="shift-info-label"
-                  >
-                    Employee name:
-                  </p>,
-                  "tag": 5,
-                  "treeBaseDuration": 0,
-                  "type": "p",
-                  "updateQueue": null,
-                },
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": "div",
-                "expirationTime": 0,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 1,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {
-                  "children": Array [
-                    <p
-                      className="shift-info-label"
-                    >
-                      Employee name:
-                    </p>,
-                    <p
-                      className="shift-info-entry"
-                    />,
-                  ],
-                  "className": "shift-info",
-                },
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {
-                  "children": Array [
-                    <p
-                      className="shift-info-label"
-                    >
-                      Employee name:
-                    </p>,
-                    <p
-                      className="shift-info-entry"
-                    />,
-                  ],
-                  "className": "shift-info",
-                },
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": FiberNode {
-                  "_debugID": 54,
-                  "_debugIsCurrentlyTiming": false,
-                  "_debugOwner": [Circular],
-                  "_debugSource": Object {
-                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                    "lineNumber": 76,
-                  },
-                  "actualDuration": 0,
-                  "actualStartTime": -1,
-                  "alternate": null,
-                  "child": null,
-                  "childExpirationTime": 0,
-                  "effectTag": 0,
-                  "elementType": "br",
-                  "expirationTime": 0,
-                  "firstContextDependency": null,
-                  "firstEffect": null,
-                  "index": 2,
-                  "key": null,
-                  "lastEffect": null,
-                  "memoizedProps": Object {},
-                  "memoizedState": null,
-                  "mode": 0,
-                  "nextEffect": null,
-                  "pendingProps": Object {},
-                  "ref": null,
-                  "return": [Circular],
-                  "selfBaseDuration": 0,
-                  "sibling": FiberNode {
-                    "_debugID": 55,
-                    "_debugIsCurrentlyTiming": false,
-                    "_debugOwner": [Circular],
-                    "_debugSource": Object {
-                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                      "lineNumber": 77,
-                    },
-                    "actualDuration": 0,
-                    "actualStartTime": -1,
-                    "alternate": null,
-                    "child": FiberNode {
-                      "_debugID": 65,
+                    "sibling": FiberNode {
+                      "_debugID": 64,
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
                         "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                        "lineNumber": 78,
+                        "lineNumber": 71,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -5160,30 +4787,130 @@ ReactWrapper {
                       "expirationTime": 0,
                       "firstContextDependency": null,
                       "firstEffect": null,
-                      "index": 0,
+                      "index": 1,
                       "key": null,
                       "lastEffect": null,
                       "memoizedProps": Object {
-                        "children": "Contact email address:",
-                        "className": "shift-info-label",
+                        "children": undefined,
+                        "className": "shift-info-entry",
                       },
                       "memoizedState": null,
                       "mode": 0,
                       "nextEffect": null,
                       "pendingProps": Object {
-                        "children": "Contact email address:",
-                        "className": "shift-info-label",
+                        "children": undefined,
+                        "className": "shift-info-entry",
                       },
                       "ref": null,
                       "return": [Circular],
                       "selfBaseDuration": 0,
-                      "sibling": FiberNode {
-                        "_debugID": 66,
+                      "sibling": null,
+                      "stateNode": <p
+                        class="shift-info-entry"
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "p",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <p
+                      class="shift-info-label"
+                    >
+                      Employee name:
+                    </p>,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "p",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "div",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 2,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <p
+                        className="shift-info-label"
+                      >
+                        Employee name:
+                      </p>,
+                      <p
+                        className="shift-info-entry"
+                      />,
+                    ],
+                    "className": "shift-info",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      <p
+                        className="shift-info-label"
+                      >
+                        Employee name:
+                      </p>,
+                      <p
+                        className="shift-info-entry"
+                      />,
+                    ],
+                    "className": "shift-info",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 55,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                      "lineNumber": 73,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "br",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 3,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {},
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {},
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 56,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                        "lineNumber": 74,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": FiberNode {
+                        "_debugID": 65,
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                          "lineNumber": 79,
+                          "lineNumber": 75,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -5195,130 +4922,30 @@ ReactWrapper {
                         "expirationTime": 0,
                         "firstContextDependency": null,
                         "firstEffect": null,
-                        "index": 1,
+                        "index": 0,
                         "key": null,
                         "lastEffect": null,
                         "memoizedProps": Object {
-                          "children": undefined,
-                          "className": "shift-info-entry",
+                          "children": "Contact email address:",
+                          "className": "shift-info-label",
                         },
                         "memoizedState": null,
                         "mode": 0,
                         "nextEffect": null,
                         "pendingProps": Object {
-                          "children": undefined,
-                          "className": "shift-info-entry",
+                          "children": "Contact email address:",
+                          "className": "shift-info-label",
                         },
                         "ref": null,
                         "return": [Circular],
                         "selfBaseDuration": 0,
-                        "sibling": null,
-                        "stateNode": <p
-                          class="shift-info-entry"
-                        />,
-                        "tag": 5,
-                        "treeBaseDuration": 0,
-                        "type": "p",
-                        "updateQueue": null,
-                      },
-                      "stateNode": <p
-                        class="shift-info-label"
-                      >
-                        Contact email address:
-                      </p>,
-                      "tag": 5,
-                      "treeBaseDuration": 0,
-                      "type": "p",
-                      "updateQueue": null,
-                    },
-                    "childExpirationTime": 0,
-                    "effectTag": 0,
-                    "elementType": "div",
-                    "expirationTime": 0,
-                    "firstContextDependency": null,
-                    "firstEffect": null,
-                    "index": 3,
-                    "key": null,
-                    "lastEffect": null,
-                    "memoizedProps": Object {
-                      "children": Array [
-                        <p
-                          className="shift-info-label"
-                        >
-                          Contact email address:
-                        </p>,
-                        <p
-                          className="shift-info-entry"
-                        />,
-                      ],
-                      "className": "shift-info",
-                    },
-                    "memoizedState": null,
-                    "mode": 0,
-                    "nextEffect": null,
-                    "pendingProps": Object {
-                      "children": Array [
-                        <p
-                          className="shift-info-label"
-                        >
-                          Contact email address:
-                        </p>,
-                        <p
-                          className="shift-info-entry"
-                        />,
-                      ],
-                      "className": "shift-info",
-                    },
-                    "ref": null,
-                    "return": [Circular],
-                    "selfBaseDuration": 0,
-                    "sibling": FiberNode {
-                      "_debugID": 56,
-                      "_debugIsCurrentlyTiming": false,
-                      "_debugOwner": [Circular],
-                      "_debugSource": Object {
-                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                        "lineNumber": 81,
-                      },
-                      "actualDuration": 0,
-                      "actualStartTime": -1,
-                      "alternate": null,
-                      "child": null,
-                      "childExpirationTime": 0,
-                      "effectTag": 0,
-                      "elementType": "br",
-                      "expirationTime": 0,
-                      "firstContextDependency": null,
-                      "firstEffect": null,
-                      "index": 4,
-                      "key": null,
-                      "lastEffect": null,
-                      "memoizedProps": Object {},
-                      "memoizedState": null,
-                      "mode": 0,
-                      "nextEffect": null,
-                      "pendingProps": Object {},
-                      "ref": null,
-                      "return": [Circular],
-                      "selfBaseDuration": 0,
-                      "sibling": FiberNode {
-                        "_debugID": 57,
-                        "_debugIsCurrentlyTiming": false,
-                        "_debugOwner": [Circular],
-                        "_debugSource": Object {
-                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                          "lineNumber": 82,
-                        },
-                        "actualDuration": 0,
-                        "actualStartTime": -1,
-                        "alternate": null,
-                        "child": FiberNode {
-                          "_debugID": 67,
+                        "sibling": FiberNode {
+                          "_debugID": 66,
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                            "lineNumber": 83,
+                            "lineNumber": 76,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -5330,30 +4957,130 @@ ReactWrapper {
                           "expirationTime": 0,
                           "firstContextDependency": null,
                           "firstEffect": null,
-                          "index": 0,
+                          "index": 1,
                           "key": null,
                           "lastEffect": null,
                           "memoizedProps": Object {
-                            "children": "Start time:",
-                            "className": "shift-info-label",
+                            "children": undefined,
+                            "className": "shift-info-entry",
                           },
                           "memoizedState": null,
                           "mode": 0,
                           "nextEffect": null,
                           "pendingProps": Object {
-                            "children": "Start time:",
-                            "className": "shift-info-label",
+                            "children": undefined,
+                            "className": "shift-info-entry",
                           },
                           "ref": null,
                           "return": [Circular],
                           "selfBaseDuration": 0,
-                          "sibling": FiberNode {
-                            "_debugID": 68,
+                          "sibling": null,
+                          "stateNode": <p
+                            class="shift-info-entry"
+                          />,
+                          "tag": 5,
+                          "treeBaseDuration": 0,
+                          "type": "p",
+                          "updateQueue": null,
+                        },
+                        "stateNode": <p
+                          class="shift-info-label"
+                        >
+                          Contact email address:
+                        </p>,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "p",
+                        "updateQueue": null,
+                      },
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "div",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 4,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": Array [
+                          <p
+                            className="shift-info-label"
+                          >
+                            Contact email address:
+                          </p>,
+                          <p
+                            className="shift-info-entry"
+                          />,
+                        ],
+                        "className": "shift-info",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": Array [
+                          <p
+                            className="shift-info-label"
+                          >
+                            Contact email address:
+                          </p>,
+                          <p
+                            className="shift-info-entry"
+                          />,
+                        ],
+                        "className": "shift-info",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 57,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                          "lineNumber": 78,
+                        },
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "elementType": "br",
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 5,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {},
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {},
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 58,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": Object {
+                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                            "lineNumber": 79,
+                          },
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": FiberNode {
+                            "_debugID": 67,
                             "_debugIsCurrentlyTiming": false,
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
                               "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                              "lineNumber": 84,
+                              "lineNumber": 80,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -5365,130 +5092,30 @@ ReactWrapper {
                             "expirationTime": 0,
                             "firstContextDependency": null,
                             "firstEffect": null,
-                            "index": 1,
+                            "index": 0,
                             "key": null,
                             "lastEffect": null,
                             "memoizedProps": Object {
-                              "children": undefined,
-                              "className": "shift-info-entry",
+                              "children": "Start time:",
+                              "className": "shift-info-label",
                             },
                             "memoizedState": null,
                             "mode": 0,
                             "nextEffect": null,
                             "pendingProps": Object {
-                              "children": undefined,
-                              "className": "shift-info-entry",
+                              "children": "Start time:",
+                              "className": "shift-info-label",
                             },
                             "ref": null,
                             "return": [Circular],
                             "selfBaseDuration": 0,
-                            "sibling": null,
-                            "stateNode": <p
-                              class="shift-info-entry"
-                            />,
-                            "tag": 5,
-                            "treeBaseDuration": 0,
-                            "type": "p",
-                            "updateQueue": null,
-                          },
-                          "stateNode": <p
-                            class="shift-info-label"
-                          >
-                            Start time:
-                          </p>,
-                          "tag": 5,
-                          "treeBaseDuration": 0,
-                          "type": "p",
-                          "updateQueue": null,
-                        },
-                        "childExpirationTime": 0,
-                        "effectTag": 0,
-                        "elementType": "div",
-                        "expirationTime": 0,
-                        "firstContextDependency": null,
-                        "firstEffect": null,
-                        "index": 5,
-                        "key": null,
-                        "lastEffect": null,
-                        "memoizedProps": Object {
-                          "children": Array [
-                            <p
-                              className="shift-info-label"
-                            >
-                              Start time:
-                            </p>,
-                            <p
-                              className="shift-info-entry"
-                            />,
-                          ],
-                          "className": "shift-info",
-                        },
-                        "memoizedState": null,
-                        "mode": 0,
-                        "nextEffect": null,
-                        "pendingProps": Object {
-                          "children": Array [
-                            <p
-                              className="shift-info-label"
-                            >
-                              Start time:
-                            </p>,
-                            <p
-                              className="shift-info-entry"
-                            />,
-                          ],
-                          "className": "shift-info",
-                        },
-                        "ref": null,
-                        "return": [Circular],
-                        "selfBaseDuration": 0,
-                        "sibling": FiberNode {
-                          "_debugID": 58,
-                          "_debugIsCurrentlyTiming": false,
-                          "_debugOwner": [Circular],
-                          "_debugSource": Object {
-                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                            "lineNumber": 86,
-                          },
-                          "actualDuration": 0,
-                          "actualStartTime": -1,
-                          "alternate": null,
-                          "child": null,
-                          "childExpirationTime": 0,
-                          "effectTag": 0,
-                          "elementType": "br",
-                          "expirationTime": 0,
-                          "firstContextDependency": null,
-                          "firstEffect": null,
-                          "index": 6,
-                          "key": null,
-                          "lastEffect": null,
-                          "memoizedProps": Object {},
-                          "memoizedState": null,
-                          "mode": 0,
-                          "nextEffect": null,
-                          "pendingProps": Object {},
-                          "ref": null,
-                          "return": [Circular],
-                          "selfBaseDuration": 0,
-                          "sibling": FiberNode {
-                            "_debugID": 59,
-                            "_debugIsCurrentlyTiming": false,
-                            "_debugOwner": [Circular],
-                            "_debugSource": Object {
-                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                              "lineNumber": 87,
-                            },
-                            "actualDuration": 0,
-                            "actualStartTime": -1,
-                            "alternate": null,
-                            "child": FiberNode {
-                              "_debugID": 69,
+                            "sibling": FiberNode {
+                              "_debugID": 68,
                               "_debugIsCurrentlyTiming": false,
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
                                 "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                "lineNumber": 88,
+                                "lineNumber": 81,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -5500,30 +5127,130 @@ ReactWrapper {
                               "expirationTime": 0,
                               "firstContextDependency": null,
                               "firstEffect": null,
-                              "index": 0,
+                              "index": 1,
                               "key": null,
                               "lastEffect": null,
                               "memoizedProps": Object {
-                                "children": "End time:",
-                                "className": "shift-info-label",
+                                "children": undefined,
+                                "className": "shift-info-entry",
                               },
                               "memoizedState": null,
                               "mode": 0,
                               "nextEffect": null,
                               "pendingProps": Object {
-                                "children": "End time:",
-                                "className": "shift-info-label",
+                                "children": undefined,
+                                "className": "shift-info-entry",
                               },
                               "ref": null,
                               "return": [Circular],
                               "selfBaseDuration": 0,
-                              "sibling": FiberNode {
-                                "_debugID": 70,
+                              "sibling": null,
+                              "stateNode": <p
+                                class="shift-info-entry"
+                              />,
+                              "tag": 5,
+                              "treeBaseDuration": 0,
+                              "type": "p",
+                              "updateQueue": null,
+                            },
+                            "stateNode": <p
+                              class="shift-info-label"
+                            >
+                              Start time:
+                            </p>,
+                            "tag": 5,
+                            "treeBaseDuration": 0,
+                            "type": "p",
+                            "updateQueue": null,
+                          },
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "elementType": "div",
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 6,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "children": Array [
+                              <p
+                                className="shift-info-label"
+                              >
+                                Start time:
+                              </p>,
+                              <p
+                                className="shift-info-entry"
+                              />,
+                            ],
+                            "className": "shift-info",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "children": Array [
+                              <p
+                                className="shift-info-label"
+                              >
+                                Start time:
+                              </p>,
+                              <p
+                                className="shift-info-entry"
+                              />,
+                            ],
+                            "className": "shift-info",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": FiberNode {
+                            "_debugID": 59,
+                            "_debugIsCurrentlyTiming": false,
+                            "_debugOwner": [Circular],
+                            "_debugSource": Object {
+                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                              "lineNumber": 83,
+                            },
+                            "actualDuration": 0,
+                            "actualStartTime": -1,
+                            "alternate": null,
+                            "child": null,
+                            "childExpirationTime": 0,
+                            "effectTag": 0,
+                            "elementType": "br",
+                            "expirationTime": 0,
+                            "firstContextDependency": null,
+                            "firstEffect": null,
+                            "index": 7,
+                            "key": null,
+                            "lastEffect": null,
+                            "memoizedProps": Object {},
+                            "memoizedState": null,
+                            "mode": 0,
+                            "nextEffect": null,
+                            "pendingProps": Object {},
+                            "ref": null,
+                            "return": [Circular],
+                            "selfBaseDuration": 0,
+                            "sibling": FiberNode {
+                              "_debugID": 60,
+                              "_debugIsCurrentlyTiming": false,
+                              "_debugOwner": [Circular],
+                              "_debugSource": Object {
+                                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                "lineNumber": 84,
+                              },
+                              "actualDuration": 0,
+                              "actualStartTime": -1,
+                              "alternate": null,
+                              "child": FiberNode {
+                                "_debugID": 69,
                                 "_debugIsCurrentlyTiming": false,
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 89,
+                                  "lineNumber": 85,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -5535,109 +5262,115 @@ ReactWrapper {
                                 "expirationTime": 0,
                                 "firstContextDependency": null,
                                 "firstEffect": null,
-                                "index": 1,
+                                "index": 0,
                                 "key": null,
                                 "lastEffect": null,
                                 "memoizedProps": Object {
-                                  "children": undefined,
-                                  "className": "shift-info-entry",
+                                  "children": "End time:",
+                                  "className": "shift-info-label",
                                 },
                                 "memoizedState": null,
                                 "mode": 0,
                                 "nextEffect": null,
                                 "pendingProps": Object {
-                                  "children": undefined,
-                                  "className": "shift-info-entry",
+                                  "children": "End time:",
+                                  "className": "shift-info-label",
                                 },
                                 "ref": null,
                                 "return": [Circular],
                                 "selfBaseDuration": 0,
-                                "sibling": null,
+                                "sibling": FiberNode {
+                                  "_debugID": 70,
+                                  "_debugIsCurrentlyTiming": false,
+                                  "_debugOwner": [Circular],
+                                  "_debugSource": Object {
+                                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                    "lineNumber": 86,
+                                  },
+                                  "actualDuration": 0,
+                                  "actualStartTime": -1,
+                                  "alternate": null,
+                                  "child": null,
+                                  "childExpirationTime": 0,
+                                  "effectTag": 0,
+                                  "elementType": "p",
+                                  "expirationTime": 0,
+                                  "firstContextDependency": null,
+                                  "firstEffect": null,
+                                  "index": 1,
+                                  "key": null,
+                                  "lastEffect": null,
+                                  "memoizedProps": Object {
+                                    "children": undefined,
+                                    "className": "shift-info-entry",
+                                  },
+                                  "memoizedState": null,
+                                  "mode": 0,
+                                  "nextEffect": null,
+                                  "pendingProps": Object {
+                                    "children": undefined,
+                                    "className": "shift-info-entry",
+                                  },
+                                  "ref": null,
+                                  "return": [Circular],
+                                  "selfBaseDuration": 0,
+                                  "sibling": null,
+                                  "stateNode": <p
+                                    class="shift-info-entry"
+                                  />,
+                                  "tag": 5,
+                                  "treeBaseDuration": 0,
+                                  "type": "p",
+                                  "updateQueue": null,
+                                },
                                 "stateNode": <p
-                                  class="shift-info-entry"
-                                />,
+                                  class="shift-info-label"
+                                >
+                                  End time:
+                                </p>,
                                 "tag": 5,
                                 "treeBaseDuration": 0,
                                 "type": "p",
                                 "updateQueue": null,
                               },
-                              "stateNode": <p
-                                class="shift-info-label"
-                              >
-                                End time:
-                              </p>,
-                              "tag": 5,
-                              "treeBaseDuration": 0,
-                              "type": "p",
-                              "updateQueue": null,
-                            },
-                            "childExpirationTime": 0,
-                            "effectTag": 0,
-                            "elementType": "div",
-                            "expirationTime": 0,
-                            "firstContextDependency": null,
-                            "firstEffect": null,
-                            "index": 7,
-                            "key": null,
-                            "lastEffect": null,
-                            "memoizedProps": Object {
-                              "children": Array [
-                                <p
-                                  className="shift-info-label"
-                                >
-                                  End time:
-                                </p>,
-                                <p
-                                  className="shift-info-entry"
-                                />,
-                              ],
-                              "className": "shift-info",
-                            },
-                            "memoizedState": null,
-                            "mode": 0,
-                            "nextEffect": null,
-                            "pendingProps": Object {
-                              "children": Array [
-                                <p
-                                  className="shift-info-label"
-                                >
-                                  End time:
-                                </p>,
-                                <p
-                                  className="shift-info-entry"
-                                />,
-                              ],
-                              "className": "shift-info",
-                            },
-                            "ref": null,
-                            "return": [Circular],
-                            "selfBaseDuration": 0,
-                            "sibling": FiberNode {
-                              "_debugID": 60,
-                              "_debugIsCurrentlyTiming": false,
-                              "_debugOwner": [Circular],
-                              "_debugSource": Object {
-                                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                "lineNumber": 91,
-                              },
-                              "actualDuration": 0,
-                              "actualStartTime": -1,
-                              "alternate": null,
-                              "child": null,
                               "childExpirationTime": 0,
                               "effectTag": 0,
-                              "elementType": "br",
+                              "elementType": "div",
                               "expirationTime": 0,
                               "firstContextDependency": null,
                               "firstEffect": null,
                               "index": 8,
                               "key": null,
                               "lastEffect": null,
-                              "memoizedProps": Object {},
+                              "memoizedProps": Object {
+                                "children": Array [
+                                  <p
+                                    className="shift-info-label"
+                                  >
+                                    End time:
+                                  </p>,
+                                  <p
+                                    className="shift-info-entry"
+                                  />,
+                                ],
+                                "className": "shift-info",
+                              },
                               "memoizedState": null,
                               "mode": 0,
                               "nextEffect": null,
-                              "pendingProps": Object {},
+                              "pendingProps": Object {
+                                "children": Array [
+                                  <p
+                                    className="shift-info-label"
+                                  >
+                                    End time:
+                                  </p>,
+                                  <p
+                                    className="shift-info-entry"
+                                  />,
+                                ],
+                                "className": "shift-info",
+                              },
                               "ref": null,
                               "return": [Circular],
                               "selfBaseDuration": 0,
@@ -5647,135 +5380,26 @@ ReactWrapper {
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
                                   "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 92,
+                                  "lineNumber": 88,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
                                 "alternate": null,
-                                "child": FiberNode {
-                                  "_debugID": 71,
-                                  "_debugIsCurrentlyTiming": false,
-                                  "_debugOwner": [Circular],
-                                  "_debugSource": Object {
-                                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 93,
-                                  },
-                                  "actualDuration": 0,
-                                  "actualStartTime": -1,
-                                  "alternate": null,
-                                  "child": null,
-                                  "childExpirationTime": 0,
-                                  "effectTag": 0,
-                                  "elementType": "button",
-                                  "expirationTime": 0,
-                                  "firstContextDependency": null,
-                                  "firstEffect": null,
-                                  "index": 0,
-                                  "key": null,
-                                  "lastEffect": null,
-                                  "memoizedProps": Object {
-                                    "children": "Request shift swap",
-                                    "className": "custom-button",
-                                    "id": "toggle-popup-content",
-                                    "onClick": [Function],
-                                  },
-                                  "memoizedState": null,
-                                  "mode": 0,
-                                  "nextEffect": null,
-                                  "pendingProps": Object {
-                                    "children": "Request shift swap",
-                                    "className": "custom-button",
-                                    "id": "toggle-popup-content",
-                                    "onClick": [Function],
-                                  },
-                                  "ref": null,
-                                  "return": [Circular],
-                                  "selfBaseDuration": 0,
-                                  "sibling": FiberNode {
-                                    "_debugID": 72,
-                                    "_debugIsCurrentlyTiming": false,
-                                    "_debugOwner": [Circular],
-                                    "_debugSource": Object {
-                                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                      "lineNumber": 93,
-                                    },
-                                    "actualDuration": 0,
-                                    "actualStartTime": -1,
-                                    "alternate": null,
-                                    "child": null,
-                                    "childExpirationTime": 0,
-                                    "effectTag": 0,
-                                    "elementType": "br",
-                                    "expirationTime": 0,
-                                    "firstContextDependency": null,
-                                    "firstEffect": null,
-                                    "index": 1,
-                                    "key": null,
-                                    "lastEffect": null,
-                                    "memoizedProps": Object {},
-                                    "memoizedState": null,
-                                    "mode": 0,
-                                    "nextEffect": null,
-                                    "pendingProps": Object {},
-                                    "ref": null,
-                                    "return": [Circular],
-                                    "selfBaseDuration": 0,
-                                    "sibling": null,
-                                    "stateNode": <br />,
-                                    "tag": 5,
-                                    "treeBaseDuration": 0,
-                                    "type": "br",
-                                    "updateQueue": null,
-                                  },
-                                  "stateNode": <button
-                                    class="custom-button"
-                                    id="toggle-popup-content"
-                                  >
-                                    Request shift swap
-                                  </button>,
-                                  "tag": 5,
-                                  "treeBaseDuration": 0,
-                                  "type": "button",
-                                  "updateQueue": null,
-                                },
+                                "child": null,
                                 "childExpirationTime": 0,
                                 "effectTag": 0,
-                                "elementType": "section",
+                                "elementType": "br",
                                 "expirationTime": 0,
                                 "firstContextDependency": null,
                                 "firstEffect": null,
                                 "index": 9,
                                 "key": null,
                                 "lastEffect": null,
-                                "memoizedProps": Object {
-                                  "children": Array [
-                                    <button
-                                      className="custom-button"
-                                      id="toggle-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request shift swap
-                                    </button>,
-                                    <br />,
-                                  ],
-                                  "id": "toggle-popup-state",
-                                },
+                                "memoizedProps": Object {},
                                 "memoizedState": null,
                                 "mode": 0,
                                 "nextEffect": null,
-                                "pendingProps": Object {
-                                  "children": Array [
-                                    <button
-                                      className="custom-button"
-                                      id="toggle-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request shift swap
-                                    </button>,
-                                    <br />,
-                                  ],
-                                  "id": "toggle-popup-state",
-                                },
+                                "pendingProps": Object {},
                                 "ref": null,
                                 "return": [Circular],
                                 "selfBaseDuration": 0,
@@ -5785,29 +5409,57 @@ ReactWrapper {
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
                                     "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 39,
+                                    "lineNumber": 89,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
                                   "alternate": null,
                                   "child": FiberNode {
-                                    "_debugID": 73,
+                                    "_debugID": 71,
                                     "_debugIsCurrentlyTiming": false,
                                     "_debugOwner": [Circular],
                                     "_debugSource": Object {
                                       "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                      "lineNumber": 40,
+                                      "lineNumber": 90,
                                     },
                                     "actualDuration": 0,
                                     "actualStartTime": -1,
                                     "alternate": null,
-                                    "child": FiberNode {
-                                      "_debugID": 74,
+                                    "child": null,
+                                    "childExpirationTime": 0,
+                                    "effectTag": 0,
+                                    "elementType": "button",
+                                    "expirationTime": 0,
+                                    "firstContextDependency": null,
+                                    "firstEffect": null,
+                                    "index": 0,
+                                    "key": null,
+                                    "lastEffect": null,
+                                    "memoizedProps": Object {
+                                      "children": "Request shift swap",
+                                      "className": "custom-button",
+                                      "id": "toggle-popup-content",
+                                      "onClick": [Function],
+                                    },
+                                    "memoizedState": null,
+                                    "mode": 0,
+                                    "nextEffect": null,
+                                    "pendingProps": Object {
+                                      "children": "Request shift swap",
+                                      "className": "custom-button",
+                                      "id": "toggle-popup-content",
+                                      "onClick": [Function],
+                                    },
+                                    "ref": null,
+                                    "return": [Circular],
+                                    "selfBaseDuration": 0,
+                                    "sibling": FiberNode {
+                                      "_debugID": 72,
                                       "_debugIsCurrentlyTiming": false,
                                       "_debugOwner": [Circular],
                                       "_debugSource": Object {
                                         "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
-                                        "lineNumber": 41,
+                                        "lineNumber": 39,
                                       },
                                       "actualDuration": 0,
                                       "actualStartTime": -1,
@@ -5819,7 +5471,7 @@ ReactWrapper {
                                       "expirationTime": 0,
                                       "firstContextDependency": null,
                                       "firstEffect": null,
-                                      "index": 0,
+                                      "index": 1,
                                       "key": null,
                                       "lastEffect": null,
                                       "memoizedProps": Object {
@@ -5852,60 +5504,20 @@ ReactWrapper {
                                       "type": "button",
                                       "updateQueue": null,
                                     },
-                                    "childExpirationTime": 0,
-                                    "effectTag": 0,
-                                    "elementType": "section",
-                                    "expirationTime": 0,
-                                    "firstContextDependency": null,
-                                    "firstEffect": null,
-                                    "index": 0,
-                                    "key": null,
-                                    "lastEffect": null,
-                                    "memoizedProps": Object {
-                                      "children": <button
-                                        className="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                        onClick={[Function]}
-                                      >
-                                        Request emergency cover
-                                      </button>,
-                                      "id": "toggle-popup-state",
-                                    },
-                                    "memoizedState": null,
-                                    "mode": 0,
-                                    "nextEffect": null,
-                                    "pendingProps": Object {
-                                      "children": <button
-                                        className="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                        onClick={[Function]}
-                                      >
-                                        Request emergency cover
-                                      </button>,
-                                      "id": "toggle-popup-state",
-                                    },
-                                    "ref": null,
-                                    "return": [Circular],
-                                    "selfBaseDuration": 0,
-                                    "sibling": null,
-                                    "stateNode": <section
-                                      id="toggle-popup-state"
+                                    "stateNode": <button
+                                      class="custom-button"
+                                      id="toggle-popup-content"
                                     >
-                                      <button
-                                        class="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                      >
-                                        Request emergency cover
-                                      </button>
-                                    </section>,
+                                      Request shift swap
+                                    </button>,
                                     "tag": 5,
                                     "treeBaseDuration": 0,
-                                    "type": "section",
+                                    "type": "button",
                                     "updateQueue": null,
                                   },
                                   "childExpirationTime": 0,
                                   "effectTag": 0,
-                                  "elementType": "div",
+                                  "elementType": "section",
                                   "expirationTime": 0,
                                   "firstContextDependency": null,
                                   "firstEffect": null,
@@ -5913,161 +5525,167 @@ ReactWrapper {
                                   "key": null,
                                   "lastEffect": null,
                                   "memoizedProps": Object {
-                                    "children": <section
-                                      id="toggle-popup-state"
-                                    >
+                                    "children": Array [
+                                      <button
+                                        className="custom-button"
+                                        id="toggle-popup-content"
+                                        onClick={[Function]}
+                                      >
+                                        Request shift swap
+                                      </button>,
                                       <button
                                         className="custom-button"
                                         id="toggle-emergency-popup-content"
                                         onClick={[Function]}
                                       >
                                         Request emergency cover
-                                      </button>
-                                    </section>,
+                                      </button>,
+                                    ],
+                                    "id": "toggle-popup-state",
                                   },
                                   "memoizedState": null,
                                   "mode": 0,
                                   "nextEffect": null,
                                   "pendingProps": Object {
-                                    "children": <section
-                                      id="toggle-popup-state"
-                                    >
+                                    "children": Array [
+                                      <button
+                                        className="custom-button"
+                                        id="toggle-popup-content"
+                                        onClick={[Function]}
+                                      >
+                                        Request shift swap
+                                      </button>,
                                       <button
                                         className="custom-button"
                                         id="toggle-emergency-popup-content"
                                         onClick={[Function]}
                                       >
                                         Request emergency cover
-                                      </button>
-                                    </section>,
+                                      </button>,
+                                    ],
+                                    "id": "toggle-popup-state",
                                   },
                                   "ref": null,
                                   "return": [Circular],
                                   "selfBaseDuration": 0,
                                   "sibling": null,
-                                  "stateNode": <div>
-                                    <section
-                                      id="toggle-popup-state"
+                                  "stateNode": <section
+                                    id="toggle-popup-state"
+                                  >
+                                    <button
+                                      class="custom-button"
+                                      id="toggle-popup-content"
                                     >
-                                      <button
-                                        class="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                      >
-                                        Request emergency cover
-                                      </button>
-                                    </section>
-                                  </div>,
+                                      Request shift swap
+                                    </button>
+                                    <button
+                                      class="custom-button"
+                                      id="toggle-emergency-popup-content"
+                                    >
+                                      Request emergency cover
+                                    </button>
+                                  </section>,
                                   "tag": 5,
                                   "treeBaseDuration": 0,
-                                  "type": "div",
+                                  "type": "section",
                                   "updateQueue": null,
                                 },
-                                "stateNode": <section
-                                  id="toggle-popup-state"
-                                >
-                                  <button
-                                    class="custom-button"
-                                    id="toggle-popup-content"
-                                  >
-                                    Request shift swap
-                                  </button>
-                                  <br />
-                                </section>,
+                                "stateNode": <br />,
                                 "tag": 5,
                                 "treeBaseDuration": 0,
-                                "type": "section",
+                                "type": "br",
                                 "updateQueue": null,
                               },
-                              "stateNode": <br />,
+                              "stateNode": <div
+                                class="shift-info"
+                              >
+                                <p
+                                  class="shift-info-label"
+                                >
+                                  End time:
+                                </p>
+                                <p
+                                  class="shift-info-entry"
+                                />
+                              </div>,
                               "tag": 5,
                               "treeBaseDuration": 0,
-                              "type": "br",
+                              "type": "div",
                               "updateQueue": null,
                             },
-                            "stateNode": <div
-                              class="shift-info"
-                            >
-                              <p
-                                class="shift-info-label"
-                              >
-                                End time:
-                              </p>
-                              <p
-                                class="shift-info-entry"
-                              />
-                            </div>,
+                            "stateNode": <br />,
                             "tag": 5,
                             "treeBaseDuration": 0,
-                            "type": "div",
+                            "type": "br",
                             "updateQueue": null,
                           },
-                          "stateNode": <br />,
+                          "stateNode": <div
+                            class="shift-info"
+                          >
+                            <p
+                              class="shift-info-label"
+                            >
+                              Start time:
+                            </p>
+                            <p
+                              class="shift-info-entry"
+                            />
+                          </div>,
                           "tag": 5,
                           "treeBaseDuration": 0,
-                          "type": "br",
+                          "type": "div",
                           "updateQueue": null,
                         },
-                        "stateNode": <div
-                          class="shift-info"
-                        >
-                          <p
-                            class="shift-info-label"
-                          >
-                            Start time:
-                          </p>
-                          <p
-                            class="shift-info-entry"
-                          />
-                        </div>,
+                        "stateNode": <br />,
                         "tag": 5,
                         "treeBaseDuration": 0,
-                        "type": "div",
+                        "type": "br",
                         "updateQueue": null,
                       },
-                      "stateNode": <br />,
+                      "stateNode": <div
+                        class="shift-info"
+                      >
+                        <p
+                          class="shift-info-label"
+                        >
+                          Contact email address:
+                        </p>
+                        <p
+                          class="shift-info-entry"
+                        />
+                      </div>,
                       "tag": 5,
                       "treeBaseDuration": 0,
-                      "type": "br",
+                      "type": "div",
                       "updateQueue": null,
                     },
-                    "stateNode": <div
-                      class="shift-info"
-                    >
-                      <p
-                        class="shift-info-label"
-                      >
-                        Contact email address:
-                      </p>
-                      <p
-                        class="shift-info-entry"
-                      />
-                    </div>,
+                    "stateNode": <br />,
                     "tag": 5,
                     "treeBaseDuration": 0,
-                    "type": "div",
+                    "type": "br",
                     "updateQueue": null,
                   },
-                  "stateNode": <br />,
+                  "stateNode": <div
+                    class="shift-info"
+                  >
+                    <p
+                      class="shift-info-label"
+                    >
+                      Employee name:
+                    </p>
+                    <p
+                      class="shift-info-entry"
+                    />
+                  </div>,
                   "tag": 5,
                   "treeBaseDuration": 0,
-                  "type": "br",
+                  "type": "div",
                   "updateQueue": null,
                 },
-                "stateNode": <div
-                  class="shift-info"
-                >
-                  <p
-                    class="shift-info-label"
-                  >
-                    Employee name:
-                  </p>
-                  <p
-                    class="shift-info-entry"
-                  />
-                </div>,
+                "stateNode": <br />,
                 "tag": 5,
                 "treeBaseDuration": 0,
-                "type": "div",
+                "type": "br",
                 "updateQueue": null,
               },
               "stateNode": <h3
@@ -6096,6 +5714,7 @@ ReactWrapper {
                 >
                   Shift Information
                 </h3>,
+                <br />,
                 <div
                   className="shift-info"
                 >
@@ -6158,21 +5777,14 @@ ReactWrapper {
                   >
                     Request shift swap
                   </button>
-                  <br />
-                </section>,
-                <div>
-                  <section
-                    id="toggle-popup-state"
+                  <button
+                    className="custom-button"
+                    id="toggle-emergency-popup-content"
+                    onClick={[Function]}
                   >
-                    <button
-                      className="custom-button"
-                      id="toggle-emergency-popup-content"
-                      onClick={[Function]}
-                    >
-                      Request emergency cover
-                    </button>
-                  </section>
-                </div>,
+                    Request emergency cover
+                  </button>
+                </section>,
               ],
               "id": "shift-popup",
             },
@@ -6186,6 +5798,7 @@ ReactWrapper {
                 >
                   Shift Information
                 </h3>,
+                <br />,
                 <div
                   className="shift-info"
                 >
@@ -6248,21 +5861,14 @@ ReactWrapper {
                   >
                     Request shift swap
                   </button>
-                  <br />
-                </section>,
-                <div>
-                  <section
-                    id="toggle-popup-state"
+                  <button
+                    className="custom-button"
+                    id="toggle-emergency-popup-content"
+                    onClick={[Function]}
                   >
-                    <button
-                      className="custom-button"
-                      id="toggle-emergency-popup-content"
-                      onClick={[Function]}
-                    >
-                      Request emergency cover
-                    </button>
-                  </section>
-                </div>,
+                    Request emergency cover
+                  </button>
+                </section>,
               ],
               "id": "shift-popup",
             },
@@ -6278,6 +5884,7 @@ ReactWrapper {
               >
                 Shift Information
               </h3>
+              <br />
               <div
                 class="shift-info"
               >
@@ -6339,20 +5946,13 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>
-                <br />
-              </section>
-              <div>
-                <section
-                  id="toggle-popup-state"
+                <button
+                  class="custom-button"
+                  id="toggle-emergency-popup-content"
                 >
-                  <button
-                    class="custom-button"
-                    id="toggle-emergency-popup-content"
-                  >
-                    Request emergency cover
-                  </button>
-                </section>
-              </div>
+                  Request emergency cover
+                </button>
+              </section>
             </div>,
             "tag": 5,
             "treeBaseDuration": 0,
@@ -6492,6 +6092,7 @@ ReactWrapper {
                       >
                         Shift Information
                       </h3>
+                      <br />
                       <div
                         class="shift-info"
                       >
@@ -6553,20 +6154,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -6703,6 +6297,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -6764,20 +6359,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -6895,6 +6483,7 @@ ReactWrapper {
                       >
                         Shift Information
                       </h3>
+                      <br />
                       <div
                         class="shift-info"
                       >
@@ -6956,20 +6545,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -7106,6 +6688,7 @@ ReactWrapper {
                     >
                       Shift Information
                     </h3>
+                    <br />
                     <div
                       class="shift-info"
                     >
@@ -7167,20 +6750,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -7363,6 +6939,7 @@ ReactWrapper {
           >
             Shift Information
           </h3>
+          <br />
           <div
             class="shift-info"
           >
@@ -7424,20 +7001,13 @@ ReactWrapper {
             >
               Request shift swap
             </button>
-            <br />
-          </section>
-          <div>
-            <section
-              id="toggle-popup-state"
+            <button
+              class="custom-button"
+              id="toggle-emergency-popup-content"
             >
-              <button
-                class="custom-button"
-                id="toggle-emergency-popup-content"
-              >
-                Request emergency cover
-              </button>
-            </section>
-          </div>
+              Request emergency cover
+            </button>
+          </section>
         </div>,
         "key": undefined,
         "nodeType": "host",
@@ -7448,6 +7018,7 @@ ReactWrapper {
             >
               Shift Information
             </h3>,
+            <br />,
             <div
               className="shift-info"
             >
@@ -7510,21 +7081,14 @@ ReactWrapper {
               >
                 Request shift swap
               </button>
-              <br />
-            </section>,
-            <div>
-              <section
-                id="toggle-popup-state"
+              <button
+                className="custom-button"
+                id="toggle-emergency-popup-content"
+                onClick={[Function]}
               >
-                <button
-                  className="custom-button"
-                  id="toggle-emergency-popup-content"
-                  onClick={[Function]}
-                >
-                  Request emergency cover
-                </button>
-              </section>
-            </div>,
+                Request emergency cover
+              </button>
+            </section>,
           ],
           "id": "shift-popup",
         },
@@ -7547,6 +7111,17 @@ ReactWrapper {
               "Shift Information",
             ],
             "type": "h3",
+          },
+          Object {
+            "instance": <br />,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": Array [
+              undefined,
+            ],
+            "type": "br",
           },
           Object {
             "instance": <div
@@ -7870,7 +7445,12 @@ ReactWrapper {
               >
                 Request shift swap
               </button>
-              <br />
+              <button
+                class="custom-button"
+                id="toggle-emergency-popup-content"
+              >
+                Request emergency cover
+              </button>
             </section>,
             "key": undefined,
             "nodeType": "host",
@@ -7883,7 +7463,13 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>,
-                <br />,
+                <button
+                  className="custom-button"
+                  id="toggle-emergency-popup-content"
+                  onClick={[Function]}
+                >
+                  Request emergency cover
+                </button>,
               ],
               "id": "toggle-popup-state",
             },
@@ -7911,100 +7497,28 @@ ReactWrapper {
                 "type": "button",
               },
               Object {
-                "instance": <br />,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {},
-                "ref": null,
-                "rendered": Array [
-                  undefined,
-                ],
-                "type": "br",
-              },
-            ],
-            "type": "section",
-          },
-          Object {
-            "instance": <div>
-              <section
-                id="toggle-popup-state"
-              >
-                <button
+                "instance": <button
                   class="custom-button"
                   id="toggle-emergency-popup-content"
                 >
                   Request emergency cover
-                </button>
-              </section>
-            </div>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <section
-                id="toggle-popup-state"
-              >
-                <button
-                  className="custom-button"
-                  id="toggle-emergency-popup-content"
-                  onClick={[Function]}
-                >
-                  Request emergency cover
-                </button>
-              </section>,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <section
-                  id="toggle-popup-state"
-                >
-                  <button
-                    class="custom-button"
-                    id="toggle-emergency-popup-content"
-                  >
-                    Request emergency cover
-                  </button>
-                </section>,
+                </button>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <button
-                    className="custom-button"
-                    id="toggle-emergency-popup-content"
-                    onClick={[Function]}
-                  >
-                    Request emergency cover
-                  </button>,
-                  "id": "toggle-popup-state",
+                  "children": "Request emergency cover",
+                  "className": "custom-button",
+                  "id": "toggle-emergency-popup-content",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "rendered": Array [
-                  Object {
-                    "instance": <button
-                      class="custom-button"
-                      id="toggle-emergency-popup-content"
-                    >
-                      Request emergency cover
-                    </button>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Request emergency cover",
-                      "className": "custom-button",
-                      "id": "toggle-emergency-popup-content",
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Request emergency cover",
-                    ],
-                    "type": "button",
-                  },
+                  "Request emergency cover",
                 ],
-                "type": "section",
+                "type": "button",
               },
             ],
-            "type": "div",
+            "type": "section",
           },
         ],
         "type": "div",

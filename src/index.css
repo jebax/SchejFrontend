@@ -19,6 +19,13 @@ button {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+.notification-divider {
+  height: 2px;
+  background-color: #E5E5E5;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
 .popup-content  {
   border-radius: 5px !important;
   padding: 4vh !important;
@@ -112,8 +119,8 @@ button {
 
 .shift-info-label {
   float: left;
-  width: 30vh;
-  margin-left: 20vh;
+  width: 22vh;
+  margin-left: 25vh;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
@@ -121,6 +128,9 @@ button {
 .shift-info-entry {
   float: left;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  height: 32px;
+  border-width: 1px;
 }
 
 aside#welcome-text {
@@ -149,6 +159,10 @@ button#decline-swap-button {
   float: right;
   width: 20vh;
   margin-left: 1vh;
+}
+
+button#confirm-emergency-request {
+  width: 20vh;
 }
 
 button#confirm-swap-request-form {
@@ -190,11 +204,28 @@ button#sign-in-submit {
 button#toggle-popup-content {
   width: 30vh;
   font-size: 0.5em;
+  margin-right: 1vh;
 }
 
 button#toggle-emergency-popup-content {
   width: 30vh;
   font-size: 0.5em;
+  margin-left: 1vh;
+}
+
+div#approve-emergency-box {
+  background-color: #EAFFE9;
+  border-radius: 2px;
+}
+
+div#approve-notification-box {
+  background-color: #E1F1FF;
+  border-radius: 2px;
+}
+
+div#decline-notification-box {
+  border-radius: 2px;
+  background-color: #FFE9E9
 }
 
 div#emergency-box {
@@ -230,7 +261,14 @@ div#sign-in-page {
   font-family: 'Montserrat', sans-serif;
 }
 
+form#emergency-request-form {
+  margin-top: 5vh;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
 form#request-swap-form {
+  margin-top: 5vh;
   display: block;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -268,6 +306,15 @@ h3#welcome-organisation {
   padding-left: 1vh;
   color: #3173AF;
   float: left;
+}
+
+input#comment {
+  width: 35vh;
+}
+
+section#confirm-emergency {
+  margin-top: 3vh;
+  text-align: center;
 }
 
 section#index-title {

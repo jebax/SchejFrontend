@@ -100,15 +100,17 @@ export default class NotificationsList extends Component {
   formatEmergencyRequestContent = () => {
     return this.state.emergencies.map((emergency, index) => {
       if (emergency.approved) {
-        return <div id="emergency-box" key={index}><span>Thanks! You have now taken on this shift. You are a hero!</span></div>
+        return <div id="approve-emergency-box" key={index}><span>Thanks! You have now taken on this shift. You are a hero!</span></div>
       } else {
       return (
         <div id="emergency-box" key={index}>
-          <span id="emergency-message">Comment: {this.state.emergencies[index].comment}</span><br />
-          <span>{this.state.emergencies[index].name} has an emergency and cannot make their shift on </span>
+          <span><b>{this.state.emergencies[index].name}</b> has an emergency and cannot make their shift on </span>
           <span>{this.formatDate(this.state.emergencies[index].start)} until </span>
           <span>{this.formatDate(this.state.emergencies[index].end)}</span><br />
-          <button id="approve-emergency-button" className="custom-button" index={index} onClick={this.handleEmergencyApprove}>Approve</button><br /><br />
+          <span id="emergency-message"><b>Comment:</b> {this.state.emergencies[index].comment}</span><br />
+          <button id="approve-emergency-button" className="custom-button" index={index} onClick={this.handleEmergencyApprove}>Approve</button>
+          <br /><br />
+          <div className='notification-divider'></div>
         </div>
       )
     }
@@ -128,7 +130,9 @@ export default class NotificationsList extends Component {
             <span id="requester-shift-details">Their shift: {this.formatDate(this.state.requests[index].requesterShift.start)} - {this.formatDate(this.state.requests[index].requesterShift.end)}</span><br />
             <span id="respondent-shift-details">Your shift: {this.formatDate(this.state.requests[index].respondentShift.start)} - {this.formatDate(this.state.requests[index].respondentShift.end)}</span><br />
             <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button>
-            <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button><br /><br />
+            <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button>
+            <br /><br />
+            <div className='notification-divider'></div>
           </div>
         )
       }

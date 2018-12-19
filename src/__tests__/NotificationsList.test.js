@@ -45,7 +45,7 @@ describe('Notifications List', () => {
 
   test("it renders a notifications list", () => {
     const divs = wrapper.find('div')
-    expect(divs.length).toEqual(3)
+    expect(divs.length).toEqual(4)
   })
 
   test("it renders a notification list with notifications", () => {

@@ -76,6 +76,9 @@ ShallowWrapper {
             </button>
             <br />
             <br />
+            <div
+              className="notification-divider"
+            />
           </div>
           <span>
             <b>
@@ -155,6 +158,9 @@ ShallowWrapper {
                 </button>
                 <br />
                 <br />
+                <div
+                  className="notification-divider"
+                />
               </div>,
             ],
             <span>
@@ -220,6 +226,9 @@ ShallowWrapper {
                 </button>,
                 <br />,
                 <br />,
+                <div
+                  className="notification-divider"
+                />,
               ],
               "id": "notification-box",
             },
@@ -374,6 +383,17 @@ ShallowWrapper {
                 "rendered": null,
                 "type": "br",
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "notification-divider",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
             ],
             "type": "div",
           },
@@ -478,6 +498,9 @@ ShallowWrapper {
               </button>
               <br />
               <br />
+              <div
+                className="notification-divider"
+              />
             </div>
             <span>
               <b>
@@ -557,6 +580,9 @@ ShallowWrapper {
                   </button>
                   <br />
                   <br />
+                  <div
+                    className="notification-divider"
+                  />
                 </div>,
               ],
               <span>
@@ -622,6 +648,9 @@ ShallowWrapper {
                   </button>,
                   <br />,
                   <br />,
+                  <div
+                    className="notification-divider"
+                  />,
                 ],
                 "id": "notification-box",
               },
@@ -775,6 +804,17 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": null,
                   "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "notification-divider",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
                 },
               ],
               "type": "div",

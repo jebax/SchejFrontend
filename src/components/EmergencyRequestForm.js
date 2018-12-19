@@ -30,8 +30,11 @@ export default class EmergencyRequestForm extends Component {
   render() {
     return(
       <form id="emergency-request-form" onSubmit={this.handleSubmit}>
-        <input id="comment" type="text" name="comment" placeholder="comment" onChange={this.handleChange} />
-        <button id="confirm-emergency-request" className='custom-button'>Confirm</button>
+        <label className='shift-info-label' for='comment'>Comment:</label>
+        <input className='shift-info-entry' id="comment" type="text" name="comment" placeholder="Why do you need to swap?" onChange={this.handleChange} /><br /><br />
+        <section id='confirm-emergency'>
+          <button id="confirm-emergency-request" className='custom-button'>Confirm</button>
+        </section>
       </form>
     )
   }
