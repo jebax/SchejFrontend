@@ -1,4 +1,4 @@
-Schej Frontend
+Schej Frontend [![Build Status](https://travis-ci.org/jebax/SchejFrontend.svg?branch=master)](https://travis-ci.org/jebax/SchejFrontend)
 ==============
 
 React frontend for our shift scheduling and swapping web app! We used Cypress for testing, and [`react-big-calendar`](https://github.com/intljusticemission/react-big-calendar) for the calendar component. You can find the Rails API backend for this project [here](https://github.com/chloeverity/SchejBackend).
