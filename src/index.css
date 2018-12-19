@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat");
 
 body {
   margin: 0;
@@ -15,6 +15,10 @@ code {
     monospace;
 }
 
+button {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 .popup-content  {
   border-radius: 5px !important;
   padding: 4vh !important;
@@ -28,6 +32,7 @@ code {
 
 .sign-in-form {
   margin-bottom: 2%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sign-in-entry {
@@ -36,10 +41,12 @@ code {
   border-width: 1px;
   width: 20%;
   font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sign-up-form {
   margin-bottom: 2%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sign-up-entry {
@@ -48,6 +55,7 @@ code {
   border-width: 1px;
   width: 20%;
   font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .custom-button {
@@ -57,7 +65,6 @@ code {
   background-color: #3173AF;
   height: 32px;
   width: 10%;
-  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -65,6 +72,7 @@ code {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  font-size: 0.8em;
 }
 
 .custom-button:disabled {
@@ -88,11 +96,18 @@ code {
 
 .rbc-calendar {
   min-width: 1212px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.rbc-btn-group {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em !important;
 }
 
 .shift-info {
   display: inline-block;
   margin-bottom: 1vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .shift-info-label {
@@ -100,18 +115,22 @@ code {
   width: 30vh;
   margin-left: 20vh;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .shift-info-entry {
   float: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 aside#welcome-text {
   float: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 aside#welcome-buttons {
   float: right;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button#approve-swap-button {
@@ -170,6 +189,7 @@ button#sign-in-submit {
 
 button#toggle-popup-content {
   width: 30vh;
+  font-size: 0.5em;
 }
 
 button#toggle-emergency-popup-content {
@@ -179,52 +199,62 @@ button#toggle-emergency-popup-content {
 div#emergency-box {
   padding: 5px;
   display: block;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div#new-shift-form {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div#notification-box {
   padding: 5px;
   display: block;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div#notifications-list {
   padding: 5px;
   display: block;
-  overflow: 'scroll'
+  font-family: 'Montserrat', sans-serif;
 }
 
 div#sign-up-page {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div#sign-in-page {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form#request-swap-form {
   display: block;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1#index-title-text {
   color: #3173AF;
   font-family: 'Fredoka One', cursive;
-  font-size: 7vh;
+  font-size: 8vh;
   position: relative;
+  margin-top: 10vh;
 }
 
 h1#title {
   color: #3173AF;
   font-family: 'Fredoka One', cursive;
-  font-size: 7vh;
+  font-size: 8vh;
   text-align: center;
+  position: relative !important;
+  top: 10vh;
+  z-index: -1;
 }
 
 h2#welcome-name {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   padding-left: 1vh;
   color: #3173AF;
@@ -232,7 +262,7 @@ h2#welcome-name {
 }
 
 h3#welcome-organisation {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   padding-left: 1vh;
   color: #3173AF;
@@ -250,9 +280,11 @@ section#toggle-popup-state {
 section#welcome {
   display: block;
   margin-bottom: 3%;
+  font-size: 0.8em;
 }
 
 span#user-name-on-hompage {
   /* font-size: 1em; */
   text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
 }

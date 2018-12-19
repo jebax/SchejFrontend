@@ -96,7 +96,7 @@ export default class Shifts extends Component {
   render() {
     return(
       <div>
-        <h1 id='title'>Schej</h1>
+        <h1 id='title' style={{top: '50px'}}>Schej</h1>
         <section id='welcome'>
           <h2 id='welcome-name'>Welcome <span id="user-name-on-hompage" >{localStorage['name']}</span></h2>
           <SignOutButton
@@ -117,7 +117,7 @@ export default class Shifts extends Component {
             defaultView = "month"
             onSelectEvent={(shift) => this.openModal(shift)}
             events= { this.state.events }
-            style={{ height: '100vh' }}
+            style={{ height: '77vh' }}
           />
         </div>
         <Popup
