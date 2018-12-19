@@ -28,6 +28,55 @@ ShallowWrapper {
         <div
           id="notifications-list"
         >
+          <div
+            id="notification-box"
+          >
+            <span
+              id="notification-message"
+            >
+              <b>
+                TestName2
+              </b>
+               wants to swap shifts with you.
+            </span>
+            <br />
+            <span
+              id="requester-shift-details"
+            >
+              Their shift: 
+              18 Dec, 16:49
+               - 
+              18 Dec, 16:49
+            </span>
+            <br />
+            <span
+              id="respondent-shift-details"
+            >
+              Your shift: 
+              18 Dec, 16:49
+               - 
+              18 Dec, 16:49
+            </span>
+            <br />
+            <button
+              className="custom-button"
+              id="approve-swap-button"
+              index={0}
+              onClick={[Function]}
+            >
+              Approve
+            </button>
+            <button
+              className="custom-button"
+              id="decline-swap-button"
+              index={0}
+              onClick={[Function]}
+            >
+              Decline
+            </button>
+            <br />
+            <br />
+          </div>
           <span>
             <b>
               Emergency Requests:
@@ -57,7 +106,57 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            Array [],
+            Array [
+              <div
+                id="notification-box"
+              >
+                <span
+                  id="notification-message"
+                >
+                  <b>
+                    TestName2
+                  </b>
+                   wants to swap shifts with you.
+                </span>
+                <br />
+                <span
+                  id="requester-shift-details"
+                >
+                  Their shift: 
+                  18 Dec, 16:49
+                   - 
+                  18 Dec, 16:49
+                </span>
+                <br />
+                <span
+                  id="respondent-shift-details"
+                >
+                  Your shift: 
+                  18 Dec, 16:49
+                   - 
+                  18 Dec, 16:49
+                </span>
+                <br />
+                <button
+                  className="custom-button"
+                  id="approve-swap-button"
+                  index={0}
+                  onClick={[Function]}
+                >
+                  Approve
+                </button>
+                <button
+                  className="custom-button"
+                  id="decline-swap-button"
+                  index={0}
+                  onClick={[Function]}
+                >
+                  Decline
+                </button>
+                <br />
+                <br />
+              </div>,
+            ],
             <span>
               <b>
                 Emergency Requests:
@@ -70,6 +169,214 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  id="notification-message"
+                >
+                  <b>
+                    TestName2
+                  </b>
+                   wants to swap shifts with you.
+                </span>,
+                <br />,
+                <span
+                  id="requester-shift-details"
+                >
+                  Their shift: 
+                  18 Dec, 16:49
+                   - 
+                  18 Dec, 16:49
+                </span>,
+                <br />,
+                <span
+                  id="respondent-shift-details"
+                >
+                  Your shift: 
+                  18 Dec, 16:49
+                   - 
+                  18 Dec, 16:49
+                </span>,
+                <br />,
+                <button
+                  className="custom-button"
+                  id="approve-swap-button"
+                  index={0}
+                  onClick={[Function]}
+                >
+                  Approve
+                </button>,
+                <button
+                  className="custom-button"
+                  id="decline-swap-button"
+                  index={0}
+                  onClick={[Function]}
+                >
+                  Decline
+                </button>,
+                <br />,
+                <br />,
+              ],
+              "id": "notification-box",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <b>
+                      TestName2
+                    </b>,
+                    " wants to swap shifts with you.",
+                  ],
+                  "id": "notification-message",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "TestName2",
+                    },
+                    "ref": null,
+                    "rendered": "TestName2",
+                    "type": "b",
+                  },
+                  " wants to swap shifts with you.",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Their shift: ",
+                    "18 Dec, 16:49",
+                    " - ",
+                    "18 Dec, 16:49",
+                  ],
+                  "id": "requester-shift-details",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Their shift: ",
+                  "18 Dec, 16:49",
+                  " - ",
+                  "18 Dec, 16:49",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Your shift: ",
+                    "18 Dec, 16:49",
+                    " - ",
+                    "18 Dec, 16:49",
+                  ],
+                  "id": "respondent-shift-details",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Your shift: ",
+                  "18 Dec, 16:49",
+                  " - ",
+                  "18 Dec, 16:49",
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Approve",
+                  "className": "custom-button",
+                  "id": "approve-swap-button",
+                  "index": 0,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Approve",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Decline",
+                  "className": "custom-button",
+                  "id": "decline-swap-button",
+                  "index": 0,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Decline",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+            ],
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -123,6 +430,55 @@ ShallowWrapper {
           <div
             id="notifications-list"
           >
+            <div
+              id="notification-box"
+            >
+              <span
+                id="notification-message"
+              >
+                <b>
+                  TestName2
+                </b>
+                 wants to swap shifts with you.
+              </span>
+              <br />
+              <span
+                id="requester-shift-details"
+              >
+                Their shift: 
+                18 Dec, 16:49
+                 - 
+                18 Dec, 16:49
+              </span>
+              <br />
+              <span
+                id="respondent-shift-details"
+              >
+                Your shift: 
+                18 Dec, 16:49
+                 - 
+                18 Dec, 16:49
+              </span>
+              <br />
+              <button
+                className="custom-button"
+                id="approve-swap-button"
+                index={0}
+                onClick={[Function]}
+              >
+                Approve
+              </button>
+              <button
+                className="custom-button"
+                id="decline-swap-button"
+                index={0}
+                onClick={[Function]}
+              >
+                Decline
+              </button>
+              <br />
+              <br />
+            </div>
             <span>
               <b>
                 Emergency Requests:
@@ -152,7 +508,57 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              Array [],
+              Array [
+                <div
+                  id="notification-box"
+                >
+                  <span
+                    id="notification-message"
+                  >
+                    <b>
+                      TestName2
+                    </b>
+                     wants to swap shifts with you.
+                  </span>
+                  <br />
+                  <span
+                    id="requester-shift-details"
+                  >
+                    Their shift: 
+                    18 Dec, 16:49
+                     - 
+                    18 Dec, 16:49
+                  </span>
+                  <br />
+                  <span
+                    id="respondent-shift-details"
+                  >
+                    Your shift: 
+                    18 Dec, 16:49
+                     - 
+                    18 Dec, 16:49
+                  </span>
+                  <br />
+                  <button
+                    className="custom-button"
+                    id="approve-swap-button"
+                    index={0}
+                    onClick={[Function]}
+                  >
+                    Approve
+                  </button>
+                  <button
+                    className="custom-button"
+                    id="decline-swap-button"
+                    index={0}
+                    onClick={[Function]}
+                  >
+                    Decline
+                  </button>
+                  <br />
+                  <br />
+                </div>,
+              ],
               <span>
                 <b>
                   Emergency Requests:
@@ -165,6 +571,214 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    id="notification-message"
+                  >
+                    <b>
+                      TestName2
+                    </b>
+                     wants to swap shifts with you.
+                  </span>,
+                  <br />,
+                  <span
+                    id="requester-shift-details"
+                  >
+                    Their shift: 
+                    18 Dec, 16:49
+                     - 
+                    18 Dec, 16:49
+                  </span>,
+                  <br />,
+                  <span
+                    id="respondent-shift-details"
+                  >
+                    Your shift: 
+                    18 Dec, 16:49
+                     - 
+                    18 Dec, 16:49
+                  </span>,
+                  <br />,
+                  <button
+                    className="custom-button"
+                    id="approve-swap-button"
+                    index={0}
+                    onClick={[Function]}
+                  >
+                    Approve
+                  </button>,
+                  <button
+                    className="custom-button"
+                    id="decline-swap-button"
+                    index={0}
+                    onClick={[Function]}
+                  >
+                    Decline
+                  </button>,
+                  <br />,
+                  <br />,
+                ],
+                "id": "notification-box",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <b>
+                        TestName2
+                      </b>,
+                      " wants to swap shifts with you.",
+                    ],
+                    "id": "notification-message",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "TestName2",
+                      },
+                      "ref": null,
+                      "rendered": "TestName2",
+                      "type": "b",
+                    },
+                    " wants to swap shifts with you.",
+                  ],
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Their shift: ",
+                      "18 Dec, 16:49",
+                      " - ",
+                      "18 Dec, 16:49",
+                    ],
+                    "id": "requester-shift-details",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Their shift: ",
+                    "18 Dec, 16:49",
+                    " - ",
+                    "18 Dec, 16:49",
+                  ],
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Your shift: ",
+                      "18 Dec, 16:49",
+                      " - ",
+                      "18 Dec, 16:49",
+                    ],
+                    "id": "respondent-shift-details",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Your shift: ",
+                    "18 Dec, 16:49",
+                    " - ",
+                    "18 Dec, 16:49",
+                  ],
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Approve",
+                    "className": "custom-button",
+                    "id": "approve-swap-button",
+                    "index": 0,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Approve",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Decline",
+                    "className": "custom-button",
+                    "id": "decline-swap-button",
+                    "index": 0,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Decline",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+              ],
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,

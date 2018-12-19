@@ -20,17 +20,18 @@ export default class NotificationsList extends Component {
     .then(response => {
       console.log(this.state)
     })
-
-    axios.get(
-      `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
-    )
-    .then(response => {
-      console.log(response)
-      this.setState({ emergencies: response.data })
-    })
-    .then(response => {
-      console.log(this.state)
-    })
+    setTimeout(() => {
+      axios.get(
+        `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
+      )
+      .then(response => {
+        console.log(response)
+        this.setState({ emergencies: response.data })
+      })
+      .then(response => {
+        console.log(this.state)
+      })
+    }, 20)
   }
 
   handleEmergencyApprove = (event) => {
@@ -121,10 +122,10 @@ export default class NotificationsList extends Component {
 
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
-      if (request.approved) {
-        return <div id="notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
+      if (request.approved) {        
+        return <div id="approve-notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
       } else if (request.declined){
-        return <div id="notification-box" key={index}><span>You have declined to swap.</span></div>
+        return <div id="decline-notification-box" key={index}><span>You have declined to swap.</span></div>
       } else {
         return (
           <div id="notification-box" key={index}>
