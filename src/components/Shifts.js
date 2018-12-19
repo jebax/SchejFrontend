@@ -98,7 +98,7 @@ export default class Shifts extends Component {
       <div>
         <h1 id='title'>Schej</h1>
         <section id='welcome'>
-          <h2 id='welcome-name'>Welcome {localStorage['name']}</h2>
+          <h2 id='welcome-name'>Welcome <span id="user-name-on-hompage" >{localStorage['name']}</span></h2>
           <SignOutButton
             history={this.props.history}
           /><br /><br />

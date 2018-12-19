@@ -11,6 +11,8 @@ React frontend for our shift scheduling and swapping web app! We used Cypress fo
 
 ## Screenshots
 
+![Alt text](./public/sign_in_page.png)
+
 ## Installation
 
 This project requires the use of [our Rails API backend](https://github.com/chloeverity/SchejBackend), so make sure you have that installed and running on a port *other* than `http://localhost:3000`.

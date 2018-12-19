@@ -245,3 +245,8 @@ section#welcome {
   display: block;
   margin-bottom: 3%;
 }
+
+span#user-name-on-hompage {
+  /* font-size: 1em; */
+  text-transform: capitalize;
+}
