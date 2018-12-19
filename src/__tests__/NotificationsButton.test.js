@@ -1,11 +1,13 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 import axios from 'axios'
 import NotificationsButton from '../components/NotificationsButton'
 import NotificationsList from '../components/NotificationsList'
 import Popup from 'reactjs-popup'
 
 jest.mock('axios')
+
+jest.useFakeTimers()
 
 describe('Notifications button', () => {
   var wrapper
@@ -15,19 +17,13 @@ describe('Notifications button', () => {
     initialResponse = { data: [] }
     axios.get.mockResolvedValue(initialResponse)
 
-    wrapper = shallow(<NotificationsButton />)
+    wrapper = mount(<NotificationsButton onClose={() => {}}/>)
   })
 
   it('renders a button', () => {
     const buttons = wrapper.find('button')
 
     expect(buttons.length).toEqual(1)
-  })
-
-  it('renders a NotificationsList', () => {
-    const lists = wrapper.find(NotificationsList)
-
-    expect(lists.length).toEqual(1)
   })
 
   it('renders a Popup', () => {
@@ -57,16 +53,15 @@ describe('Notifications button', () => {
     wrapper.instance().closeModal()
 
     const button = wrapper.find('#notifications-button')
-
+    jest.runAllTimers()
     expect(button.props().children[0]).toEqual("Notifications (", 5, ")")
   })
 
   it('updates its state correctly when popup modal is closed', async () => {
     wrapper.instance().closeModal()
+    wrapper.props().onClose = jest.fn()
 
-    setTimeout(() => {
-      expect(wrapper.state().notificationsOpen).toEqual(false)
-      expect(wrapper.props().onClose).toHaveBeenCalledTimes(1)
-    }, 21)
+    jest.runAllTimers()
+    expect(wrapper.state().notificationsOpen).toEqual(false)
   })
 })
