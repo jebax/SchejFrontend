@@ -36,7 +36,6 @@ export default class RequestSwapForm extends Component {
       }
     )
     .then(response => {
-      console.log(response)
       this.props.history.push('/')
       this.props.history.push('/shifts')
     })
@@ -59,7 +58,7 @@ export default class RequestSwapForm extends Component {
         <select className="menu" name="userShift" onChange={this.handleChange} value={this.state.userShift}>
           <option className='menu-item'>My shifts</option>
           {this.state.userShifts.map( (shift, index) => {
-            if (new Date(parseInt(shift.start_time)) > new Date()) {
+            if (new Date(parseInt(shift.start_time)) >= new Date()) {
               return <option className="menu-item" key={index} value={shift.id}>{this.formatDate(shift.start_time)} - {this.formatDate(shift.end_time)}</option>
             }
           })}

@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request swap form it matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RequestSwapForm
+    shiftInfo={
+      Object {
+        "shiftId": 1,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="shift-info-label"
+        >
+          Select a shift:
+        </span>,
+        <select
+          className="menu"
+          name="userShift"
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            className="menu-item"
+          >
+            My shifts
+          </option>
+          <option
+            className="menu-item"
+          >
+            18 Dec, 16:49
+             - 
+            18 Dec, 16:49
+          </option>
+          <option
+            className="menu-item"
+          >
+            18 Dec, 16:49
+             - 
+            18 Dec, 16:49
+          </option>
+        </select>,
+        <br />,
+        <button
+          className="custom-button"
+          id="confirm-swap-request-form"
+        >
+          Confirm
+        </button>,
+      ],
+      "id": "request-swap-form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Select a shift:",
+          "className": "shift-info-label",
+        },
+        "ref": null,
+        "rendered": "Select a shift:",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              className="menu-item"
+            >
+              My shifts
+            </option>,
+            Array [
+              <option
+                className="menu-item"
+              >
+                18 Dec, 16:49
+                 - 
+                18 Dec, 16:49
+              </option>,
+              <option
+                className="menu-item"
+              >
+                18 Dec, 16:49
+                 - 
+                18 Dec, 16:49
+              </option>,
+            ],
+          ],
+          "className": "menu",
+          "name": "userShift",
+          "onChange": [Function],
+          "value": "",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "My shifts",
+              "className": "menu-item",
+            },
+            "ref": null,
+            "rendered": "My shifts",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "18 Dec, 16:49",
+                " - ",
+                "18 Dec, 16:49",
+              ],
+              "className": "menu-item",
+              "value": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "18 Dec, 16:49",
+              " - ",
+              "18 Dec, 16:49",
+            ],
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "18 Dec, 16:49",
+                " - ",
+                "18 Dec, 16:49",
+              ],
+              "className": "menu-item",
+              "value": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "18 Dec, 16:49",
+              " - ",
+              "18 Dec, 16:49",
+            ],
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Confirm",
+          "className": "custom-button",
+          "id": "confirm-swap-request-form",
+        },
+        "ref": null,
+        "rendered": "Confirm",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="shift-info-label"
+          >
+            Select a shift:
+          </span>,
+          <select
+            className="menu"
+            name="userShift"
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              className="menu-item"
+            >
+              My shifts
+            </option>
+            <option
+              className="menu-item"
+            >
+              18 Dec, 16:49
+               - 
+              18 Dec, 16:49
+            </option>
+            <option
+              className="menu-item"
+            >
+              18 Dec, 16:49
+               - 
+              18 Dec, 16:49
+            </option>
+          </select>,
+          <br />,
+          <button
+            className="custom-button"
+            id="confirm-swap-request-form"
+          >
+            Confirm
+          </button>,
+        ],
+        "id": "request-swap-form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Select a shift:",
+            "className": "shift-info-label",
+          },
+          "ref": null,
+          "rendered": "Select a shift:",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                className="menu-item"
+              >
+                My shifts
+              </option>,
+              Array [
+                <option
+                  className="menu-item"
+                >
+                  18 Dec, 16:49
+                   - 
+                  18 Dec, 16:49
+                </option>,
+                <option
+                  className="menu-item"
+                >
+                  18 Dec, 16:49
+                   - 
+                  18 Dec, 16:49
+                </option>,
+              ],
+            ],
+            "className": "menu",
+            "name": "userShift",
+            "onChange": [Function],
+            "value": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "My shifts",
+                "className": "menu-item",
+              },
+              "ref": null,
+              "rendered": "My shifts",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "18 Dec, 16:49",
+                  " - ",
+                  "18 Dec, 16:49",
+                ],
+                "className": "menu-item",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "18 Dec, 16:49",
+                " - ",
+                "18 Dec, 16:49",
+              ],
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "18 Dec, 16:49",
+                  " - ",
+                  "18 Dec, 16:49",
+                ],
+                "className": "menu-item",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "18 Dec, 16:49",
+                " - ",
+                "18 Dec, 16:49",
+              ],
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Confirm",
+            "className": "custom-button",
+            "id": "confirm-swap-request-form",
+          },
+          "ref": null,
+          "rendered": "Confirm",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
