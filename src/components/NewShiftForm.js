@@ -33,7 +33,6 @@ export default class NewShiftForm extends Component {
 
   createNewShiftRequest = () => {
     let stateCopy = this.state
-    console.log(stateCopy)
     axios.post(
       `${process.env.REACT_APP_API_URL}/shifts`, {
         user_id: localStorage['id'],
