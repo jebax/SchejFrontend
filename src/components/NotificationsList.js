@@ -127,8 +127,8 @@ export default class NotificationsList extends Component {
             <span id="notification-message"><b>{this.state.requests[index].requesterShift.name}</b> wants to swap shifts with you.</span><br />
             <span id="requester-shift-details">Their shift: {this.formatDate(this.state.requests[index].requesterShift.start)} - {this.formatDate(this.state.requests[index].requesterShift.end)}</span><br />
             <span id="respondent-shift-details">Your shift: {this.formatDate(this.state.requests[index].respondentShift.start)} - {this.formatDate(this.state.requests[index].respondentShift.end)}</span><br />
-            <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button>
-            <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button><br /><br />
+            <button id="decline-swap-button" className="custom-button" index={index} onClick={this.handleDecline}>Decline</button>
+            <button id="approve-swap-button" className="custom-button" index={index} onClick={this.handleApprove}>Approve</button><br /><br />
           </div>
         )
       }
@@ -140,10 +140,10 @@ export default class NotificationsList extends Component {
       <div>
         <h3 className='popup-title'>Notifications</h3>
         <div id='notifications-list'>
+          {this.formatRequestContent()}
           <span><b>Emergency Requests:</b></span>
           <br />
           {this.formatEmergencyRequestContent()}
-          {this.formatRequestContent()}
         </div>
       </div>
   )}
