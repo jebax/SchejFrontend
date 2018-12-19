@@ -35,6 +35,6 @@ describe('Shift Popup', () => {
     expect(wrapper.find("RequestSwapForm")).toBeTruthy()
   })
 
-
+  
 
 })
