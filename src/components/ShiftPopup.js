@@ -33,6 +33,17 @@ export default class ShiftPopup extends Component {
     })
   }
 
+  formatEmergencyRequest = () => {
+    if (this.props.shiftInfo.userId === parseInt(localStorage['id'])) {
+      return(
+        <div>
+          <section id='toggle-popup-state'>
+          <button id='toggle-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
+          </section>
+        </div>
+    )}
+  }
+
   render() {
     if (this.state.showingRequestForm) {
       return (
@@ -79,11 +90,10 @@ export default class ShiftPopup extends Component {
           </div>
           <br />
           <section id='toggle-popup-state'>
-            <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button><br />
-            <button id='toggle-emergency-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
+          <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button><br />
           </section>
+          {this.formatEmergencyRequest()}
         </div>
-      )
+      )}
     }
-  }
 }

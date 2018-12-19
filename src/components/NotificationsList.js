@@ -110,7 +110,6 @@ export default class NotificationsList extends Component {
       } else {
       return (
         <div id="emergency-box" key={index}>
-          <span><b>Emergency requests:</b></span><br />
           <span id="emergency-message">Comment: {this.state.emergencies[index].comment}</span><br />
           <span>{this.state.emergencies[index].name} has an emergency and cannot make their shift on </span>
           <span>{this.formatDate(this.state.emergencies[index].start)} until </span>
@@ -149,8 +148,10 @@ export default class NotificationsList extends Component {
       <div>
         <h3 className='popup-title'>Notifications</h3>
         <div id='notifications-list'>
-          {this.formatRequestContent()},
-           {this.formatEmergencyRequestContent()}
+          {this.formatRequestContent()}
+          <span><b>Emergency Requests:</b></span>
+          <br />
+          {this.formatEmergencyRequestContent()}
         </div>
       </div>
   )}
