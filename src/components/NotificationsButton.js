@@ -18,11 +18,19 @@ export default class NotificationsButton extends Component {
   }
 
   getRequestsNumber = () => {
+    var requestsLength = 0
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
     .then(response => {
-      this.setState({ requestsNumber: response.data.length })
+      requestsLength += response.data.length
+    })
+
+    axios.get(
+      `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
+    )
+    .then(response => {
+      this.setState({ requestsNumber: requestsLength + response.data.length })
     })
   }
 

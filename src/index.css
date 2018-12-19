@@ -118,6 +118,12 @@ button#approve-swap-button {
   margin-left: 1vh;
 }
 
+button#approve-emergency-button {
+  float: right;
+  width: 20vh;
+  margin-left: 1vh;
+}
+
 button#decline-swap-button {
   float: right;
   width: 20vh;
@@ -164,6 +170,10 @@ button#toggle-popup-content {
   width: 30vh;
 }
 
+button#toggle-emergency-popup-content {
+  width: 30vh;
+}
+
 div#new-shift-form {
   text-align: center;
 }
@@ -172,6 +182,12 @@ div#notification-box {
   padding: 5px;
   display: block;
 
+}
+
+div#notifications-list {
+  padding: 5px;
+  display: block;
+  overflow: 'scroll'
 }
 
 div#sign-up-page {
