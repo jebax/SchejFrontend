@@ -37,19 +37,6 @@ describe('Signing in', () => {
     cy.contains('Welcome TestName')
   })
 
-  it.skip('Alerts the user if wrong email or password is entered', () => {
-    cy.visit('http://localhost:3000/')
-    cy.get('[id="sign-in-email-entry"]')
-      .type('TestEmail')
-    cy.get('[id="sign-in-password-entry"]')
-      .type('WrongPassword')
-    cy.get('[id="sign-in-submit"]')
-      .click()
-      .then(() => {
-        expect(stub.getCall(0)).to.be.calledWith('Wrong email or password')
-      })
-  })
-
   it('cannot submit if all fields are not filled', () => {
     cy.visit('http://localhost:3000/')
     cy.get('[id="sign-in-email-entry"]')

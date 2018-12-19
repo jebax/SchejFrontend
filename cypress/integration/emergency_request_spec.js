@@ -8,7 +8,8 @@ describe('Requesting emergency cover for a shift', () => {
     const data = {
       name: 'TestName',
       organisation: 'Testorganisation',
-      job_title: 'TestTitle'
+      job_title: 'TestTitle',
+      id: '1'
     }
 
     cy.server()
@@ -30,7 +31,9 @@ describe('Requesting emergency cover for a shift', () => {
           title: 'TestName',
           start_time: '1544601600000',
           end_time: '1544616000000',
-          email: 'TestEmail'
+          email: 'TestEmail',
+          id: '1',
+          user_id: 1
         }
       }
     })

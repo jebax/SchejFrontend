@@ -38,7 +38,7 @@ export default class ShiftPopup extends Component {
       return(
         <div>
           <section id='toggle-popup-state'>
-          <button id='toggle-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
+          <button id='toggle-emergency-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
           </section>
         </div>
     )}
