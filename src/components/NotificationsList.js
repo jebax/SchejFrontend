@@ -17,9 +17,7 @@ export default class NotificationsList extends Component {
     .then(response => {
       this.setState({ requests: response.data })
     })
-    .then(response => {
-      console.log(this.state)
-    })
+
     setTimeout(() => {
       axios.get(
         `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
@@ -27,9 +25,6 @@ export default class NotificationsList extends Component {
       .then(response => {
         console.log(response)
         this.setState({ emergencies: response.data })
-      })
-      .then(response => {
-        console.log(this.state)
       })
     }, 20)
   }
@@ -122,7 +117,7 @@ export default class NotificationsList extends Component {
 
   formatRequestContent = () => {
     return this.state.requests.map((request, index) => {
-      if (request.approved) {        
+      if (request.approved) {
         return <div id="approve-notification-box" key={index}><span>Thanks! Your shifts have been swapped.</span></div>
       } else if (request.declined){
         return <div id="decline-notification-box" key={index}><span>You have declined to swap.</span></div>

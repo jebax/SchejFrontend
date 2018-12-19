@@ -2,7 +2,6 @@ import React from 'react'
 import { mount, shallow } from 'enzyme'
 import axios from 'axios'
 import NotificationsButton from '../components/NotificationsButton'
-import NotificationsList from '../components/NotificationsList'
 import Popup from 'reactjs-popup'
 
 jest.mock('axios')
@@ -63,5 +62,9 @@ describe('Notifications button', () => {
 
     jest.runAllTimers()
     expect(wrapper.state().notificationsOpen).toEqual(false)
+  })
+
+  afterAll(() => {
+    wrapper.unmount()
   })
 })
