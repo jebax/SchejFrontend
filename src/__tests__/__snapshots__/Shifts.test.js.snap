@@ -1,0 +1,1059 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shifts it matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Shifts
+    history={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          id="title"
+        >
+          Schej
+        </h1>,
+        <section
+          id="welcome"
+        >
+          <h2
+            id="welcome-name"
+          >
+            Welcome 
+          </h2>
+          <SignOutButton
+            history={Array []}
+          />
+          <br />
+          <br />
+          <h3
+            id="welcome-organisation"
+          >
+            Organisation: 
+          </h3>
+          <button
+            className="custom-button"
+            id="add-shift-button"
+            onClick={[Function]}
+          >
+            Add Shift
+          </button>
+          <NotificationsButton
+            onClose={[Function]}
+          />
+        </section>,
+        <div>
+          <ForwardRef
+            defaultDate={2018-12-18T16:49:11.163Z}
+            defaultView="month"
+            events={Array []}
+            localizer={
+              DateLocalizer {
+                "format": [Function],
+                "formats": Object {
+                  "agendaDateFormat": "ddd MMM DD",
+                  "agendaHeaderFormat": [Function],
+                  "agendaTimeFormat": "LT",
+                  "agendaTimeRangeFormat": [Function],
+                  "dateFormat": "DD",
+                  "dayFormat": "DD ddd",
+                  "dayHeaderFormat": "dddd MMM DD",
+                  "dayRangeHeaderFormat": [Function],
+                  "eventTimeRangeEndFormat": [Function],
+                  "eventTimeRangeFormat": [Function],
+                  "eventTimeRangeStartFormat": [Function],
+                  "monthHeaderFormat": "MMMM YYYY",
+                  "selectRangeFormat": [Function],
+                  "timeGutterFormat": "LT",
+                  "weekdayFormat": "ddd",
+                },
+                "propType": [Function],
+                "startOfWeek": [Function],
+              }
+            }
+            onSelectEvent={[Function]}
+            selectable={true}
+            style={
+              Object {
+                "height": "100vh",
+              }
+            }
+          />
+        </div>,
+        <Popup
+          arrow={true}
+          arrowStyle={Object {}}
+          className=""
+          closeOnDocumentClick={true}
+          closeOnEscape={true}
+          contentStyle={Object {}}
+          defaultOpen={false}
+          disabled={false}
+          keepTooltipInside={false}
+          lockScroll={false}
+          modal={false}
+          mouseEnterDelay={100}
+          mouseLeaveDelay={100}
+          offsetX={0}
+          offsetY={0}
+          on={
+            Array [
+              "click",
+            ]
+          }
+          onClose={[Function]}
+          onOpen={[Function]}
+          open={false}
+          overlayStyle={Object {}}
+          position="bottom center"
+          repositionOnResize={true}
+          trigger={null}
+        >
+          <ShiftPopup
+            history={Array []}
+            shiftInfo=""
+          />
+        </Popup>,
+        <Popup
+          arrow={true}
+          arrowStyle={Object {}}
+          className=""
+          closeOnDocumentClick={true}
+          closeOnEscape={true}
+          contentStyle={Object {}}
+          defaultOpen={false}
+          disabled={false}
+          keepTooltipInside={false}
+          lockScroll={false}
+          modal={false}
+          mouseEnterDelay={100}
+          mouseLeaveDelay={100}
+          offsetX={0}
+          offsetY={0}
+          on={
+            Array [
+              "click",
+            ]
+          }
+          onClose={[Function]}
+          onOpen={[Function]}
+          open={false}
+          overlayStyle={Object {}}
+          position="bottom center"
+          repositionOnResize={true}
+          trigger={null}
+        >
+          <NewShiftForm
+            history={Array []}
+          />
+        </Popup>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Schej",
+          "id": "title",
+        },
+        "ref": null,
+        "rendered": "Schej",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              id="welcome-name"
+            >
+              Welcome 
+            </h2>,
+            <SignOutButton
+              history={Array []}
+            />,
+            <br />,
+            <br />,
+            <h3
+              id="welcome-organisation"
+            >
+              Organisation: 
+            </h3>,
+            <button
+              className="custom-button"
+              id="add-shift-button"
+              onClick={[Function]}
+            >
+              Add Shift
+            </button>,
+            <NotificationsButton
+              onClose={[Function]}
+            />,
+          ],
+          "id": "welcome",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Welcome ",
+                undefined,
+              ],
+              "id": "welcome-name",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Welcome ",
+              undefined,
+            ],
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "history": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Organisation: ",
+                undefined,
+              ],
+              "id": "welcome-organisation",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Organisation: ",
+              undefined,
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add Shift",
+              "className": "custom-button",
+              "id": "add-shift-button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Add Shift",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onClose": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ForwardRef
+            defaultDate={2018-12-18T16:49:11.163Z}
+            defaultView="month"
+            events={Array []}
+            localizer={
+              DateLocalizer {
+                "format": [Function],
+                "formats": Object {
+                  "agendaDateFormat": "ddd MMM DD",
+                  "agendaHeaderFormat": [Function],
+                  "agendaTimeFormat": "LT",
+                  "agendaTimeRangeFormat": [Function],
+                  "dateFormat": "DD",
+                  "dayFormat": "DD ddd",
+                  "dayHeaderFormat": "dddd MMM DD",
+                  "dayRangeHeaderFormat": [Function],
+                  "eventTimeRangeEndFormat": [Function],
+                  "eventTimeRangeFormat": [Function],
+                  "eventTimeRangeStartFormat": [Function],
+                  "monthHeaderFormat": "MMMM YYYY",
+                  "selectRangeFormat": [Function],
+                  "timeGutterFormat": "LT",
+                  "weekdayFormat": "ddd",
+                },
+                "propType": [Function],
+                "startOfWeek": [Function],
+              }
+            }
+            onSelectEvent={[Function]}
+            selectable={true}
+            style={
+              Object {
+                "height": "100vh",
+              }
+            }
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "defaultDate": 2018-12-18T16:49:11.163Z,
+            "defaultView": "month",
+            "events": Array [],
+            "localizer": DateLocalizer {
+              "format": [Function],
+              "formats": Object {
+                "agendaDateFormat": "ddd MMM DD",
+                "agendaHeaderFormat": [Function],
+                "agendaTimeFormat": "LT",
+                "agendaTimeRangeFormat": [Function],
+                "dateFormat": "DD",
+                "dayFormat": "DD ddd",
+                "dayHeaderFormat": "dddd MMM DD",
+                "dayRangeHeaderFormat": [Function],
+                "eventTimeRangeEndFormat": [Function],
+                "eventTimeRangeFormat": [Function],
+                "eventTimeRangeStartFormat": [Function],
+                "monthHeaderFormat": "MMMM YYYY",
+                "selectRangeFormat": [Function],
+                "timeGutterFormat": "LT",
+                "weekdayFormat": "ddd",
+              },
+              "propType": [Function],
+              "startOfWeek": [Function],
+            },
+            "onSelectEvent": [Function],
+            "selectable": true,
+            "style": Object {
+              "height": "100vh",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "ControlledComponent": [Function],
+            "Navigate": Object {
+              "DATE": "DATE",
+              "NEXT": "NEXT",
+              "PREVIOUS": "PREV",
+              "TODAY": "TODAY",
+            },
+            "Views": Object {
+              "AGENDA": "agenda",
+              "DAY": "day",
+              "MONTH": "month",
+              "WEEK": "week",
+              "WORK_WEEK": "work_week",
+            },
+            "components": Object {
+              "dateCellWrapper": [Function],
+              "dayWrapper": [Function],
+              "eventWrapper": [Function],
+            },
+            "deferControlTo": [Function],
+            "globalizeLocalizer": [Function],
+            "momentLocalizer": [Function],
+            "move": [Function],
+            "propTypes": Object {
+              "date": [Function],
+              "defaultDate": [Function],
+              "defaultSelected": [Function],
+              "defaultView": [Function],
+              "innerRef": [Function],
+              "selected": [Function],
+              "view": [Function],
+            },
+            "render": [Function],
+          },
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrow": true,
+          "arrowStyle": Object {},
+          "children": <ShiftPopup
+            history={Array []}
+            shiftInfo=""
+          />,
+          "className": "",
+          "closeOnDocumentClick": true,
+          "closeOnEscape": true,
+          "contentStyle": Object {},
+          "defaultOpen": false,
+          "disabled": false,
+          "keepTooltipInside": false,
+          "lockScroll": false,
+          "modal": false,
+          "mouseEnterDelay": 100,
+          "mouseLeaveDelay": 100,
+          "offsetX": 0,
+          "offsetY": 0,
+          "on": Array [
+            "click",
+          ],
+          "onClose": [Function],
+          "onOpen": [Function],
+          "open": false,
+          "overlayStyle": Object {},
+          "position": "bottom center",
+          "repositionOnResize": true,
+          "trigger": null,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "history": Array [],
+            "shiftInfo": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrow": true,
+          "arrowStyle": Object {},
+          "children": <NewShiftForm
+            history={Array []}
+          />,
+          "className": "",
+          "closeOnDocumentClick": true,
+          "closeOnEscape": true,
+          "contentStyle": Object {},
+          "defaultOpen": false,
+          "disabled": false,
+          "keepTooltipInside": false,
+          "lockScroll": false,
+          "modal": false,
+          "mouseEnterDelay": 100,
+          "mouseLeaveDelay": 100,
+          "offsetX": 0,
+          "offsetY": 0,
+          "on": Array [
+            "click",
+          ],
+          "onClose": [Function],
+          "onOpen": [Function],
+          "open": false,
+          "overlayStyle": Object {},
+          "position": "bottom center",
+          "repositionOnResize": true,
+          "trigger": null,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "history": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            id="title"
+          >
+            Schej
+          </h1>,
+          <section
+            id="welcome"
+          >
+            <h2
+              id="welcome-name"
+            >
+              Welcome 
+            </h2>
+            <SignOutButton
+              history={Array []}
+            />
+            <br />
+            <br />
+            <h3
+              id="welcome-organisation"
+            >
+              Organisation: 
+            </h3>
+            <button
+              className="custom-button"
+              id="add-shift-button"
+              onClick={[Function]}
+            >
+              Add Shift
+            </button>
+            <NotificationsButton
+              onClose={[Function]}
+            />
+          </section>,
+          <div>
+            <ForwardRef
+              defaultDate={2018-12-18T16:49:11.163Z}
+              defaultView="month"
+              events={Array []}
+              localizer={
+                DateLocalizer {
+                  "format": [Function],
+                  "formats": Object {
+                    "agendaDateFormat": "ddd MMM DD",
+                    "agendaHeaderFormat": [Function],
+                    "agendaTimeFormat": "LT",
+                    "agendaTimeRangeFormat": [Function],
+                    "dateFormat": "DD",
+                    "dayFormat": "DD ddd",
+                    "dayHeaderFormat": "dddd MMM DD",
+                    "dayRangeHeaderFormat": [Function],
+                    "eventTimeRangeEndFormat": [Function],
+                    "eventTimeRangeFormat": [Function],
+                    "eventTimeRangeStartFormat": [Function],
+                    "monthHeaderFormat": "MMMM YYYY",
+                    "selectRangeFormat": [Function],
+                    "timeGutterFormat": "LT",
+                    "weekdayFormat": "ddd",
+                  },
+                  "propType": [Function],
+                  "startOfWeek": [Function],
+                }
+              }
+              onSelectEvent={[Function]}
+              selectable={true}
+              style={
+                Object {
+                  "height": "100vh",
+                }
+              }
+            />
+          </div>,
+          <Popup
+            arrow={true}
+            arrowStyle={Object {}}
+            className=""
+            closeOnDocumentClick={true}
+            closeOnEscape={true}
+            contentStyle={Object {}}
+            defaultOpen={false}
+            disabled={false}
+            keepTooltipInside={false}
+            lockScroll={false}
+            modal={false}
+            mouseEnterDelay={100}
+            mouseLeaveDelay={100}
+            offsetX={0}
+            offsetY={0}
+            on={
+              Array [
+                "click",
+              ]
+            }
+            onClose={[Function]}
+            onOpen={[Function]}
+            open={false}
+            overlayStyle={Object {}}
+            position="bottom center"
+            repositionOnResize={true}
+            trigger={null}
+          >
+            <ShiftPopup
+              history={Array []}
+              shiftInfo=""
+            />
+          </Popup>,
+          <Popup
+            arrow={true}
+            arrowStyle={Object {}}
+            className=""
+            closeOnDocumentClick={true}
+            closeOnEscape={true}
+            contentStyle={Object {}}
+            defaultOpen={false}
+            disabled={false}
+            keepTooltipInside={false}
+            lockScroll={false}
+            modal={false}
+            mouseEnterDelay={100}
+            mouseLeaveDelay={100}
+            offsetX={0}
+            offsetY={0}
+            on={
+              Array [
+                "click",
+              ]
+            }
+            onClose={[Function]}
+            onOpen={[Function]}
+            open={false}
+            overlayStyle={Object {}}
+            position="bottom center"
+            repositionOnResize={true}
+            trigger={null}
+          >
+            <NewShiftForm
+              history={Array []}
+            />
+          </Popup>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Schej",
+            "id": "title",
+          },
+          "ref": null,
+          "rendered": "Schej",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                id="welcome-name"
+              >
+                Welcome 
+              </h2>,
+              <SignOutButton
+                history={Array []}
+              />,
+              <br />,
+              <br />,
+              <h3
+                id="welcome-organisation"
+              >
+                Organisation: 
+              </h3>,
+              <button
+                className="custom-button"
+                id="add-shift-button"
+                onClick={[Function]}
+              >
+                Add Shift
+              </button>,
+              <NotificationsButton
+                onClose={[Function]}
+              />,
+            ],
+            "id": "welcome",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Welcome ",
+                  undefined,
+                ],
+                "id": "welcome-name",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Welcome ",
+                undefined,
+              ],
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "history": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Organisation: ",
+                  undefined,
+                ],
+                "id": "welcome-organisation",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Organisation: ",
+                undefined,
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add Shift",
+                "className": "custom-button",
+                "id": "add-shift-button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Add Shift",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onClose": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ForwardRef
+              defaultDate={2018-12-18T16:49:11.163Z}
+              defaultView="month"
+              events={Array []}
+              localizer={
+                DateLocalizer {
+                  "format": [Function],
+                  "formats": Object {
+                    "agendaDateFormat": "ddd MMM DD",
+                    "agendaHeaderFormat": [Function],
+                    "agendaTimeFormat": "LT",
+                    "agendaTimeRangeFormat": [Function],
+                    "dateFormat": "DD",
+                    "dayFormat": "DD ddd",
+                    "dayHeaderFormat": "dddd MMM DD",
+                    "dayRangeHeaderFormat": [Function],
+                    "eventTimeRangeEndFormat": [Function],
+                    "eventTimeRangeFormat": [Function],
+                    "eventTimeRangeStartFormat": [Function],
+                    "monthHeaderFormat": "MMMM YYYY",
+                    "selectRangeFormat": [Function],
+                    "timeGutterFormat": "LT",
+                    "weekdayFormat": "ddd",
+                  },
+                  "propType": [Function],
+                  "startOfWeek": [Function],
+                }
+              }
+              onSelectEvent={[Function]}
+              selectable={true}
+              style={
+                Object {
+                  "height": "100vh",
+                }
+              }
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "defaultDate": 2018-12-18T16:49:11.163Z,
+              "defaultView": "month",
+              "events": Array [],
+              "localizer": DateLocalizer {
+                "format": [Function],
+                "formats": Object {
+                  "agendaDateFormat": "ddd MMM DD",
+                  "agendaHeaderFormat": [Function],
+                  "agendaTimeFormat": "LT",
+                  "agendaTimeRangeFormat": [Function],
+                  "dateFormat": "DD",
+                  "dayFormat": "DD ddd",
+                  "dayHeaderFormat": "dddd MMM DD",
+                  "dayRangeHeaderFormat": [Function],
+                  "eventTimeRangeEndFormat": [Function],
+                  "eventTimeRangeFormat": [Function],
+                  "eventTimeRangeStartFormat": [Function],
+                  "monthHeaderFormat": "MMMM YYYY",
+                  "selectRangeFormat": [Function],
+                  "timeGutterFormat": "LT",
+                  "weekdayFormat": "ddd",
+                },
+                "propType": [Function],
+                "startOfWeek": [Function],
+              },
+              "onSelectEvent": [Function],
+              "selectable": true,
+              "style": Object {
+                "height": "100vh",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "ControlledComponent": [Function],
+              "Navigate": Object {
+                "DATE": "DATE",
+                "NEXT": "NEXT",
+                "PREVIOUS": "PREV",
+                "TODAY": "TODAY",
+              },
+              "Views": Object {
+                "AGENDA": "agenda",
+                "DAY": "day",
+                "MONTH": "month",
+                "WEEK": "week",
+                "WORK_WEEK": "work_week",
+              },
+              "components": Object {
+                "dateCellWrapper": [Function],
+                "dayWrapper": [Function],
+                "eventWrapper": [Function],
+              },
+              "deferControlTo": [Function],
+              "globalizeLocalizer": [Function],
+              "momentLocalizer": [Function],
+              "move": [Function],
+              "propTypes": Object {
+                "date": [Function],
+                "defaultDate": [Function],
+                "defaultSelected": [Function],
+                "defaultView": [Function],
+                "innerRef": [Function],
+                "selected": [Function],
+                "view": [Function],
+              },
+              "render": [Function],
+            },
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrow": true,
+            "arrowStyle": Object {},
+            "children": <ShiftPopup
+              history={Array []}
+              shiftInfo=""
+            />,
+            "className": "",
+            "closeOnDocumentClick": true,
+            "closeOnEscape": true,
+            "contentStyle": Object {},
+            "defaultOpen": false,
+            "disabled": false,
+            "keepTooltipInside": false,
+            "lockScroll": false,
+            "modal": false,
+            "mouseEnterDelay": 100,
+            "mouseLeaveDelay": 100,
+            "offsetX": 0,
+            "offsetY": 0,
+            "on": Array [
+              "click",
+            ],
+            "onClose": [Function],
+            "onOpen": [Function],
+            "open": false,
+            "overlayStyle": Object {},
+            "position": "bottom center",
+            "repositionOnResize": true,
+            "trigger": null,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "history": Array [],
+              "shiftInfo": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrow": true,
+            "arrowStyle": Object {},
+            "children": <NewShiftForm
+              history={Array []}
+            />,
+            "className": "",
+            "closeOnDocumentClick": true,
+            "closeOnEscape": true,
+            "contentStyle": Object {},
+            "defaultOpen": false,
+            "disabled": false,
+            "keepTooltipInside": false,
+            "lockScroll": false,
+            "modal": false,
+            "mouseEnterDelay": 100,
+            "mouseLeaveDelay": 100,
+            "offsetX": 0,
+            "offsetY": 0,
+            "on": Array [
+              "click",
+            ],
+            "onClose": [Function],
+            "onOpen": [Function],
+            "open": false,
+            "overlayStyle": Object {},
+            "position": "bottom center",
+            "repositionOnResize": true,
+            "trigger": null,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "history": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

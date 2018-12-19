@@ -46,9 +46,6 @@ export default class NewShiftForm extends Component {
       this.props.history.push('/')
       this.props.history.push('/shifts')
     })
-    .catch(error => {
-      console.log(error)
-    })
   }
 
   render() {
