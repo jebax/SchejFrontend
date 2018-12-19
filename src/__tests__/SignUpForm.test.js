@@ -125,5 +125,6 @@ describe("sign up form", () => {
 
   afterAll(() => {
     localStorage.clear()
+    wrapper.unmount()
   })
 })

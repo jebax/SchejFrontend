@@ -20,78 +20,80 @@ export default class Shifts extends Component {
       newShiftOpen: false,
       displayedShift: ''
     }
+
+    if (!localStorage['authenticationToken']) {
+      this.props.history.push('/')
+    }
+
     this.openModal = this.openModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
     this.getAllShifts()
   }
 
   openModal (shift){
-   this.setState({
-     open: true,
-     displayedShift: {
-       shiftId: shift.eventId,
-       title: shift.title,
-       userId: shift.userId,
-       start: shift.start,
-       end: shift.end,
-       email: shift.email
-     }
-   })
- }
+    this.setState({
+      open: true,
+      displayedShift: {
+        shiftId: shift.eventId,
+        title: shift.title,
+        userId: shift.userId,
+        start: shift.start,
+        end: shift.end,
+        email: shift.email
+      }
+    })
+  }
 
- openNewShiftModal = () => {
-   this.setState({
-     newShiftOpen: true
-   })
- }
+  openNewShiftModal = () => {
+    this.setState({
+      newShiftOpen: true
+    })
+  }
 
- closeAndUpdate = () => {
-   this.setState({ events: [] })
-   setTimeout(() => {
-     this.getAllShifts()
-     this.setState({
-       open: false,
-       newShiftOpen: false
-     })
-   }, 10)
- }
+  closeAndUpdate = () => {
+    this.setState({ events: [] })
+    setTimeout(() => {
+      this.getAllShifts()
+      this.setState({
+        open: false,
+        newShiftOpen: false
+      })
+    }, 10)
+  }
 
- closeModal () {
-   this.setState({
-     open: false,
-     newShiftOpen: false
-   })
- }
+  closeModal () {
+    this.setState({
+      open: false,
+      newShiftOpen: false
+    })
+  }
 
- getAllShifts = () => {
-   axios.get(
-     `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}&job_title=${localStorage['jobTitle']}`
-   )
-   .then(response => {
-     console.log(response)
-     let shiftData = response.data
-     for(var i in shiftData) {
-       shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))
-       shiftData[i].end_time = new Date(parseInt(shiftData[i].end_time))
+  getAllShifts = () => {
+    axios.get(
+      `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}&job_title=${localStorage['jobTitle']}`
+    )
+    .then(response => {
+      console.log(response)
+      let shiftData = response.data
+      for(var i in shiftData) {
+        shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))
+        shiftData[i].end_time = new Date(parseInt(shiftData[i].end_time))
 
-       this.setState(prevState => ({
-         events: [...prevState.events, {
-           title: shiftData[i].title,
-           start: shiftData[i].start_time,
-           end: shiftData[i].end_time,
-           eventId: shiftData[i].id,
-           userId: shiftData[i].user_id,
-           email: shiftData[i].email
-         }]
-       }))
+        this.setState(prevState => ({
+          events: [...prevState.events, {
+            title: shiftData[i].title,
+            start: shiftData[i].start_time,
+            end: shiftData[i].end_time,
+            eventId: shiftData[i].id,
+            userId: shiftData[i].user_id,
+            email: shiftData[i].email
+          }]
+        }))
       }
     })
   }
 
   render() {
-    if (!localStorage['authenticationToken']) {
-      this.props.history.push('/')
-    }
     return(
       <div>
         <h1 id='title'>Schej</h1>

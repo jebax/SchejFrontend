@@ -13,7 +13,7 @@ describe('sign in form', () => {
   })
 
   beforeEach(() => {
-    window.localStorage.clear()
+    global.localStorage.clear()
   })
 
   test("it matches the snapshot", () => {
@@ -56,13 +56,14 @@ describe('sign in form', () => {
   })
 
   test('It redirects to the shifts calendar if already signed in', () => {
-    localStorage['authenticationToken'] = 'TestToken'
+    global.localStorage['authenticationToken'] = 'TestToken'
     const secondWrapper = mount(<SignInForm history={[]} />)
 
     expect(secondWrapper.props().history).toEqual(['/shifts'])
   })
 
   afterAll(() => {
-    localStorage.clear()
+    global.localStorage.clear()
+    wrapper.unmount()
   })
 })
