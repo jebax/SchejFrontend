@@ -194,6 +194,7 @@ button#toggle-popup-content {
 
 button#toggle-emergency-popup-content {
   width: 30vh;
+  font-size: 0.5em;
 }
 
 div#emergency-box {
