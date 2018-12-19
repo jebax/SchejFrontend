@@ -38,5 +38,4 @@ describe('Shift Popup', () => {
   afterAll(() => {
     wrapper.unmount()
   })
-
 })
