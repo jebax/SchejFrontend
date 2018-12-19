@@ -176,6 +176,11 @@ button#toggle-emergency-popup-content {
   width: 30vh;
 }
 
+div#emergency-box {
+  padding: 5px;
+  display: block;
+}
+
 div#new-shift-form {
   text-align: center;
 }
@@ -183,7 +188,6 @@ div#new-shift-form {
 div#notification-box {
   padding: 5px;
   display: block;
-
 }
 
 div#notifications-list {

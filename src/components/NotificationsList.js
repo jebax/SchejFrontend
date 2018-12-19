@@ -140,10 +140,10 @@ export default class NotificationsList extends Component {
       <div>
         <h3 className='popup-title'>Notifications</h3>
         <div id='notifications-list'>
-          {this.formatRequestContent()}
           <span><b>Emergency Requests:</b></span>
           <br />
           {this.formatEmergencyRequestContent()}
+          {this.formatRequestContent()}
         </div>
       </div>
   )}
