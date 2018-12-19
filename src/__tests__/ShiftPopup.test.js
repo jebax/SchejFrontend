@@ -6,17 +6,19 @@ describe('Shift Popup', () => {
   var wrapper
 
   beforeAll(() => {
-    wrapper = shallow(<ShiftPopup shiftInfo = {
+    global.localStorage['id'] = 1
+
+    wrapper = mount(<ShiftPopup shiftInfo = {
       {
         start: { toLocaleString() {} },
-        end: { toLocaleString() {} }
+        end: { toLocaleString() {} },
+        userId: 1
       }
     }/>)
   })
 
 
   test("it matches the snapshot", () => {
-    console.log(wrapper);
     expect(wrapper).toMatchSnapshot()
   })
 
@@ -32,6 +34,7 @@ describe('Shift Popup', () => {
     expect(wrapper.state().showingRequestForm).toEqual(true)
     expect(wrapper.find("RequestSwapForm")).toBeTruthy()
   })
+
 
 
 })
