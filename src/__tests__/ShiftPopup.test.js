@@ -24,8 +24,6 @@ describe('Shift Popup', () => {
     expect(wrapper.find('#shift-popup')).toBeTruthy()
   })
 
-  
 
-  })
 
 })
