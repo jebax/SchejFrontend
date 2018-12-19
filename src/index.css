@@ -18,6 +18,8 @@ code {
 .popup-content  {
   border-radius: 5px !important;
   padding: 4vh !important;
+  height: 60vh !important;
+  overflow: scroll !important;
 }
 
 .rbc-toolbar-label {
