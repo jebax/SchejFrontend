@@ -5,17 +5,51 @@ export default class NotificationsList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      requests: []
+      requests: [],
+      emergencies: []
     }
   }
 
   componentWillMount() {
+    console.log(localStorage['id'])
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
     .then(response => {
       this.setState({ requests: response.data })
     })
+    .then(response => {
+      console.log(this.state)
+    })
+    console.log(localStorage['id'])
+
+    axios.get(
+      `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
+    )
+    .then(response => {
+      console.log(response)
+      this.setState({ emergencies: response.data })
+    })
+    .then(response => {
+      console.log(this.state)
+    })
+  }
+
+  handleEmergencyApprove = (event) => {
+    const index = event.target.attributes.index.value
+    let emergencies = [...this.state.emergencies]
+    let emergency = {...emergencies[index]}
+    emergency.approved = true
+    emergencies[index] = emergency
+    this.setState({emergencies})
+
+    axios.patch(
+      `${process.env.REACT_APP_API_URL}/emergencyshift/${this.state.emergencies[index].shiftId}`, {
+        respondent_id: localStorage['id']
+      }
+    )
+
+    this.deleteEmergencyRequest(this.state.emergencies[index].id)
   }
 
   handleApprove = (event) => {
@@ -47,6 +81,12 @@ export default class NotificationsList extends Component {
     this.deleteRequest(this.state.requests[index].id)
   }
 
+  deleteEmergencyRequest = (emergencyId) => {
+    axios.delete(
+      `${process.env.REACT_APP_API_URL}/emergency_requests/${emergencyId}`
+    )
+  }
+
   deleteRequest = (requestId) => {
     axios.delete(
       `${process.env.REACT_APP_API_URL}/requests/${requestId}`
@@ -61,6 +101,25 @@ export default class NotificationsList extends Component {
 
   formatDate = (time) => {
     return new Date(parseInt(time)).toLocaleString("en-GB", { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit'})
+  }
+
+  formatEmergencyRequestContent = () => {
+    return this.state.emergencies.map((emergency, index) => {
+      if (emergency.approved) {
+        return <div id="emergency-box" key={index}><span>Thanks! You have now taken on this shift. You are a hero!</span></div>
+      } else {
+      return (
+        <div id="emergency-box" key={index}>
+          <span><b>Emergency requests:</b></span><br />
+          <span id="emergency-message">Comment: {this.state.emergencies[index].comment}</span><br />
+          <span>{this.state.emergencies[index].name} has an emergency and cannot make their shift on </span>
+          <span>{this.formatDate(this.state.emergencies[index].start)} until </span>
+          <span>{this.formatDate(this.state.emergencies[index].end)}</span><br />
+          <button id="approve-emergency-button" className="custom-button" index={index} onClick={this.handleEmergencyApprove}>Approve</button><br /><br />
+        </div>
+      )
+    }
+    })
   }
 
   formatRequestContent = () => {
@@ -84,11 +143,14 @@ export default class NotificationsList extends Component {
   }
 
   render() {
+    console.log('logging state here')
+    console.log(this.state)
     return(
       <div>
         <h3 className='popup-title'>Notifications</h3>
         <div id='notifications-list'>
-          {this.formatRequestContent()}
+          {this.formatRequestContent()},
+           {this.formatEmergencyRequestContent()}
         </div>
       </div>
   )}
