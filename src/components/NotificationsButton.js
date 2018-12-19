@@ -26,12 +26,14 @@ export default class NotificationsButton extends Component {
       requestsLength += response.data.length
     })
 
-    axios.get(
-      `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
-    )
-    .then(response => {
-      this.setState({ requestsNumber: requestsLength + response.data.length })
-    })
+    setTimeout(() => {
+      axios.get(
+        `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
+      )
+      .then(response => {
+        this.setState({ requestsNumber: requestsLength + response.data.length })
+      })
+    }, 20)
   }
 
   openNotificationsModal = () => {

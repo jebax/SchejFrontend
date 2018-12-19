@@ -11,7 +11,6 @@ export default class NotificationsList extends Component {
   }
 
   componentWillMount() {
-    console.log(localStorage['id'])
     axios.get(
       `${process.env.REACT_APP_API_URL}/requestsbyuser/${localStorage['id']}`
     )
@@ -21,7 +20,6 @@ export default class NotificationsList extends Component {
     .then(response => {
       console.log(this.state)
     })
-    console.log(localStorage['id'])
 
     axios.get(
       `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
@@ -142,8 +140,6 @@ export default class NotificationsList extends Component {
   }
 
   render() {
-    console.log('logging state here')
-    console.log(this.state)
     return(
       <div>
         <h3 className='popup-title'>Notifications</h3>
