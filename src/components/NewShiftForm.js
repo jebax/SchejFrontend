@@ -63,7 +63,7 @@ export default class NewShiftForm extends Component {
         <Flatpickr data-enable-time
           value={this.state.endDate}
           onChange={endDate => { this.setState({ endDate: endDate[0] }) }}
-          options={{minDate: this.state.startDate}}
+          options={{minDate: this.state.currentDate}}
         />
         <br />
         <form className='new-shift-form' onSubmit={this.handleSubmit}>

@@ -33,7 +33,7 @@ export default class NotificationsButton extends Component {
       .then(response => {
         this.setState({ requestsNumber: requestsLength + response.data.length })
       })
-    }, 20)
+    }, 100)
   }
 
   openNotificationsModal = () => {

@@ -40,7 +40,6 @@ export default class SignInForm extends Component {
         password: this.state.password
       })
       .then(response => {
-        console.log(response)
         if (response.data['error']){
           alert('Wrong email or password')
         } else {

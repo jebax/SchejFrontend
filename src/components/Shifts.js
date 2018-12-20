@@ -76,20 +76,12 @@ export default class Shifts extends Component {
       console.log(response)
       let shiftData = response.data
       for(var i in shiftData) {
-        shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))
-        shiftData[i].end_time = new Date(parseInt(shiftData[i].end_time))
-
-        this.setState(prevState => ({
-          events: [...prevState.events, {
-            title: shiftData[i].title,
-            start: shiftData[i].start_time,
-            end: shiftData[i].end_time,
-            eventId: shiftData[i].id,
-            userId: shiftData[i].user_id,
-            email: shiftData[i].email
-          }]
-        }))
+        shiftData[i].start = new Date(parseInt(shiftData[i].start))
+        shiftData[i].end = new Date(parseInt(shiftData[i].end))
       }
+      setTimeout(() => {
+        this.setState({events: shiftData})
+      }, 50)
     })
   }
 

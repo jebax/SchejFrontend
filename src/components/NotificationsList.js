@@ -23,7 +23,6 @@ export default class NotificationsList extends Component {
         `${process.env.REACT_APP_API_URL}/emergency_requests?user_id=${localStorage['id']}`
       )
       .then(response => {
-        console.log(response)
         this.setState({ emergencies: response.data })
       })
     }, 20)
@@ -58,7 +57,7 @@ export default class NotificationsList extends Component {
       `${process.env.REACT_APP_API_URL}/shifts/${this.state.requests[index].requesterShift.id}?other_id=${this.state.requests[index].respondentShift.id}`
     )
     .then(response => {
-      console.log(response)
+
     })
 
     this.deleteRequest(this.state.requests[index].id)
@@ -86,7 +85,7 @@ export default class NotificationsList extends Component {
       `${process.env.REACT_APP_API_URL}/requests/${requestId}`
     )
     .then(response => {
-      console.log(response)
+
     })
     .catch(error => {
       console.log(error)
