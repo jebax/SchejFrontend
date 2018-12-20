@@ -5,7 +5,6 @@ import { deleteAuthStorage } from '../actions/authentication'
 export default class SignOutButton extends Component {
 
   handleClick = () => {
-    console.log(localStorage['authenticationToken'])
     let self = this
     axios.delete(
       `${process.env.REACT_APP_API_URL}/sign_out`,

@@ -73,7 +73,6 @@ export default class Shifts extends Component {
       `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}&job_title=${localStorage['jobTitle']}`
     )
     .then(response => {
-      console.log(response)
       let shiftData = response.data
       for(var i in shiftData) {
         shiftData[i].start_time = new Date(parseInt(shiftData[i].start_time))

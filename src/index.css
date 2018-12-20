@@ -34,7 +34,7 @@ button {
 }
 
 .rbc-toolbar-label {
-  margin-left: 14vh;
+  margin-left: 11vh;
 }
 
 .sign-in-form {
@@ -120,7 +120,7 @@ button {
 .shift-info-label {
   float: left;
   width: 22vh;
-  margin-left: 25vh;
+  margin-left: 12vh;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
@@ -184,7 +184,7 @@ button#add-shift-button {
 button#notifications-button {
   margin-right: 1vh;
   float: right;
-  width: 27.5vh;
+  width: 20vh;
 }
 
 button#sign-out-button {
