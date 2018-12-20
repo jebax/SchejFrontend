@@ -36,7 +36,7 @@ ShallowWrapper {
           id="comment"
           name="comment"
           onChange={[Function]}
-          placeholder="Why do you need to swap?"
+          placeholder="Why can't you make this shift?"
           type="text"
         />,
         <br />,
@@ -79,7 +79,7 @@ ShallowWrapper {
           "id": "comment",
           "name": "comment",
           "onChange": [Function],
-          "placeholder": "Why do you need to swap?",
+          "placeholder": "Why can't you make this shift?",
           "type": "text",
         },
         "ref": null,
@@ -154,7 +154,7 @@ ShallowWrapper {
             id="comment"
             name="comment"
             onChange={[Function]}
-            placeholder="Why do you need to swap?"
+            placeholder="Why can't you make this shift?"
             type="text"
           />,
           <br />,
@@ -197,7 +197,7 @@ ShallowWrapper {
             "id": "comment",
             "name": "comment",
             "onChange": [Function],
-            "placeholder": "Why do you need to swap?",
+            "placeholder": "Why can't you make this shift?",
             "type": "text",
           },
           "ref": null,
