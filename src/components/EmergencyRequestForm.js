@@ -31,7 +31,7 @@ export default class EmergencyRequestForm extends Component {
     return(
       <form id="emergency-request-form" onSubmit={this.handleSubmit}>
         <label className='shift-info-label' for='comment'>Comment:</label>
-        <input className='shift-info-entry' id="comment" type="text" name="comment" placeholder="Why do you need to swap?" onChange={this.handleChange} /><br /><br />
+        <input className='shift-info-entry' id="comment" type="text" name="comment" placeholder="Why can't you make this shift?" onChange={this.handleChange} /><br /><br />
         <section id='confirm-emergency'>
           <button id="confirm-emergency-request" className='custom-button'>Confirm</button>
         </section>
