@@ -261,6 +261,11 @@ div#sign-in-page {
   font-family: 'Montserrat', sans-serif;
 }
 
+div#toggle-emergency-div {
+  text-align: center;
+  margin-top: 1vh;
+}
+
 form#emergency-request-form {
   margin-top: 5vh;
   display: block;

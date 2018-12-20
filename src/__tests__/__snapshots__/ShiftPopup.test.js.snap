@@ -183,20 +183,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -394,20 +387,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -586,20 +572,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -797,20 +776,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -926,8 +898,8 @@ ReactWrapper {
           "_debugIsCurrentlyTiming": false,
           "_debugOwner": [Circular],
           "_debugSource": Object {
-            "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-            "lineNumber": 68,
+            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+            "lineNumber": 64,
           },
           "actualDuration": 0,
           "actualStartTime": -1,
@@ -937,8 +909,8 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-              "lineNumber": 69,
+              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+              "lineNumber": 65,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -972,19 +944,19 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                "lineNumber": 70,
+                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                "lineNumber": 66,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
               "alternate": null,
               "child": FiberNode {
-                "_debugID": 63,
+                "_debugID": 62,
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                  "lineNumber": 71,
+                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                  "lineNumber": 67,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -1014,12 +986,12 @@ ReactWrapper {
                 "return": [Circular],
                 "selfBaseDuration": 0,
                 "sibling": FiberNode {
-                  "_debugID": 64,
+                  "_debugID": 63,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                    "lineNumber": 72,
+                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                    "lineNumber": 68,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -1113,8 +1085,8 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                  "lineNumber": 74,
+                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                  "lineNumber": 70,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -1142,19 +1114,19 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                    "lineNumber": 75,
+                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                    "lineNumber": 71,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
                   "alternate": null,
                   "child": FiberNode {
-                    "_debugID": 65,
+                    "_debugID": 64,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                      "lineNumber": 76,
+                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                      "lineNumber": 72,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -1184,12 +1156,12 @@ ReactWrapper {
                     "return": [Circular],
                     "selfBaseDuration": 0,
                     "sibling": FiberNode {
-                      "_debugID": 66,
+                      "_debugID": 65,
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
-                        "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                        "lineNumber": 77,
+                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                        "lineNumber": 73,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -1283,8 +1255,8 @@ ReactWrapper {
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                      "lineNumber": 79,
+                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                      "lineNumber": 75,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -1312,19 +1284,19 @@ ReactWrapper {
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
-                        "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                        "lineNumber": 80,
+                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                        "lineNumber": 76,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
                       "alternate": null,
                       "child": FiberNode {
-                        "_debugID": 67,
+                        "_debugID": 66,
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
-                          "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                          "lineNumber": 81,
+                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                          "lineNumber": 77,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -1354,12 +1326,12 @@ ReactWrapper {
                         "return": [Circular],
                         "selfBaseDuration": 0,
                         "sibling": FiberNode {
-                          "_debugID": 68,
+                          "_debugID": 67,
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
-                            "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                            "lineNumber": 82,
+                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                            "lineNumber": 78,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -1453,8 +1425,8 @@ ReactWrapper {
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
-                          "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                          "lineNumber": 84,
+                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                          "lineNumber": 80,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -1482,19 +1454,19 @@ ReactWrapper {
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
-                            "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                            "lineNumber": 85,
+                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                            "lineNumber": 81,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
                           "alternate": null,
                           "child": FiberNode {
-                            "_debugID": 69,
+                            "_debugID": 68,
                             "_debugIsCurrentlyTiming": false,
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
-                              "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                              "lineNumber": 86,
+                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                              "lineNumber": 82,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -1524,12 +1496,12 @@ ReactWrapper {
                             "return": [Circular],
                             "selfBaseDuration": 0,
                             "sibling": FiberNode {
-                              "_debugID": 70,
+                              "_debugID": 69,
                               "_debugIsCurrentlyTiming": false,
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
-                                "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                "lineNumber": 87,
+                                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                "lineNumber": 83,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -1623,8 +1595,8 @@ ReactWrapper {
                             "_debugIsCurrentlyTiming": false,
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
-                              "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                              "lineNumber": 89,
+                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                              "lineNumber": 85,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -1652,19 +1624,19 @@ ReactWrapper {
                               "_debugIsCurrentlyTiming": false,
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
-                                "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                "lineNumber": 90,
+                                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                "lineNumber": 86,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
                               "alternate": null,
                               "child": FiberNode {
-                                "_debugID": 71,
+                                "_debugID": 70,
                                 "_debugIsCurrentlyTiming": false,
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
-                                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 91,
+                                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                  "lineNumber": 87,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -1698,12 +1670,12 @@ ReactWrapper {
                                 "return": [Circular],
                                 "selfBaseDuration": 0,
                                 "sibling": FiberNode {
-                                  "_debugID": 72,
+                                  "_debugID": 71,
                                   "_debugIsCurrentlyTiming": false,
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
-                                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 91,
+                                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                    "lineNumber": 37,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
@@ -1711,26 +1683,41 @@ ReactWrapper {
                                   "child": null,
                                   "childExpirationTime": 0,
                                   "effectTag": 0,
-                                  "elementType": "br",
+                                  "elementType": "button",
                                   "expirationTime": 0,
                                   "firstContextDependency": null,
                                   "firstEffect": null,
                                   "index": 1,
                                   "key": null,
                                   "lastEffect": null,
-                                  "memoizedProps": Object {},
+                                  "memoizedProps": Object {
+                                    "children": "Request emergency cover",
+                                    "className": "custom-button",
+                                    "id": "toggle-emergency-popup-content",
+                                    "onClick": [Function],
+                                  },
                                   "memoizedState": null,
                                   "mode": 0,
                                   "nextEffect": null,
-                                  "pendingProps": Object {},
+                                  "pendingProps": Object {
+                                    "children": "Request emergency cover",
+                                    "className": "custom-button",
+                                    "id": "toggle-emergency-popup-content",
+                                    "onClick": [Function],
+                                  },
                                   "ref": null,
                                   "return": [Circular],
                                   "selfBaseDuration": 0,
                                   "sibling": null,
-                                  "stateNode": <br />,
+                                  "stateNode": <button
+                                    class="custom-button"
+                                    id="toggle-emergency-popup-content"
+                                  >
+                                    Request emergency cover
+                                  </button>,
                                   "tag": 5,
                                   "treeBaseDuration": 0,
-                                  "type": "br",
+                                  "type": "button",
                                   "updateQueue": null,
                                 },
                                 "stateNode": <button
@@ -1762,7 +1749,13 @@ ReactWrapper {
                                   >
                                     Request shift swap
                                   </button>,
-                                  <br />,
+                                  <button
+                                    className="custom-button"
+                                    id="toggle-emergency-popup-content"
+                                    onClick={[Function]}
+                                  >
+                                    Request emergency cover
+                                  </button>,
                                 ],
                                 "id": "toggle-popup-state",
                               },
@@ -1778,196 +1771,20 @@ ReactWrapper {
                                   >
                                     Request shift swap
                                   </button>,
-                                  <br />,
+                                  <button
+                                    className="custom-button"
+                                    id="toggle-emergency-popup-content"
+                                    onClick={[Function]}
+                                  >
+                                    Request emergency cover
+                                  </button>,
                                 ],
                                 "id": "toggle-popup-state",
                               },
                               "ref": null,
                               "return": [Circular],
                               "selfBaseDuration": 0,
-                              "sibling": FiberNode {
-                                "_debugID": 62,
-                                "_debugIsCurrentlyTiming": false,
-                                "_debugOwner": [Circular],
-                                "_debugSource": Object {
-                                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 37,
-                                },
-                                "actualDuration": 0,
-                                "actualStartTime": -1,
-                                "alternate": null,
-                                "child": FiberNode {
-                                  "_debugID": 73,
-                                  "_debugIsCurrentlyTiming": false,
-                                  "_debugOwner": [Circular],
-                                  "_debugSource": Object {
-                                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 38,
-                                  },
-                                  "actualDuration": 0,
-                                  "actualStartTime": -1,
-                                  "alternate": null,
-                                  "child": FiberNode {
-                                    "_debugID": 74,
-                                    "_debugIsCurrentlyTiming": false,
-                                    "_debugOwner": [Circular],
-                                    "_debugSource": Object {
-                                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                      "lineNumber": 39,
-                                    },
-                                    "actualDuration": 0,
-                                    "actualStartTime": -1,
-                                    "alternate": null,
-                                    "child": null,
-                                    "childExpirationTime": 0,
-                                    "effectTag": 0,
-                                    "elementType": "button",
-                                    "expirationTime": 0,
-                                    "firstContextDependency": null,
-                                    "firstEffect": null,
-                                    "index": 0,
-                                    "key": null,
-                                    "lastEffect": null,
-                                    "memoizedProps": Object {
-                                      "children": "Request emergency cover",
-                                      "className": "custom-button",
-                                      "id": "toggle-emergency-popup-content",
-                                      "onClick": [Function],
-                                    },
-                                    "memoizedState": null,
-                                    "mode": 0,
-                                    "nextEffect": null,
-                                    "pendingProps": Object {
-                                      "children": "Request emergency cover",
-                                      "className": "custom-button",
-                                      "id": "toggle-emergency-popup-content",
-                                      "onClick": [Function],
-                                    },
-                                    "ref": null,
-                                    "return": [Circular],
-                                    "selfBaseDuration": 0,
-                                    "sibling": null,
-                                    "stateNode": <button
-                                      class="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                    >
-                                      Request emergency cover
-                                    </button>,
-                                    "tag": 5,
-                                    "treeBaseDuration": 0,
-                                    "type": "button",
-                                    "updateQueue": null,
-                                  },
-                                  "childExpirationTime": 0,
-                                  "effectTag": 0,
-                                  "elementType": "section",
-                                  "expirationTime": 0,
-                                  "firstContextDependency": null,
-                                  "firstEffect": null,
-                                  "index": 0,
-                                  "key": null,
-                                  "lastEffect": null,
-                                  "memoizedProps": Object {
-                                    "children": <button
-                                      className="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request emergency cover
-                                    </button>,
-                                    "id": "toggle-popup-state",
-                                  },
-                                  "memoizedState": null,
-                                  "mode": 0,
-                                  "nextEffect": null,
-                                  "pendingProps": Object {
-                                    "children": <button
-                                      className="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request emergency cover
-                                    </button>,
-                                    "id": "toggle-popup-state",
-                                  },
-                                  "ref": null,
-                                  "return": [Circular],
-                                  "selfBaseDuration": 0,
-                                  "sibling": null,
-                                  "stateNode": <section
-                                    id="toggle-popup-state"
-                                  >
-                                    <button
-                                      class="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                    >
-                                      Request emergency cover
-                                    </button>
-                                  </section>,
-                                  "tag": 5,
-                                  "treeBaseDuration": 0,
-                                  "type": "section",
-                                  "updateQueue": null,
-                                },
-                                "childExpirationTime": 0,
-                                "effectTag": 0,
-                                "elementType": "div",
-                                "expirationTime": 0,
-                                "firstContextDependency": null,
-                                "firstEffect": null,
-                                "index": 10,
-                                "key": null,
-                                "lastEffect": null,
-                                "memoizedProps": Object {
-                                  "children": <section
-                                    id="toggle-popup-state"
-                                  >
-                                    <button
-                                      className="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request emergency cover
-                                    </button>
-                                  </section>,
-                                },
-                                "memoizedState": null,
-                                "mode": 0,
-                                "nextEffect": null,
-                                "pendingProps": Object {
-                                  "children": <section
-                                    id="toggle-popup-state"
-                                  >
-                                    <button
-                                      className="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                      onClick={[Function]}
-                                    >
-                                      Request emergency cover
-                                    </button>
-                                  </section>,
-                                },
-                                "ref": null,
-                                "return": [Circular],
-                                "selfBaseDuration": 0,
-                                "sibling": null,
-                                "stateNode": <div>
-                                  <section
-                                    id="toggle-popup-state"
-                                  >
-                                    <button
-                                      class="custom-button"
-                                      id="toggle-emergency-popup-content"
-                                    >
-                                      Request emergency cover
-                                    </button>
-                                  </section>
-                                </div>,
-                                "tag": 5,
-                                "treeBaseDuration": 0,
-                                "type": "div",
-                                "updateQueue": null,
-                              },
+                              "sibling": null,
                               "stateNode": <section
                                 id="toggle-popup-state"
                               >
@@ -1977,7 +1794,12 @@ ReactWrapper {
                                 >
                                   Request shift swap
                                 </button>
-                                <br />
+                                <button
+                                  class="custom-button"
+                                  id="toggle-emergency-popup-content"
+                                >
+                                  Request emergency cover
+                                </button>
                               </section>,
                               "tag": 5,
                               "treeBaseDuration": 0,
@@ -2164,21 +1986,14 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>
-                <br />
-              </section>,
-              <div>
-                <section
-                  id="toggle-popup-state"
+                <button
+                  className="custom-button"
+                  id="toggle-emergency-popup-content"
+                  onClick={[Function]}
                 >
-                  <button
-                    className="custom-button"
-                    id="toggle-emergency-popup-content"
-                    onClick={[Function]}
-                  >
-                    Request emergency cover
-                  </button>
-                </section>
-              </div>,
+                  Request emergency cover
+                </button>
+              </section>,
             ],
             "id": "shift-popup",
           },
@@ -2254,21 +2069,14 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>
-                <br />
-              </section>,
-              <div>
-                <section
-                  id="toggle-popup-state"
+                <button
+                  className="custom-button"
+                  id="toggle-emergency-popup-content"
+                  onClick={[Function]}
                 >
-                  <button
-                    className="custom-button"
-                    id="toggle-emergency-popup-content"
-                    onClick={[Function]}
-                  >
-                    Request emergency cover
-                  </button>
-                </section>
-              </div>,
+                  Request emergency cover
+                </button>
+              </section>,
             ],
             "id": "shift-popup",
           },
@@ -2345,20 +2153,13 @@ ReactWrapper {
               >
                 Request shift swap
               </button>
-              <br />
-            </section>
-            <div>
-              <section
-                id="toggle-popup-state"
+              <button
+                class="custom-button"
+                id="toggle-emergency-popup-content"
               >
-                <button
-                  class="custom-button"
-                  id="toggle-emergency-popup-content"
-                >
-                  Request emergency cover
-                </button>
-              </section>
-            </div>
+                Request emergency cover
+              </button>
+            </section>
           </div>,
           "tag": 5,
           "treeBaseDuration": 0,
@@ -2559,20 +2360,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -2770,20 +2564,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -2962,20 +2749,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -3173,20 +2953,13 @@ ReactWrapper {
                     >
                       Request shift swap
                     </button>
-                    <br />
-                  </section>
-                  <div>
-                    <section
-                      id="toggle-popup-state"
+                    <button
+                      class="custom-button"
+                      id="toggle-emergency-popup-content"
                     >
-                      <button
-                        class="custom-button"
-                        id="toggle-emergency-popup-content"
-                      >
-                        Request emergency cover
-                      </button>
-                    </section>
-                  </div>
+                      Request emergency cover
+                    </button>
+                  </section>
                 </div>
               </div>,
               "context": Object {},
@@ -3430,20 +3203,13 @@ ReactWrapper {
           >
             Request shift swap
           </button>
-          <br />
-        </section>
-        <div>
-          <section
-            id="toggle-popup-state"
+          <button
+            class="custom-button"
+            id="toggle-emergency-popup-content"
           >
-            <button
-              class="custom-button"
-              id="toggle-emergency-popup-content"
-            >
-              Request emergency cover
-            </button>
-          </section>
-        </div>
+            Request emergency cover
+          </button>
+        </section>
       </div>,
       "key": undefined,
       "nodeType": "host",
@@ -3516,21 +3282,14 @@ ReactWrapper {
             >
               Request shift swap
             </button>
-            <br />
-          </section>,
-          <div>
-            <section
-              id="toggle-popup-state"
+            <button
+              className="custom-button"
+              id="toggle-emergency-popup-content"
+              onClick={[Function]}
             >
-              <button
-                className="custom-button"
-                id="toggle-emergency-popup-content"
-                onClick={[Function]}
-              >
-                Request emergency cover
-              </button>
-            </section>
-          </div>,
+              Request emergency cover
+            </button>
+          </section>,
         ],
         "id": "shift-popup",
       },
@@ -3876,7 +3635,12 @@ ReactWrapper {
             >
               Request shift swap
             </button>
-            <br />
+            <button
+              class="custom-button"
+              id="toggle-emergency-popup-content"
+            >
+              Request emergency cover
+            </button>
           </section>,
           "key": undefined,
           "nodeType": "host",
@@ -3889,7 +3653,13 @@ ReactWrapper {
               >
                 Request shift swap
               </button>,
-              <br />,
+              <button
+                className="custom-button"
+                id="toggle-emergency-popup-content"
+                onClick={[Function]}
+              >
+                Request emergency cover
+              </button>,
             ],
             "id": "toggle-popup-state",
           },
@@ -3917,100 +3687,28 @@ ReactWrapper {
               "type": "button",
             },
             Object {
-              "instance": <br />,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": Array [
-                undefined,
-              ],
-              "type": "br",
-            },
-          ],
-          "type": "section",
-        },
-        Object {
-          "instance": <div>
-            <section
-              id="toggle-popup-state"
-            >
-              <button
+              "instance": <button
                 class="custom-button"
                 id="toggle-emergency-popup-content"
               >
                 Request emergency cover
-              </button>
-            </section>
-          </div>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <section
-              id="toggle-popup-state"
-            >
-              <button
-                className="custom-button"
-                id="toggle-emergency-popup-content"
-                onClick={[Function]}
-              >
-                Request emergency cover
-              </button>
-            </section>,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": <section
-                id="toggle-popup-state"
-              >
-                <button
-                  class="custom-button"
-                  id="toggle-emergency-popup-content"
-                >
-                  Request emergency cover
-                </button>
-              </section>,
+              </button>,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <button
-                  className="custom-button"
-                  id="toggle-emergency-popup-content"
-                  onClick={[Function]}
-                >
-                  Request emergency cover
-                </button>,
-                "id": "toggle-popup-state",
+                "children": "Request emergency cover",
+                "className": "custom-button",
+                "id": "toggle-emergency-popup-content",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": Array [
-                Object {
-                  "instance": <button
-                    class="custom-button"
-                    id="toggle-emergency-popup-content"
-                  >
-                    Request emergency cover
-                  </button>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Request emergency cover",
-                    "className": "custom-button",
-                    "id": "toggle-emergency-popup-content",
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Request emergency cover",
-                  ],
-                  "type": "button",
-                },
+                "Request emergency cover",
               ],
-              "type": "section",
+              "type": "button",
             },
           ],
-          "type": "div",
+          "type": "section",
         },
       ],
       "type": "div",
@@ -4177,20 +3875,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -4388,20 +4079,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -4580,20 +4264,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -4791,20 +4468,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -4920,8 +4590,8 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-              "lineNumber": 68,
+              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+              "lineNumber": 64,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -4931,8 +4601,8 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                "lineNumber": 69,
+                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                "lineNumber": 65,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -4966,19 +4636,19 @@ ReactWrapper {
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
-                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                  "lineNumber": 70,
+                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                  "lineNumber": 66,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
                 "alternate": null,
                 "child": FiberNode {
-                  "_debugID": 63,
+                  "_debugID": 62,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                    "lineNumber": 71,
+                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                    "lineNumber": 67,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -5008,12 +4678,12 @@ ReactWrapper {
                   "return": [Circular],
                   "selfBaseDuration": 0,
                   "sibling": FiberNode {
-                    "_debugID": 64,
+                    "_debugID": 63,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                      "lineNumber": 72,
+                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                      "lineNumber": 68,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -5107,8 +4777,8 @@ ReactWrapper {
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
-                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                    "lineNumber": 74,
+                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                    "lineNumber": 70,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -5136,19 +4806,19 @@ ReactWrapper {
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                      "lineNumber": 75,
+                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                      "lineNumber": 71,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
                     "alternate": null,
                     "child": FiberNode {
-                      "_debugID": 65,
+                      "_debugID": 64,
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
-                        "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                        "lineNumber": 76,
+                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                        "lineNumber": 72,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -5178,12 +4848,12 @@ ReactWrapper {
                       "return": [Circular],
                       "selfBaseDuration": 0,
                       "sibling": FiberNode {
-                        "_debugID": 66,
+                        "_debugID": 65,
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
-                          "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                          "lineNumber": 77,
+                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                          "lineNumber": 73,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -5277,8 +4947,8 @@ ReactWrapper {
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
-                        "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                        "lineNumber": 79,
+                        "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                        "lineNumber": 75,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -5306,19 +4976,19 @@ ReactWrapper {
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
-                          "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                          "lineNumber": 80,
+                          "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                          "lineNumber": 76,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
                         "alternate": null,
                         "child": FiberNode {
-                          "_debugID": 67,
+                          "_debugID": 66,
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
-                            "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                            "lineNumber": 81,
+                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                            "lineNumber": 77,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -5348,12 +5018,12 @@ ReactWrapper {
                           "return": [Circular],
                           "selfBaseDuration": 0,
                           "sibling": FiberNode {
-                            "_debugID": 68,
+                            "_debugID": 67,
                             "_debugIsCurrentlyTiming": false,
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
-                              "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                              "lineNumber": 82,
+                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                              "lineNumber": 78,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
@@ -5447,8 +5117,8 @@ ReactWrapper {
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
-                            "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                            "lineNumber": 84,
+                            "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                            "lineNumber": 80,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -5476,19 +5146,19 @@ ReactWrapper {
                             "_debugIsCurrentlyTiming": false,
                             "_debugOwner": [Circular],
                             "_debugSource": Object {
-                              "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                              "lineNumber": 85,
+                              "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                              "lineNumber": 81,
                             },
                             "actualDuration": 0,
                             "actualStartTime": -1,
                             "alternate": null,
                             "child": FiberNode {
-                              "_debugID": 69,
+                              "_debugID": 68,
                               "_debugIsCurrentlyTiming": false,
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
-                                "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                "lineNumber": 86,
+                                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                "lineNumber": 82,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -5518,12 +5188,12 @@ ReactWrapper {
                               "return": [Circular],
                               "selfBaseDuration": 0,
                               "sibling": FiberNode {
-                                "_debugID": 70,
+                                "_debugID": 69,
                                 "_debugIsCurrentlyTiming": false,
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
-                                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 87,
+                                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                  "lineNumber": 83,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
@@ -5617,8 +5287,8 @@ ReactWrapper {
                               "_debugIsCurrentlyTiming": false,
                               "_debugOwner": [Circular],
                               "_debugSource": Object {
-                                "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                "lineNumber": 89,
+                                "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                "lineNumber": 85,
                               },
                               "actualDuration": 0,
                               "actualStartTime": -1,
@@ -5646,19 +5316,19 @@ ReactWrapper {
                                 "_debugIsCurrentlyTiming": false,
                                 "_debugOwner": [Circular],
                                 "_debugSource": Object {
-                                  "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                  "lineNumber": 90,
+                                  "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                  "lineNumber": 86,
                                 },
                                 "actualDuration": 0,
                                 "actualStartTime": -1,
                                 "alternate": null,
                                 "child": FiberNode {
-                                  "_debugID": 71,
+                                  "_debugID": 70,
                                   "_debugIsCurrentlyTiming": false,
                                   "_debugOwner": [Circular],
                                   "_debugSource": Object {
-                                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 91,
+                                    "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                    "lineNumber": 87,
                                   },
                                   "actualDuration": 0,
                                   "actualStartTime": -1,
@@ -5692,12 +5362,12 @@ ReactWrapper {
                                   "return": [Circular],
                                   "selfBaseDuration": 0,
                                   "sibling": FiberNode {
-                                    "_debugID": 72,
+                                    "_debugID": 71,
                                     "_debugIsCurrentlyTiming": false,
                                     "_debugOwner": [Circular],
                                     "_debugSource": Object {
-                                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                      "lineNumber": 91,
+                                      "fileName": "/Users/Joel/Makers/final-project/schej-frontend/src/components/ShiftPopup.js",
+                                      "lineNumber": 37,
                                     },
                                     "actualDuration": 0,
                                     "actualStartTime": -1,
@@ -5705,26 +5375,41 @@ ReactWrapper {
                                     "child": null,
                                     "childExpirationTime": 0,
                                     "effectTag": 0,
-                                    "elementType": "br",
+                                    "elementType": "button",
                                     "expirationTime": 0,
                                     "firstContextDependency": null,
                                     "firstEffect": null,
                                     "index": 1,
                                     "key": null,
                                     "lastEffect": null,
-                                    "memoizedProps": Object {},
+                                    "memoizedProps": Object {
+                                      "children": "Request emergency cover",
+                                      "className": "custom-button",
+                                      "id": "toggle-emergency-popup-content",
+                                      "onClick": [Function],
+                                    },
                                     "memoizedState": null,
                                     "mode": 0,
                                     "nextEffect": null,
-                                    "pendingProps": Object {},
+                                    "pendingProps": Object {
+                                      "children": "Request emergency cover",
+                                      "className": "custom-button",
+                                      "id": "toggle-emergency-popup-content",
+                                      "onClick": [Function],
+                                    },
                                     "ref": null,
                                     "return": [Circular],
                                     "selfBaseDuration": 0,
                                     "sibling": null,
-                                    "stateNode": <br />,
+                                    "stateNode": <button
+                                      class="custom-button"
+                                      id="toggle-emergency-popup-content"
+                                    >
+                                      Request emergency cover
+                                    </button>,
                                     "tag": 5,
                                     "treeBaseDuration": 0,
-                                    "type": "br",
+                                    "type": "button",
                                     "updateQueue": null,
                                   },
                                   "stateNode": <button
@@ -5756,7 +5441,13 @@ ReactWrapper {
                                     >
                                       Request shift swap
                                     </button>,
-                                    <br />,
+                                    <button
+                                      className="custom-button"
+                                      id="toggle-emergency-popup-content"
+                                      onClick={[Function]}
+                                    >
+                                      Request emergency cover
+                                    </button>,
                                   ],
                                   "id": "toggle-popup-state",
                                 },
@@ -5772,196 +5463,20 @@ ReactWrapper {
                                     >
                                       Request shift swap
                                     </button>,
-                                    <br />,
+                                    <button
+                                      className="custom-button"
+                                      id="toggle-emergency-popup-content"
+                                      onClick={[Function]}
+                                    >
+                                      Request emergency cover
+                                    </button>,
                                   ],
                                   "id": "toggle-popup-state",
                                 },
                                 "ref": null,
                                 "return": [Circular],
                                 "selfBaseDuration": 0,
-                                "sibling": FiberNode {
-                                  "_debugID": 62,
-                                  "_debugIsCurrentlyTiming": false,
-                                  "_debugOwner": [Circular],
-                                  "_debugSource": Object {
-                                    "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                    "lineNumber": 37,
-                                  },
-                                  "actualDuration": 0,
-                                  "actualStartTime": -1,
-                                  "alternate": null,
-                                  "child": FiberNode {
-                                    "_debugID": 73,
-                                    "_debugIsCurrentlyTiming": false,
-                                    "_debugOwner": [Circular],
-                                    "_debugSource": Object {
-                                      "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                      "lineNumber": 38,
-                                    },
-                                    "actualDuration": 0,
-                                    "actualStartTime": -1,
-                                    "alternate": null,
-                                    "child": FiberNode {
-                                      "_debugID": 74,
-                                      "_debugIsCurrentlyTiming": false,
-                                      "_debugOwner": [Circular],
-                                      "_debugSource": Object {
-                                        "fileName": "/Users/anouskahopkins/Makers/Week_11/SchejFrontend/src/components/ShiftPopup.js",
-                                        "lineNumber": 39,
-                                      },
-                                      "actualDuration": 0,
-                                      "actualStartTime": -1,
-                                      "alternate": null,
-                                      "child": null,
-                                      "childExpirationTime": 0,
-                                      "effectTag": 0,
-                                      "elementType": "button",
-                                      "expirationTime": 0,
-                                      "firstContextDependency": null,
-                                      "firstEffect": null,
-                                      "index": 0,
-                                      "key": null,
-                                      "lastEffect": null,
-                                      "memoizedProps": Object {
-                                        "children": "Request emergency cover",
-                                        "className": "custom-button",
-                                        "id": "toggle-emergency-popup-content",
-                                        "onClick": [Function],
-                                      },
-                                      "memoizedState": null,
-                                      "mode": 0,
-                                      "nextEffect": null,
-                                      "pendingProps": Object {
-                                        "children": "Request emergency cover",
-                                        "className": "custom-button",
-                                        "id": "toggle-emergency-popup-content",
-                                        "onClick": [Function],
-                                      },
-                                      "ref": null,
-                                      "return": [Circular],
-                                      "selfBaseDuration": 0,
-                                      "sibling": null,
-                                      "stateNode": <button
-                                        class="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                      >
-                                        Request emergency cover
-                                      </button>,
-                                      "tag": 5,
-                                      "treeBaseDuration": 0,
-                                      "type": "button",
-                                      "updateQueue": null,
-                                    },
-                                    "childExpirationTime": 0,
-                                    "effectTag": 0,
-                                    "elementType": "section",
-                                    "expirationTime": 0,
-                                    "firstContextDependency": null,
-                                    "firstEffect": null,
-                                    "index": 0,
-                                    "key": null,
-                                    "lastEffect": null,
-                                    "memoizedProps": Object {
-                                      "children": <button
-                                        className="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                        onClick={[Function]}
-                                      >
-                                        Request emergency cover
-                                      </button>,
-                                      "id": "toggle-popup-state",
-                                    },
-                                    "memoizedState": null,
-                                    "mode": 0,
-                                    "nextEffect": null,
-                                    "pendingProps": Object {
-                                      "children": <button
-                                        className="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                        onClick={[Function]}
-                                      >
-                                        Request emergency cover
-                                      </button>,
-                                      "id": "toggle-popup-state",
-                                    },
-                                    "ref": null,
-                                    "return": [Circular],
-                                    "selfBaseDuration": 0,
-                                    "sibling": null,
-                                    "stateNode": <section
-                                      id="toggle-popup-state"
-                                    >
-                                      <button
-                                        class="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                      >
-                                        Request emergency cover
-                                      </button>
-                                    </section>,
-                                    "tag": 5,
-                                    "treeBaseDuration": 0,
-                                    "type": "section",
-                                    "updateQueue": null,
-                                  },
-                                  "childExpirationTime": 0,
-                                  "effectTag": 0,
-                                  "elementType": "div",
-                                  "expirationTime": 0,
-                                  "firstContextDependency": null,
-                                  "firstEffect": null,
-                                  "index": 10,
-                                  "key": null,
-                                  "lastEffect": null,
-                                  "memoizedProps": Object {
-                                    "children": <section
-                                      id="toggle-popup-state"
-                                    >
-                                      <button
-                                        className="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                        onClick={[Function]}
-                                      >
-                                        Request emergency cover
-                                      </button>
-                                    </section>,
-                                  },
-                                  "memoizedState": null,
-                                  "mode": 0,
-                                  "nextEffect": null,
-                                  "pendingProps": Object {
-                                    "children": <section
-                                      id="toggle-popup-state"
-                                    >
-                                      <button
-                                        className="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                        onClick={[Function]}
-                                      >
-                                        Request emergency cover
-                                      </button>
-                                    </section>,
-                                  },
-                                  "ref": null,
-                                  "return": [Circular],
-                                  "selfBaseDuration": 0,
-                                  "sibling": null,
-                                  "stateNode": <div>
-                                    <section
-                                      id="toggle-popup-state"
-                                    >
-                                      <button
-                                        class="custom-button"
-                                        id="toggle-emergency-popup-content"
-                                      >
-                                        Request emergency cover
-                                      </button>
-                                    </section>
-                                  </div>,
-                                  "tag": 5,
-                                  "treeBaseDuration": 0,
-                                  "type": "div",
-                                  "updateQueue": null,
-                                },
+                                "sibling": null,
                                 "stateNode": <section
                                   id="toggle-popup-state"
                                 >
@@ -5971,7 +5486,12 @@ ReactWrapper {
                                   >
                                     Request shift swap
                                   </button>
-                                  <br />
+                                  <button
+                                    class="custom-button"
+                                    id="toggle-emergency-popup-content"
+                                  >
+                                    Request emergency cover
+                                  </button>
                                 </section>,
                                 "tag": 5,
                                 "treeBaseDuration": 0,
@@ -6158,21 +5678,14 @@ ReactWrapper {
                   >
                     Request shift swap
                   </button>
-                  <br />
-                </section>,
-                <div>
-                  <section
-                    id="toggle-popup-state"
+                  <button
+                    className="custom-button"
+                    id="toggle-emergency-popup-content"
+                    onClick={[Function]}
                   >
-                    <button
-                      className="custom-button"
-                      id="toggle-emergency-popup-content"
-                      onClick={[Function]}
-                    >
-                      Request emergency cover
-                    </button>
-                  </section>
-                </div>,
+                    Request emergency cover
+                  </button>
+                </section>,
               ],
               "id": "shift-popup",
             },
@@ -6248,21 +5761,14 @@ ReactWrapper {
                   >
                     Request shift swap
                   </button>
-                  <br />
-                </section>,
-                <div>
-                  <section
-                    id="toggle-popup-state"
+                  <button
+                    className="custom-button"
+                    id="toggle-emergency-popup-content"
+                    onClick={[Function]}
                   >
-                    <button
-                      className="custom-button"
-                      id="toggle-emergency-popup-content"
-                      onClick={[Function]}
-                    >
-                      Request emergency cover
-                    </button>
-                  </section>
-                </div>,
+                    Request emergency cover
+                  </button>
+                </section>,
               ],
               "id": "shift-popup",
             },
@@ -6339,20 +5845,13 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>
-                <br />
-              </section>
-              <div>
-                <section
-                  id="toggle-popup-state"
+                <button
+                  class="custom-button"
+                  id="toggle-emergency-popup-content"
                 >
-                  <button
-                    class="custom-button"
-                    id="toggle-emergency-popup-content"
-                  >
-                    Request emergency cover
-                  </button>
-                </section>
-              </div>
+                  Request emergency cover
+                </button>
+              </section>
             </div>,
             "tag": 5,
             "treeBaseDuration": 0,
@@ -6553,20 +6052,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -6764,20 +6256,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -6956,20 +6441,13 @@ ReactWrapper {
                         >
                           Request shift swap
                         </button>
-                        <br />
-                      </section>
-                      <div>
-                        <section
-                          id="toggle-popup-state"
+                        <button
+                          class="custom-button"
+                          id="toggle-emergency-popup-content"
                         >
-                          <button
-                            class="custom-button"
-                            id="toggle-emergency-popup-content"
-                          >
-                            Request emergency cover
-                          </button>
-                        </section>
-                      </div>
+                          Request emergency cover
+                        </button>
+                      </section>
                     </div>
                   </div>,
                   "context": Object {},
@@ -7167,20 +6645,13 @@ ReactWrapper {
                       >
                         Request shift swap
                       </button>
-                      <br />
-                    </section>
-                    <div>
-                      <section
-                        id="toggle-popup-state"
+                      <button
+                        class="custom-button"
+                        id="toggle-emergency-popup-content"
                       >
-                        <button
-                          class="custom-button"
-                          id="toggle-emergency-popup-content"
-                        >
-                          Request emergency cover
-                        </button>
-                      </section>
-                    </div>
+                        Request emergency cover
+                      </button>
+                    </section>
                   </div>
                 </div>,
                 "context": Object {},
@@ -7424,20 +6895,13 @@ ReactWrapper {
             >
               Request shift swap
             </button>
-            <br />
-          </section>
-          <div>
-            <section
-              id="toggle-popup-state"
+            <button
+              class="custom-button"
+              id="toggle-emergency-popup-content"
             >
-              <button
-                class="custom-button"
-                id="toggle-emergency-popup-content"
-              >
-                Request emergency cover
-              </button>
-            </section>
-          </div>
+              Request emergency cover
+            </button>
+          </section>
         </div>,
         "key": undefined,
         "nodeType": "host",
@@ -7510,21 +6974,14 @@ ReactWrapper {
               >
                 Request shift swap
               </button>
-              <br />
-            </section>,
-            <div>
-              <section
-                id="toggle-popup-state"
+              <button
+                className="custom-button"
+                id="toggle-emergency-popup-content"
+                onClick={[Function]}
               >
-                <button
-                  className="custom-button"
-                  id="toggle-emergency-popup-content"
-                  onClick={[Function]}
-                >
-                  Request emergency cover
-                </button>
-              </section>
-            </div>,
+                Request emergency cover
+              </button>
+            </section>,
           ],
           "id": "shift-popup",
         },
@@ -7870,7 +7327,12 @@ ReactWrapper {
               >
                 Request shift swap
               </button>
-              <br />
+              <button
+                class="custom-button"
+                id="toggle-emergency-popup-content"
+              >
+                Request emergency cover
+              </button>
             </section>,
             "key": undefined,
             "nodeType": "host",
@@ -7883,7 +7345,13 @@ ReactWrapper {
                 >
                   Request shift swap
                 </button>,
-                <br />,
+                <button
+                  className="custom-button"
+                  id="toggle-emergency-popup-content"
+                  onClick={[Function]}
+                >
+                  Request emergency cover
+                </button>,
               ],
               "id": "toggle-popup-state",
             },
@@ -7911,100 +7379,28 @@ ReactWrapper {
                 "type": "button",
               },
               Object {
-                "instance": <br />,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {},
-                "ref": null,
-                "rendered": Array [
-                  undefined,
-                ],
-                "type": "br",
-              },
-            ],
-            "type": "section",
-          },
-          Object {
-            "instance": <div>
-              <section
-                id="toggle-popup-state"
-              >
-                <button
+                "instance": <button
                   class="custom-button"
                   id="toggle-emergency-popup-content"
                 >
                   Request emergency cover
-                </button>
-              </section>
-            </div>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <section
-                id="toggle-popup-state"
-              >
-                <button
-                  className="custom-button"
-                  id="toggle-emergency-popup-content"
-                  onClick={[Function]}
-                >
-                  Request emergency cover
-                </button>
-              </section>,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <section
-                  id="toggle-popup-state"
-                >
-                  <button
-                    class="custom-button"
-                    id="toggle-emergency-popup-content"
-                  >
-                    Request emergency cover
-                  </button>
-                </section>,
+                </button>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <button
-                    className="custom-button"
-                    id="toggle-emergency-popup-content"
-                    onClick={[Function]}
-                  >
-                    Request emergency cover
-                  </button>,
-                  "id": "toggle-popup-state",
+                  "children": "Request emergency cover",
+                  "className": "custom-button",
+                  "id": "toggle-emergency-popup-content",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "rendered": Array [
-                  Object {
-                    "instance": <button
-                      class="custom-button"
-                      id="toggle-emergency-popup-content"
-                    >
-                      Request emergency cover
-                    </button>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Request emergency cover",
-                      "className": "custom-button",
-                      "id": "toggle-emergency-popup-content",
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Request emergency cover",
-                    ],
-                    "type": "button",
-                  },
+                  "Request emergency cover",
                 ],
-                "type": "section",
+                "type": "button",
               },
             ],
-            "type": "div",
+            "type": "section",
           },
         ],
         "type": "div",
