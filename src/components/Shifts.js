@@ -118,6 +118,14 @@ export default class Shifts extends Component {
             onSelectEvent={(shift) => this.openModal(shift)}
             events= { this.state.events }
             style={{ height: '100vh' }}
+            eventPropGetter = {event => {
+              const user = parseInt(localStorage['id']) === event.userId;
+              console.log(user);
+              const backgroundColor = user ? "#ff9933" : "#3174ad";
+              return { style: { backgroundColor }
+            };
+          }
+        }
           />
         </div>
         <Popup
