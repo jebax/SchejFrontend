@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import Popup from "reactjs-popup";
 import RequestSwapForm from "./RequestSwapForm";
 import EmergencyRequestForm from "./EmergencyRequestForm";
-import axios from 'axios'
 
 export default class ShiftPopup extends Component {
   constructor(props) {
@@ -36,7 +34,11 @@ export default class ShiftPopup extends Component {
   formatEmergencyRequest = () => {
     if (this.props.shiftInfo.userId === parseInt(localStorage['id'])) {
       return(
-        <button id='toggle-emergency-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
+        <div>
+          <section id='toggle-popup-state'>
+          <button id='toggle-emergency-popup-content' className='custom-button' onClick={this.emergencyRequest}>Request emergency cover</button>
+          </section>
+        </div>
     )}
   }
 
@@ -65,7 +67,6 @@ export default class ShiftPopup extends Component {
       return(
         <div id='shift-popup'>
           <h3 className='popup-title'>Shift Information</h3>
-          <br />
           <div className='shift-info'>
             <p className='shift-info-label'>Employee name:</p>
             <p className='shift-info-entry'>{this.props.shiftInfo.title}</p>
@@ -87,9 +88,9 @@ export default class ShiftPopup extends Component {
           </div>
           <br />
           <section id='toggle-popup-state'>
-            <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button>
-            {this.formatEmergencyRequest()}
+          <button id='toggle-popup-content' className='custom-button' onClick={this.changeState}>Request shift swap</button><br />
           </section>
+          {this.formatEmergencyRequest()}
         </div>
       )}
     }

@@ -40,20 +40,8 @@ ShallowWrapper {
           >
             My shifts
           </option>
-          <option
-            className="menu-item"
-          >
-            18 Dec, 16:49
-             - 
-            18 Dec, 16:49
-          </option>
-          <option
-            className="menu-item"
-          >
-            18 Dec, 16:49
-             - 
-            18 Dec, 16:49
-          </option>
+          null[object Object]
+          null[object Object]
         </select>,
         <br />,
         <button
@@ -92,20 +80,8 @@ ShallowWrapper {
               My shifts
             </option>,
             Array [
-              <option
-                className="menu-item"
-              >
-                18 Dec, 16:49
-                 - 
-                18 Dec, 16:49
-              </option>,
-              <option
-                className="menu-item"
-              >
-                18 Dec, 16:49
-                 - 
-                18 Dec, 16:49
-              </option>,
+              "null[object Object]",
+              "null[object Object]",
             ],
           ],
           "className": "menu",
@@ -127,48 +103,8 @@ ShallowWrapper {
             "rendered": "My shifts",
             "type": "option",
           },
-          Object {
-            "instance": null,
-            "key": "0",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "18 Dec, 16:49",
-                " - ",
-                "18 Dec, 16:49",
-              ],
-              "className": "menu-item",
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              "18 Dec, 16:49",
-              " - ",
-              "18 Dec, 16:49",
-            ],
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "18 Dec, 16:49",
-                " - ",
-                "18 Dec, 16:49",
-              ],
-              "className": "menu-item",
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              "18 Dec, 16:49",
-              " - ",
-              "18 Dec, 16:49",
-            ],
-            "type": "option",
-          },
+          "null[object Object]",
+          "null[object Object]",
         ],
         "type": "select",
       },
@@ -220,20 +156,8 @@ ShallowWrapper {
             >
               My shifts
             </option>
-            <option
-              className="menu-item"
-            >
-              18 Dec, 16:49
-               - 
-              18 Dec, 16:49
-            </option>
-            <option
-              className="menu-item"
-            >
-              18 Dec, 16:49
-               - 
-              18 Dec, 16:49
-            </option>
+            null[object Object]
+            null[object Object]
           </select>,
           <br />,
           <button
@@ -272,20 +196,8 @@ ShallowWrapper {
                 My shifts
               </option>,
               Array [
-                <option
-                  className="menu-item"
-                >
-                  18 Dec, 16:49
-                   - 
-                  18 Dec, 16:49
-                </option>,
-                <option
-                  className="menu-item"
-                >
-                  18 Dec, 16:49
-                   - 
-                  18 Dec, 16:49
-                </option>,
+                "null[object Object]",
+                "null[object Object]",
               ],
             ],
             "className": "menu",
@@ -307,48 +219,8 @@ ShallowWrapper {
               "rendered": "My shifts",
               "type": "option",
             },
-            Object {
-              "instance": null,
-              "key": "0",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "18 Dec, 16:49",
-                  " - ",
-                  "18 Dec, 16:49",
-                ],
-                "className": "menu-item",
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                "18 Dec, 16:49",
-                " - ",
-                "18 Dec, 16:49",
-              ],
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "1",
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "18 Dec, 16:49",
-                  " - ",
-                  "18 Dec, 16:49",
-                ],
-                "className": "menu-item",
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                "18 Dec, 16:49",
-                " - ",
-                "18 Dec, 16:49",
-              ],
-              "type": "option",
-            },
+            "null[object Object]",
+            "null[object Object]",
           ],
           "type": "select",
         },

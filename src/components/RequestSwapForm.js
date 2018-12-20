@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Popup from "reactjs-popup";
 
 export default class RequestSwapForm extends Component {
   constructor(props){
@@ -58,9 +57,11 @@ export default class RequestSwapForm extends Component {
         <select className="menu" name="userShift" onChange={this.handleChange} value={this.state.userShift}>
           <option className='menu-item'>My shifts</option>
           {this.state.userShifts.map( (shift, index) => {
+            let options = null
             if (new Date(parseInt(shift.start_time)) >= new Date()) {
-              return <option className="menu-item" key={index} value={shift.id}>{this.formatDate(shift.start_time)} - {this.formatDate(shift.end_time)}</option>
+              options += <option className="menu-item" key={index} value={shift.id}>{this.formatDate(shift.start_time)} - {this.formatDate(shift.end_time)}</option>
             }
+            return options
           })}
         </select>
         <br />

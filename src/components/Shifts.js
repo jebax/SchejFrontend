@@ -8,7 +8,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 import Popup from "reactjs-popup";
 import ShiftPopup from './ShiftPopup'
 import NotificationsButton from './NotificationsButton'
-import NotificationsList from './NotificationsList'
 const localizer = BigCalendar.momentLocalizer(moment)
 
 export default class Shifts extends Component {
