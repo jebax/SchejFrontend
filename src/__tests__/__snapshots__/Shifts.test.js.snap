@@ -66,6 +66,7 @@ ShallowWrapper {
           <ForwardRef
             defaultDate={2018-12-18T16:49:11.163Z}
             defaultView="month"
+            eventPropGetter={[Function]}
             localizer={
               DateLocalizer {
                 "format": [Function],
@@ -338,6 +339,7 @@ ShallowWrapper {
           "children": <ForwardRef
             defaultDate={2018-12-18T16:49:11.163Z}
             defaultView="month"
+            eventPropGetter={[Function]}
             localizer={
               DateLocalizer {
                 "format": [Function],
@@ -379,6 +381,7 @@ ShallowWrapper {
           "props": Object {
             "defaultDate": 2018-12-18T16:49:11.163Z,
             "defaultView": "month",
+            "eventPropGetter": [Function],
             "events": undefined,
             "localizer": DateLocalizer {
               "format": [Function],
@@ -603,6 +606,7 @@ ShallowWrapper {
             <ForwardRef
               defaultDate={2018-12-18T16:49:11.163Z}
               defaultView="month"
+              eventPropGetter={[Function]}
               localizer={
                 DateLocalizer {
                   "format": [Function],
@@ -875,6 +879,7 @@ ShallowWrapper {
             "children": <ForwardRef
               defaultDate={2018-12-18T16:49:11.163Z}
               defaultView="month"
+              eventPropGetter={[Function]}
               localizer={
                 DateLocalizer {
                   "format": [Function],
@@ -916,6 +921,7 @@ ShallowWrapper {
             "props": Object {
               "defaultDate": 2018-12-18T16:49:11.163Z,
               "defaultView": "month",
+              "eventPropGetter": [Function],
               "events": undefined,
               "localizer": DateLocalizer {
                 "format": [Function],
