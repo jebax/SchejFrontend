@@ -48,13 +48,11 @@ describe("Adding shift", () => {
     cy.route({
       method: 'GET',
       url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation&job_title=TestTitle',
-      response: {
-        data: {
+      response: [{
           title: 'TestEmail',
-          start_time: '1544601600000',
-          end_time: '1544616000000'
-        }
-      }
+          start: '1544601600000',
+          end: '1544616000000'
+        }]
     })
     cy.get('[id="add-shift-button"]')
       .click()

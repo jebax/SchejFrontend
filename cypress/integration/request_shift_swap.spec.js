@@ -25,14 +25,12 @@ describe('Requesting a shift swap', () => {
     cy.route({
       method: 'GET',
       url: 'http://localhost:3001/api/v1/shifts?organisation=Testorganisation&job_title=TestTitle',
-      response: {
-        data: {
+      response: [{
           title: 'TestName',
-          start_time: '1544601600000',
-          end_time: '1544616000000',
+          start: '1544601600000',
+          end: '1544616000000',
           email: 'TestEmail'
-        }
-      }
+        }]
     })
     cy.visit('http://localhost:3000/sign_up')
 
