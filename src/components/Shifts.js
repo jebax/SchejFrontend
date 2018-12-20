@@ -120,7 +120,6 @@ export default class Shifts extends Component {
             style={{ height: '100vh' }}
             eventPropGetter = {event => {
               const user = parseInt(localStorage['id']) === event.userId;
-              console.log(user);
               const backgroundColor = user ? "#ff9933" : "#3174ad";
               return { style: { backgroundColor }
             };
