@@ -73,15 +73,12 @@ export default class Shifts extends Component {
       `${process.env.REACT_APP_API_URL}/shifts?organisation=${localStorage['organisation']}&job_title=${localStorage['jobTitle']}`
     )
     .then(response => {
-      console.log(response)
       let shiftData = response.data
       for(var i in shiftData) {
         shiftData[i].start = new Date(parseInt(shiftData[i].start))
         shiftData[i].end = new Date(parseInt(shiftData[i].end))
       }
-      setTimeout(() => {
-        this.setState({events: shiftData})
-      }, 50)
+      this.setState({events: shiftData})
     })
   }
 
@@ -110,6 +107,11 @@ export default class Shifts extends Component {
             onSelectEvent={(shift) => this.openModal(shift)}
             events= { this.state.events }
             style={{ height: '77vh' }}
+            eventPropGetter = {event => {
+              const user = parseInt(localStorage['id']) === event.userId
+              const backgroundColor = user ? '#ff9933' : '#3174ad'
+              return { style: { backgroundColor } }
+            }}
           />
         </div>
         <Popup
