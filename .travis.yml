@@ -8,7 +8,7 @@ script:
  - CI=false
  - npm run build
  - npm add surge
- - npm test
+ - npm test -u
 deploy:
   provider: surge
   project: ./build/
