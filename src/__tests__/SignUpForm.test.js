@@ -66,7 +66,7 @@ describe("sign up form", () => {
 
     button.simulate('click')
 
-    expect(mountedWrapper.props().history).toEqual(['/sign_in'])
+    expect(mountedWrapper.props().history).toEqual(['/'])
   })
 
   test('alerts the user when email already taken', () => {
